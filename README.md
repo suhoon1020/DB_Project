@@ -21,3 +21,6 @@ git clone <주소> .
         scr_signup.txt
         scr_update.txt
 ```
+
+### 1.screen
+쉘 화면에서 이용자에게 보여주는 화면을 제공하기 위함
