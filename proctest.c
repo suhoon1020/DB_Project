@@ -561,7 +561,7 @@ struct { unsigned short len; unsigned char arr[255]; } v_type;
         v_food_name.arr[v_food_name.len] = '\0';
         v_type.arr[v_type.len] = '\0';
 
-        printf(" %-10s %-20s %-10s %-10s %-10s %-10s\n",
+        printf(" %-10s %-20s %-10s %-10.1f %-10.1f %-10.1f %-10.1f\n",
                v_category.arr, v_food_name.arr, v_type.arr, v_calorie, v_carbo, v_protein, v_fat);
         ++count;
 
@@ -571,12 +571,12 @@ struct { unsigned short len; unsigned char arr[255]; } v_type;
             count = 0;
             getch();
 
-            gotoxy(0, 3); // 이전 데이터 클리어
+            gotoxy(0, 2); // 이전 데이터 클리어
             for (int i = 0; i < PAGE_NUM; i++)
             {
                 printf("                                                                                               \n");
             }
-            gotoxy(0, 3); // 새 페이지 시작
+            gotoxy(0, 2); // 새 페이지 시작
         }
     }
 
@@ -650,7 +650,7 @@ struct { unsigned short len; unsigned char arr[255]; } v_type;
 
     while (1)
     {
-        /* EXEC SQL FETCH c_cursor INTO : v_category, : v_food_name, :v_type, : v_carbo, : v_protein, : v_fat, : v_calorie; */ 
+        /* EXEC SQL FETCH c_cursor INTO : v_category, : v_food_name, : v_type, : v_carbo, : v_protein, : v_fat, : v_calorie; */ 
 
 {
         struct sqlexd sqlstm;
