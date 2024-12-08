@@ -129,32 +129,25 @@ void main_options(){
 	char c = getchar() ;
 	while (getchar() != '\n');
 
-	/*
-	1. view food                                         
-	2. view recent manu                                  
-	3. refrash today's manu                              
-	4. add food (Permission required)                    
-	5. delete food (Permission required)                 
-	6. modify food (Permission required)     */
 
 	switch(c){
 		case '1': 
-			view_food();
+			view_food(); // 음식 확인
 			break;
 		case '2':
-			view_recent_manu();
+            add_food(); // 음식 추가
 			break;
 		case '3':
-			refresh_today_manu();
+            delete_food(); // 음식 삭제
 			break;
 		case '4':
-			add_food();
+			modify_food(); // 음식 수정
 			break;
 		case '5':
-			delete_food();
+			view_menu(); // 식단 확인
 			break;
 		case '6':
-			modify_food();
+            refresh_today_manu(); //오늘의 식단 새로 고침
 			break;
 
 		default : break ;
@@ -166,9 +159,9 @@ void view_food()
 {
 	clrscr();
 
-	print_screen("scr_view_food.txt") ;
+	print_screen("screen/scr_select.txt") ;
     
-	gotoxy(49,15);
+	gotoxy(11,16);
 
 	char c = getchar() ;
 	while (getchar() != '\n');
@@ -192,12 +185,13 @@ void view_food()
 void view_food_all()
 {
     EXEC SQL BEGIN DECLARE SECTION;
+    varchar v_food_name[255];
     varchar v_category[255];
-    varchar v_menu_name[255];
-    float v_carb;
+    varchar v_type[255];
+    float v_calorie;
+    float v_carbo;
     float v_protein;
     float v_fat;
-    float v_calorie;
     EXEC SQL END DECLARE SECTION;
 
     int count = 0;
@@ -206,25 +200,26 @@ void view_food_all()
 
     /* 고정 SQL 쿼리로 커서 선언 */
     EXEC SQL DECLARE c_cursor CURSOR FOR 
-        SELECT category, menu_name, carb, protein, fat, calorie FROM FOOD;
+        SELECT fname,fcategory,ftype,kal,carbo,protein,fat from food_table;
     EXEC SQL OPEN c_cursor;
 
-    printf(" %-10s %-20s %-8s %-8s %-8s %-8s\n",
-           "Category", "Menu Name", "Carb", "Protein", "Fat", "Calorie");
+    printf(" %-10s %-20s %-10s %-10s %-10s %-10s %-10s\n",
+           "Category", "Food Name", "Type" ,"Calorie", "Carbo", "Protein", "Fat");
     printf("--------------------------------------------------------------\n");
 
     while (1) {
-        EXEC SQL FETCH c_cursor INTO :v_category, :v_menu_name, :v_carb, :v_protein, :v_fat, :v_calorie;
+        EXEC SQL FETCH c_cursor INTO :v_food_name, :v_category, :v_type, :v_calorie, :v_carbo, :v_protein, :v_fat; //커서에 저장
 
         if (sqlca.sqlcode == 1403) { // 더 이상 데이터가 없으면 종료
             break;
         }
 
         v_category.arr[v_category.len] = '\0';
-        v_menu_name.arr[v_menu_name.len] = '\0';
+        v_food_name.arr[v_food_name.len] = '\0';
+        v_type.arr[v_type.len] = '\0';
 
-        printf(" %-10s %-20s %-8.2f %-8.2f %-8.2f %-8.2f\n",
-               v_category.arr, v_menu_name.arr, v_carb, v_protein, v_fat, v_calorie);
+        printf(" %-10s %-20s %-10s %-10s %-10s %-10s\n",
+               v_category.arr, v_food_name.arr,v_type.arr, v_calorie,v_carbo, v_protein, v_fat);
         ++count;
 
         if (count == PAGE_NUM) {
@@ -253,7 +248,7 @@ void view_food_search()
 {
 	EXEC SQL BEGIN DECLARE SECTION;
     varchar v_category[255];
-    varchar v_menu_name[255];
+    varchar v_food_name[255];
     float v_carb;
     float v_protein;
     float v_fat;
@@ -267,21 +262,21 @@ void view_food_search()
     clrscr();
 
 	char input_category[20];
-	char input_menu_name[20];
+	char input_food_name[20];
 
 
     printf("Enter category: ");
     gets(input_category);  // 사용자로부터 카테고리 입력받기
     printf("Enter menu name (or part of it): ");
-    gets(input_menu_name);  // 사용자로부터 메뉴 이름 입력받기
+    gets(input_food_name);  // 사용자로부터 메뉴 이름 입력받기
 
     sprintf(sqlstmt, 
-            "SELECT category, menu_name, carb, protein, fat, calorie "
+            "SELECT fcategory, fname, ftpye ,carbo, protein, fat, calorie "
             "FROM FOOD WHERE category LIKE '%%%s%%' AND menu_name LIKE '%%%s%%'", 
-            input_category, input_menu_name);
+            input_category, input_food_name);
 
-    printf(" %-10s %-20s %-8s %-8s %-8s %-8s\n",
-           "Category", "Menu Name", "Carb", "Protein", "Fat", "Calorie");
+    printf(" %-10s %-20s %-10s %-10s %-10s %-10s %-10s\n",
+           "Category", "Food Name", "Type" ,"Calorie", "Carbo", "Protein", "Fat");
     printf("--------------------------------------------------------------\n");
 
     while (1) {
@@ -319,7 +314,7 @@ void view_food_search()
     getch(); // 종료
 }
 
-void view_recent_manu()
+void view_menu() // 식단 확인
 {
 }
 
@@ -339,6 +334,10 @@ void modify_food()
 {
 }
 
+
+/*
+화면 보여주는 함수
+*/
 void print_screen(char* fname)
 {
 	FILE* fp;
