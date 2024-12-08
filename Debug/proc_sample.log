@@ -1,0 +1,8 @@
+﻿  proc_sample.c
+C:\Users\suhoo\iCloudDrive\Downloads\Code\DB_Project\proc_sample.c(273,16): warning C4267: '=': 'size_t'에서 'unsigned short'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\suhoo\iCloudDrive\Downloads\Code\DB_Project\proc_sample.c(275,15): warning C4267: '=': 'size_t'에서 'unsigned short'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\suhoo\iCloudDrive\Downloads\Code\DB_Project\proc_sample.c(371,4): warning C4013: 'gets'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+C:\Users\suhoo\iCloudDrive\Downloads\Code\DB_Project\proc_sample.c(723,5): warning C4101: 'i' :참조되지 않은 지역 변수입니다.
+C:\Users\suhoo\iCloudDrive\Downloads\Code\DB_Project\proc_sample.c(1218,10): warning C4047: '=': 'char'의 간접 참조 수준이 'char *'과(와) 다릅니다.
+C:\Users\suhoo\iCloudDrive\Downloads\Code\DB_Project\proc_sample.c(1045,5): warning C4101: 'i' :참조되지 않은 지역 변수입니다.
+  proc_sample.vcxproj -> C:\Users\suhoo\iCloudDrive\Downloads\Code\DB_Project\Debug\proc_sample.exe

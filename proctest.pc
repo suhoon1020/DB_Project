@@ -1,0 +1,361 @@
+#define _CRT_SECURE_NO_WARNINGS
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <ctype.h>
+#include <string.h>
+#include <conio.h>
+
+/* for oracle */
+#include <sqlda.h>
+#include <sqlca.h>
+#include <sqlcpr.h>
+
+void db_connect();
+void sql_error(char *msg);
+
+/* manu */
+void main_options();
+void view_food();
+void view_food_all();
+void view_food_search();
+void view_recent_manu();
+void refresh_today_manu();
+void add_food();
+void delete_food();
+void modify_food();
+
+void print_screen(char *fname);
+
+
+#include <windows.h>
+void gotoxy(int x, int y);
+void getxy(int* x, int* y);
+void clrscr(void);
+
+
+EXEC SQL BEGIN DECLARE SECTION;
+	VARCHAR uid[80];
+	VARCHAR pwd[20];
+EXEC SQL END DECLARE SECTION;
+
+#define getch() _getch()
+
+void main()
+{
+	db_connect();
+
+	main_options();
+}
+
+void db_connect()
+{
+   /* ID */
+   strcpy((char *)uid.arr,"b20193221@//sedb.deu.ac.kr:1521/orcl");
+   uid.len = (short) strlen((char *)uid.arr);
+   /* PW */
+   strcpy((char *)pwd.arr,"20193221");
+   pwd.len = (short) strlen((char *)pwd.arr);
+
+   EXEC SQL CONNECT :uid IDENTIFIED BY :pwd;
+
+
+	if (sqlca.sqlcode != 0 && sqlca.sqlcode != -1405){ 
+		printf("\7Connect error: %s", sqlca.sqlerrm.sqlerrmc);
+		getch();
+		exit(-1);
+	}
+
+    printf("Oracle Connect SUCCESS by %s\n", uid.arr);
+}
+
+
+void sql_error(char *msg)
+{
+   char err_msg[128];
+   size_t buf_len, msg_len;
+
+   EXEC SQL WHENEVER SQLERROR CONTINUE;
+
+   printf("\n%s\n", msg);
+   buf_len = sizeof (err_msg);
+   sqlglm(err_msg, &buf_len, &msg_len);
+   printf("%.*s\n", msg_len, err_msg);
+   getch();
+
+   EXEC SQL ROLLBACK WORK;
+}
+
+/*---------------  print screen --------------------*/
+#define STD_HANDLE GetStdHandle(STD_OUTPUT_HANDLE)
+
+void gotoxy(int x, int y)
+{
+	COORD Cur = { (SHORT)x, (SHORT)y };
+
+	SetConsoleCursorPosition(STD_HANDLE, Cur);
+}
+
+void getxy(int* x, int* y)
+{
+	CONSOLE_SCREEN_BUFFER_INFO Buf;
+
+	GetConsoleScreenBufferInfo(GetStdHandle(STD_OUTPUT_HANDLE), &Buf);
+	*x = (int)Buf.dwCursorPosition.X;
+	*y = (int)Buf.dwCursorPosition.Y;
+
+}
+
+void clrscr(void)
+{
+	COORD Cur = { 0, 0 };
+	unsigned long dwLen;
+
+	FillConsoleOutputCharacter(STD_HANDLE, ' ', 120 * 28, Cur, &dwLen);
+	gotoxy(0, 0);
+}
+
+/*---------------------------------------------------------*/
+
+/*------------------------- Manus ------------------------*/
+
+void main_options(){
+	clrscr();
+
+	print_screen("scr_main.txt") ;
+    
+	gotoxy(49,15);
+
+	char c = getchar() ;
+	while (getchar() != '\n');
+
+	/*
+	1. view food                                         
+	2. view recent manu                                  
+	3. refrash today's manu                              
+	4. add food (Permission required)                    
+	5. delete food (Permission required)                 
+	6. modify food (Permission required)     */
+
+	switch(c){
+		case '1': 
+			view_food();
+			break;
+		case '2':
+			view_recent_manu();
+			break;
+		case '3':
+			refresh_today_manu();
+			break;
+		case '4':
+			add_food();
+			break;
+		case '5':
+			delete_food();
+			break;
+		case '6':
+			modify_food();
+			break;
+
+		default : break ;
+
+	}	
+}
+
+void view_food()
+{
+	clrscr();
+
+	print_screen("scr_view_food.txt") ;
+    
+	gotoxy(49,15);
+
+	char c = getchar() ;
+	while (getchar() != '\n');
+
+	/*
+	1. view all food                                     
+	2. search food     */
+
+	switch(c){
+		case '1': 
+			view_food_all();
+			break;
+		case '2':
+			view_food_search();
+			break;
+		default : break ;
+	}
+}
+
+#define PAGE_NUM 5
+void view_food_all()
+{
+    EXEC SQL BEGIN DECLARE SECTION;
+    varchar v_category[255];
+    varchar v_menu_name[255];
+    float v_carb;
+    float v_protein;
+    float v_fat;
+    float v_calorie;
+    EXEC SQL END DECLARE SECTION;
+
+    int count = 0;
+
+    clrscr();
+
+    /* 고정 SQL 쿼리로 커서 선언 */
+    EXEC SQL DECLARE c_cursor CURSOR FOR 
+        SELECT category, menu_name, carb, protein, fat, calorie FROM FOOD;
+    EXEC SQL OPEN c_cursor;
+
+    printf(" %-10s %-20s %-8s %-8s %-8s %-8s\n",
+           "Category", "Menu Name", "Carb", "Protein", "Fat", "Calorie");
+    printf("--------------------------------------------------------------\n");
+
+    while (1) {
+        EXEC SQL FETCH c_cursor INTO :v_category, :v_menu_name, :v_carb, :v_protein, :v_fat, :v_calorie;
+
+        if (sqlca.sqlcode == 1403) { // 더 이상 데이터가 없으면 종료
+            break;
+        }
+
+        v_category.arr[v_category.len] = '\0';
+        v_menu_name.arr[v_menu_name.len] = '\0';
+
+        printf(" %-10s %-20s %-8.2f %-8.2f %-8.2f %-8.2f\n",
+               v_category.arr, v_menu_name.arr, v_carb, v_protein, v_fat, v_calorie);
+        ++count;
+
+        if (count == PAGE_NUM) {
+            printf("\n\n                                  Hit any key for next page\n");
+            count = 0;
+            getch();
+
+            gotoxy(0, 3); // 이전 데이터 클리어
+            for (int i = 0; i < PAGE_NUM; i++) {
+                printf("                                                                                               \n");
+            }
+            gotoxy(0, 3); // 새 페이지 시작
+        }
+    }
+
+    printf("\n");
+    printf("Total matched tuples: %d\n", sqlca.sqlerrd[2]);
+
+    EXEC SQL CLOSE c_cursor;
+
+    getch(); // 종료
+}
+
+
+void view_food_search()
+{
+	EXEC SQL BEGIN DECLARE SECTION;
+    varchar v_category[255];
+    varchar v_menu_name[255];
+    float v_carb;
+    float v_protein;
+    float v_fat;
+    float v_calorie;
+    EXEC SQL END DECLARE SECTION;
+
+    int count = 0;
+
+    clrscr();
+
+	char no_temp[20];
+	char name_temp[20];
+
+	gets(no_temp); 
+
+	gets(name_temp);
+
+    printf("Enter category: ");
+    gets(input_category);  // 사용자로부터 카테고리 입력받기
+    printf("Enter menu name (or part of it): ");
+    gets(input_menu_name);  // 사용자로부터 메뉴 이름 입력받기
+
+    sprintf(sqlstmt, 
+            "SELECT category, menu_name, carb, protein, fat, calorie "
+            "FROM FOOD WHERE category LIKE '%%%s%%' AND menu_name LIKE '%%%s%%'", 
+            input_category, input_menu_name);
+
+    printf(" %-10s %-20s %-8s %-8s %-8s %-8s\n",
+           "Category", "Menu Name", "Carb", "Protein", "Fat", "Calorie");
+    printf("--------------------------------------------------------------\n");
+
+    while (1) {
+        EXEC SQL FETCH c_cursor INTO :v_category, :v_menu_name, :v_carb, :v_protein, :v_fat, :v_calorie;
+
+        if (sqlca.sqlcode == 1403) { // 더 이상 데이터가 없으면 종료
+            break;
+        }
+
+        v_category.arr[v_category.len] = '\0';
+        v_menu_name.arr[v_menu_name.len] = '\0';
+
+        printf(" %-10s %-20s %-8.2f %-8.2f %-8.2f %-8.2f\n",
+               v_category.arr, v_menu_name.arr, v_carb, v_protein, v_fat, v_calorie);
+        ++count;
+
+        if (count == PAGE_NUM) {
+            printf("\n\n                                  Hit any key for next page\n");
+            count = 0;
+            getch();
+
+            gotoxy(0, 3); // 이전 데이터 클리어
+            for (int i = 0; i < PAGE_NUM; i++) {
+                printf("                                                                                               \n");
+            }
+            gotoxy(0, 3); // 새 페이지 시작
+        }
+    }
+
+    printf("\n");
+    printf("Total matched tuples: %d\n", sqlca.sqlerrd[2]);
+
+    EXEC SQL CLOSE c_cursor;
+
+    getch(); // 종료
+}
+
+void view_recent_manu()
+{
+}
+
+void refresh_today_manu()
+{
+}
+
+void add_food()
+{
+}
+
+void delete_food()
+{
+}
+
+void modify_food()
+{
+}
+
+void print_screen(char* fname)
+{
+	FILE* fp;
+	char line[100];
+
+	if ((fp = fopen(fname, "r")) == NULL) {
+		printf("file open error\n");
+		getch();
+		exit(-1);
+	}
+	while (1) {
+		if (fgets(line, 99, fp) == NULL) {
+			break;
+		}
+		printf("%s", line);
+	}
+
+	fclose(fp);
+}
