@@ -177,6 +177,9 @@ void view_food()
     case '2':
         view_food_search();
         break;
+    case '3':
+        main_options();
+        break;
     default:
         break;
     }
@@ -206,7 +209,7 @@ void view_food_all()
 
     printf(" %-10s %-20s %-10s %-10s %-10s %-10s %-10s\n",
            "Category", "Food Name", "Type", "Calorie", "Carbo", "Protein", "Fat");
-    printf("--------------------------------------------------------------\n");
+    printf("-------------------------------------------------------------------------------\n");
 
     while (1)
     {
