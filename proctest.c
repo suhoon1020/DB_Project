@@ -145,9 +145,9 @@ static const short sqlcud0[] =
 66,0,0,3,0,0,13,217,0,0,6,0,0,1,0,2,9,0,0,2,9,0,0,2,4,0,0,2,4,0,0,2,4,0,0,2,4,
 0,0,
 105,0,0,3,0,0,15,246,0,0,0,0,0,1,0,
-120,0,0,3,0,0,13,289,0,0,6,0,0,1,0,2,9,0,0,2,9,0,0,2,4,0,0,2,4,0,0,2,4,0,0,2,4,
+120,0,0,3,0,0,13,288,0,0,6,0,0,1,0,2,9,0,0,2,9,0,0,2,4,0,0,2,4,0,0,2,4,0,0,2,4,
 0,0,
-159,0,0,3,0,0,15,318,0,0,0,0,0,1,0,
+159,0,0,3,0,0,15,317,0,0,0,0,0,1,0,
 };
 
 
@@ -210,10 +210,10 @@ void main()
 void db_connect()
 {
    /* ID */
-   strcpy((char *)uid.arr,"b20193221@//sedb.deu.ac.kr:1521/orcl");
+   strcpy((char *)uid.arr,"a20193208@//sedb.deu.ac.kr:1521/orcl");
    uid.len = (short) strlen((char *)uid.arr);
    /* PW */
-   strcpy((char *)pwd.arr,"20193221");
+   strcpy((char *)pwd.arr,"20193208");
    pwd.len = (short) strlen((char *)pwd.arr);
 
    /* EXEC SQL CONNECT :uid IDENTIFIED BY :pwd; */ 
@@ -346,9 +346,9 @@ void clrscr(void)
 void main_options(){
 	clrscr();
 
-	print_screen("scr_main.txt") ;
+	print_screen("screen/scr_main.txt") ;
     
-	gotoxy(49,15);
+	gotoxy(9,19);
 
 	char c = getchar() ;
 	while (getchar() != '\n');
@@ -610,6 +610,8 @@ struct { unsigned short len; unsigned char arr[255]; } v_menu_name;
     float v_protein;
     float v_fat;
     float v_calorie;
+
+    char sqlstmt[1024];
     /* EXEC SQL END DECLARE SECTION; */ 
 
 
@@ -617,12 +619,9 @@ struct { unsigned short len; unsigned char arr[255]; } v_menu_name;
 
     clrscr();
 
-	char no_temp[20];
-	char name_temp[20];
+	char input_category[20];
+	char input_menu_name[20];
 
-	gets(no_temp); 
-
-	gets(name_temp);
 
     printf("Enter category: ");
     gets(input_category);  // 사용자로부터 카테고리 입력받기
