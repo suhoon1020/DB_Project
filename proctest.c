@@ -147,37 +147,42 @@ static const short sqlcud0[] =
 177,0,0,4,0,0,13,327,0,0,7,0,0,1,0,2,9,0,0,2,9,0,0,2,9,0,0,2,4,0,0,2,4,0,0,2,4,
 0,0,2,4,0,0,
 220,0,0,4,0,0,15,359,0,0,0,0,0,1,0,
-235,0,0,5,120,0,3,469,0,0,8,8,0,1,0,1,9,0,0,1,9,0,0,1,9,0,0,1,4,0,0,1,4,0,0,1,
+235,0,0,3,0,0,17,392,0,0,1,1,0,1,0,1,97,0,0,
+254,0,0,3,0,0,45,394,0,0,0,0,0,1,0,
+269,0,0,3,0,0,13,403,0,0,6,0,0,1,0,2,9,0,0,2,9,0,0,2,3,0,0,2,9,0,0,2,9,0,0,2,9,
+0,0,
+308,0,0,3,0,0,15,437,0,0,0,0,0,1,0,
+323,0,0,5,120,0,3,543,0,0,8,8,0,1,0,1,9,0,0,1,9,0,0,1,9,0,0,1,4,0,0,1,4,0,0,1,
 4,0,0,1,4,0,0,1,9,0,0,
-282,0,0,3,0,0,17,515,0,0,1,1,0,1,0,1,97,0,0,
-301,0,0,3,0,0,45,517,0,0,0,0,0,1,0,
-316,0,0,3,0,0,13,521,0,0,7,0,0,1,0,2,9,0,0,2,9,0,0,2,9,0,0,2,4,0,0,2,4,0,0,2,4,
+370,0,0,3,0,0,17,589,0,0,1,1,0,1,0,1,97,0,0,
+389,0,0,3,0,0,45,591,0,0,0,0,0,1,0,
+404,0,0,3,0,0,13,595,0,0,7,0,0,1,0,2,9,0,0,2,9,0,0,2,9,0,0,2,4,0,0,2,4,0,0,2,4,
 0,0,2,4,0,0,
-359,0,0,6,0,0,17,550,0,0,1,1,0,1,0,1,97,0,0,
-378,0,0,6,0,0,21,551,0,0,0,0,0,1,0,
-393,0,0,7,0,0,31,556,0,0,0,0,0,1,0,
-408,0,0,8,0,0,29,561,0,0,0,0,0,1,0,
-423,0,0,3,0,0,15,574,0,0,0,0,0,1,0,
-438,0,0,3,0,0,17,603,0,0,1,1,0,1,0,1,97,0,0,
-457,0,0,3,0,0,45,605,0,0,0,0,0,1,0,
-472,0,0,3,0,0,13,609,0,0,7,0,0,1,0,2,9,0,0,2,9,0,0,2,9,0,0,2,4,0,0,2,4,0,0,2,4,
+447,0,0,6,0,0,17,624,0,0,1,1,0,1,0,1,97,0,0,
+466,0,0,6,0,0,21,625,0,0,0,0,0,1,0,
+481,0,0,7,0,0,31,630,0,0,0,0,0,1,0,
+496,0,0,8,0,0,29,635,0,0,0,0,0,1,0,
+511,0,0,3,0,0,15,648,0,0,0,0,0,1,0,
+526,0,0,3,0,0,17,677,0,0,1,1,0,1,0,1,97,0,0,
+545,0,0,3,0,0,45,679,0,0,0,0,0,1,0,
+560,0,0,3,0,0,13,683,0,0,7,0,0,1,0,2,9,0,0,2,9,0,0,2,9,0,0,2,4,0,0,2,4,0,0,2,4,
 0,0,2,4,0,0,
-515,0,0,3,0,0,15,635,0,0,0,0,0,1,0,
-530,0,0,9,0,0,17,671,0,0,1,1,0,1,0,1,97,0,0,
-549,0,0,9,0,0,21,672,0,0,0,0,0,1,0,
-564,0,0,10,0,0,31,679,0,0,0,0,0,1,0,
-579,0,0,11,0,0,29,684,0,0,0,0,0,1,0,
-594,0,0,12,0,0,17,767,0,0,1,1,0,1,0,1,97,0,0,
-613,0,0,12,0,0,45,769,0,0,0,0,0,1,0,
-628,0,0,12,0,0,13,770,0,0,1,0,0,1,0,2,9,0,0,
-647,0,0,12,0,0,15,776,0,0,0,0,0,1,0,
-662,0,0,13,0,0,24,784,0,0,1,1,0,1,0,1,97,0,0,
-681,0,0,14,0,0,31,790,0,0,0,0,0,1,0,
-696,0,0,15,0,0,29,797,0,0,0,0,0,1,0,
-711,0,0,12,0,0,15,805,0,0,0,0,0,1,0,
-726,0,0,16,0,0,17,849,0,0,1,1,0,1,0,1,97,0,0,
-745,0,0,16,0,0,45,851,0,0,0,0,0,1,0,
-760,0,0,16,0,0,13,852,0,0,7,0,0,1,0,2,9,0,0,2,9,0,0,2,9,0,0,2,9,0,0,2,4,0,0,2,
+603,0,0,3,0,0,15,709,0,0,0,0,0,1,0,
+618,0,0,9,0,0,17,745,0,0,1,1,0,1,0,1,97,0,0,
+637,0,0,9,0,0,21,746,0,0,0,0,0,1,0,
+652,0,0,10,0,0,31,753,0,0,0,0,0,1,0,
+667,0,0,11,0,0,29,758,0,0,0,0,0,1,0,
+682,0,0,12,0,0,17,841,0,0,1,1,0,1,0,1,97,0,0,
+701,0,0,12,0,0,45,843,0,0,0,0,0,1,0,
+716,0,0,12,0,0,13,844,0,0,1,0,0,1,0,2,9,0,0,
+735,0,0,12,0,0,15,850,0,0,0,0,0,1,0,
+750,0,0,13,0,0,24,858,0,0,1,1,0,1,0,1,97,0,0,
+769,0,0,14,0,0,31,864,0,0,0,0,0,1,0,
+784,0,0,15,0,0,29,871,0,0,0,0,0,1,0,
+799,0,0,12,0,0,15,879,0,0,0,0,0,1,0,
+814,0,0,16,0,0,17,923,0,0,1,1,0,1,0,1,97,0,0,
+833,0,0,16,0,0,45,925,0,0,0,0,0,1,0,
+848,0,0,16,0,0,13,926,0,0,7,0,0,1,0,2,9,0,0,2,9,0,0,2,9,0,0,2,9,0,0,2,4,0,0,2,
 4,0,0,2,4,0,0,
 };
 
@@ -969,8 +974,246 @@ struct { unsigned short len; unsigned char arr[255]; } v_type;
     }
 }
 
-void view_menu() // 식단 확인
+void view_menu()
 {
+    /* EXEC SQL BEGIN DECLARE SECTION; */ 
+
+    char sqlstmt[1024];
+    /* varchar v_mDate[20]; */ 
+struct { unsigned short len; unsigned char arr[20]; } v_mDate;
+
+    /* varchar v_mTime[10]; */ 
+struct { unsigned short len; unsigned char arr[10]; } v_mTime;
+
+    int v_menuID;
+    /* varchar v_fnameMain[30]; */ 
+struct { unsigned short len; unsigned char arr[30]; } v_fnameMain;
+
+    /* varchar v_fnameSub[30]; */ 
+struct { unsigned short len; unsigned char arr[30]; } v_fnameSub;
+
+    /* varchar v_fnameSide[30]; */ 
+struct { unsigned short len; unsigned char arr[30]; } v_fnameSide;
+
+    /* EXEC SQL END DECLARE SECTION; */ 
+
+
+    int count = 0;
+    char c;
+
+    clrscr();
+
+    sprintf(sqlstmt, 
+            "SELECT m.mDate, m.mTime, m.menuID, mt.fnameMain, mt.fnameSub, mt.fnameSide FROM composition_menu_table m JOIN menu_table mt ON m.menuID = mt.menuID WHERE mt.userID = '%s' ORDER BY m.mDate, m.mTime", v_userId.arr);
+    /* EXEC SQL PREPARE S FROM :sqlstmt; */ 
+
+{
+    struct sqlexd sqlstm;
+    sqlstm.sqlvsn = 13;
+    sqlstm.arrsiz = 7;
+    sqlstm.sqladtp = &sqladt;
+    sqlstm.sqltdsp = &sqltds;
+    sqlstm.stmt = "";
+    sqlstm.iters = (unsigned int  )1;
+    sqlstm.offset = (unsigned int  )235;
+    sqlstm.cud = sqlcud0;
+    sqlstm.sqlest = (unsigned char  *)&sqlca;
+    sqlstm.sqlety = (unsigned short)4352;
+    sqlstm.occurs = (unsigned int  )0;
+    sqlstm.sqhstv[0] = (         void  *)sqlstmt;
+    sqlstm.sqhstl[0] = (unsigned int  )1024;
+    sqlstm.sqhsts[0] = (         int  )0;
+    sqlstm.sqindv[0] = (         void  *)0;
+    sqlstm.sqinds[0] = (         int  )0;
+    sqlstm.sqharm[0] = (unsigned int  )0;
+    sqlstm.sqadto[0] = (unsigned short )0;
+    sqlstm.sqtdso[0] = (unsigned short )0;
+    sqlstm.sqphsv = sqlstm.sqhstv;
+    sqlstm.sqphsl = sqlstm.sqhstl;
+    sqlstm.sqphss = sqlstm.sqhsts;
+    sqlstm.sqpind = sqlstm.sqindv;
+    sqlstm.sqpins = sqlstm.sqinds;
+    sqlstm.sqparm = sqlstm.sqharm;
+    sqlstm.sqparc = sqlstm.sqharc;
+    sqlstm.sqpadto = sqlstm.sqadto;
+    sqlstm.sqptdso = sqlstm.sqtdso;
+    sqlcxt((void **)0, &sqlctx, &sqlstm, &sqlfpn);
+}
+
+
+    /* EXEC SQL DECLARE v_cursor CURSOR FOR S; */ 
+
+    /* EXEC SQL OPEN v_cursor; */ 
+
+{
+    struct sqlexd sqlstm;
+    sqlstm.sqlvsn = 13;
+    sqlstm.arrsiz = 7;
+    sqlstm.sqladtp = &sqladt;
+    sqlstm.sqltdsp = &sqltds;
+    sqlstm.stmt = "";
+    sqlstm.iters = (unsigned int  )1;
+    sqlstm.offset = (unsigned int  )254;
+    sqlstm.selerr = (unsigned short)1;
+    sqlstm.sqlpfmem = (unsigned int  )0;
+    sqlstm.cud = sqlcud0;
+    sqlstm.sqlest = (unsigned char  *)&sqlca;
+    sqlstm.sqlety = (unsigned short)4352;
+    sqlstm.occurs = (unsigned int  )0;
+    sqlstm.sqcmod = (unsigned int )0;
+    sqlcxt((void **)0, &sqlctx, &sqlstm, &sqlfpn);
+}
+
+
+
+
+    printf(" %-15s %-10s %-10s %-20s %-20s %-20s\n",
+           "Date", "Time", "MenuID", "Main Dish", "Sub Dish", "Side Dish");
+    printf("-------------------------------------------------------------------------------\n");
+
+    while (1)
+    {
+        /* EXEC SQL FETCH v_cursor INTO :v_mDate, :v_mTime, :v_menuID, :v_fnameMain, :v_fnameSub ,:v_fnameSide; */ 
+
+{
+        struct sqlexd sqlstm;
+        sqlstm.sqlvsn = 13;
+        sqlstm.arrsiz = 7;
+        sqlstm.sqladtp = &sqladt;
+        sqlstm.sqltdsp = &sqltds;
+        sqlstm.iters = (unsigned int  )1;
+        sqlstm.offset = (unsigned int  )269;
+        sqlstm.selerr = (unsigned short)1;
+        sqlstm.sqlpfmem = (unsigned int  )0;
+        sqlstm.cud = sqlcud0;
+        sqlstm.sqlest = (unsigned char  *)&sqlca;
+        sqlstm.sqlety = (unsigned short)4352;
+        sqlstm.occurs = (unsigned int  )0;
+        sqlstm.sqfoff = (           int )0;
+        sqlstm.sqfmod = (unsigned int )2;
+        sqlstm.sqhstv[0] = (         void  *)&v_mDate;
+        sqlstm.sqhstl[0] = (unsigned int  )22;
+        sqlstm.sqhsts[0] = (         int  )0;
+        sqlstm.sqindv[0] = (         void  *)0;
+        sqlstm.sqinds[0] = (         int  )0;
+        sqlstm.sqharm[0] = (unsigned int  )0;
+        sqlstm.sqadto[0] = (unsigned short )0;
+        sqlstm.sqtdso[0] = (unsigned short )0;
+        sqlstm.sqhstv[1] = (         void  *)&v_mTime;
+        sqlstm.sqhstl[1] = (unsigned int  )12;
+        sqlstm.sqhsts[1] = (         int  )0;
+        sqlstm.sqindv[1] = (         void  *)0;
+        sqlstm.sqinds[1] = (         int  )0;
+        sqlstm.sqharm[1] = (unsigned int  )0;
+        sqlstm.sqadto[1] = (unsigned short )0;
+        sqlstm.sqtdso[1] = (unsigned short )0;
+        sqlstm.sqhstv[2] = (         void  *)&v_menuID;
+        sqlstm.sqhstl[2] = (unsigned int  )sizeof(int);
+        sqlstm.sqhsts[2] = (         int  )0;
+        sqlstm.sqindv[2] = (         void  *)0;
+        sqlstm.sqinds[2] = (         int  )0;
+        sqlstm.sqharm[2] = (unsigned int  )0;
+        sqlstm.sqadto[2] = (unsigned short )0;
+        sqlstm.sqtdso[2] = (unsigned short )0;
+        sqlstm.sqhstv[3] = (         void  *)&v_fnameMain;
+        sqlstm.sqhstl[3] = (unsigned int  )32;
+        sqlstm.sqhsts[3] = (         int  )0;
+        sqlstm.sqindv[3] = (         void  *)0;
+        sqlstm.sqinds[3] = (         int  )0;
+        sqlstm.sqharm[3] = (unsigned int  )0;
+        sqlstm.sqadto[3] = (unsigned short )0;
+        sqlstm.sqtdso[3] = (unsigned short )0;
+        sqlstm.sqhstv[4] = (         void  *)&v_fnameSub;
+        sqlstm.sqhstl[4] = (unsigned int  )32;
+        sqlstm.sqhsts[4] = (         int  )0;
+        sqlstm.sqindv[4] = (         void  *)0;
+        sqlstm.sqinds[4] = (         int  )0;
+        sqlstm.sqharm[4] = (unsigned int  )0;
+        sqlstm.sqadto[4] = (unsigned short )0;
+        sqlstm.sqtdso[4] = (unsigned short )0;
+        sqlstm.sqhstv[5] = (         void  *)&v_fnameSide;
+        sqlstm.sqhstl[5] = (unsigned int  )32;
+        sqlstm.sqhsts[5] = (         int  )0;
+        sqlstm.sqindv[5] = (         void  *)0;
+        sqlstm.sqinds[5] = (         int  )0;
+        sqlstm.sqharm[5] = (unsigned int  )0;
+        sqlstm.sqadto[5] = (unsigned short )0;
+        sqlstm.sqtdso[5] = (unsigned short )0;
+        sqlstm.sqphsv = sqlstm.sqhstv;
+        sqlstm.sqphsl = sqlstm.sqhstl;
+        sqlstm.sqphss = sqlstm.sqhsts;
+        sqlstm.sqpind = sqlstm.sqindv;
+        sqlstm.sqpins = sqlstm.sqinds;
+        sqlstm.sqparm = sqlstm.sqharm;
+        sqlstm.sqparc = sqlstm.sqharc;
+        sqlstm.sqpadto = sqlstm.sqadto;
+        sqlstm.sqptdso = sqlstm.sqtdso;
+        sqlcxt((void **)0, &sqlctx, &sqlstm, &sqlfpn);
+}
+
+
+
+        if (sqlca.sqlcode != 0)
+        {
+            break;
+        }
+
+        v_mDate.arr[v_mDate.len] = '\0';
+        v_mTime.arr[v_mTime.len] = '\0';
+        v_fnameMain.arr[v_fnameMain.len] = '\0';
+        v_fnameSide.arr[v_fnameSide.len] = '\0';
+
+        printf(" %-15s %-10s %-10d %-20s %-20s\n",
+               v_mDate.arr, v_mTime.arr, v_menuID, v_fnameMain.arr, v_fnameSide.arr);
+        ++count;
+
+        if (count == PAGE_NUM)
+        {
+            printf("\n\n                                          Hit any key for next page\n");
+            count = 0;
+            getch();
+
+            gotoxy(0, 2);
+            for (int i = 0; i < PAGE_NUM; i++)
+            {
+                printf("                                                                                               \n");
+            }
+            gotoxy(0, 2);
+        }
+    }
+
+    printf("\n");
+    printf("Total matched tuples: %d\n", sqlca.sqlerrd[2]);
+    printf("Press Q : Go back / Press any key : Exit Program\n");
+    /* EXEC SQL CLOSE c_cursor; */ 
+
+{
+    struct sqlexd sqlstm;
+    sqlstm.sqlvsn = 13;
+    sqlstm.arrsiz = 7;
+    sqlstm.sqladtp = &sqladt;
+    sqlstm.sqltdsp = &sqltds;
+    sqlstm.iters = (unsigned int  )1;
+    sqlstm.offset = (unsigned int  )308;
+    sqlstm.cud = sqlcud0;
+    sqlstm.sqlest = (unsigned char  *)&sqlca;
+    sqlstm.sqlety = (unsigned short)4352;
+    sqlstm.occurs = (unsigned int  )0;
+    sqlcxt((void **)0, &sqlctx, &sqlstm, &sqlfpn);
+}
+
+
+
+    c = getch();
+
+    if (c == 'q' || c == 'Q')
+    {
+        return;
+    }
+    else
+    {
+        exit(0);
+    }
 }
 
 void refresh_today_menu()
@@ -1087,7 +1330,7 @@ struct { unsigned short len; unsigned char arr[255]; } v_userId;
     sqlstm.stmt = "insert into FOOD_TABLE (fcategory,ftype,fname,calorie,car\
 bo,protein,fat,userId) values (:b0,:b1,:b2,:b3,:b4,:b5,:b6,:b7)";
     sqlstm.iters = (unsigned int  )1;
-    sqlstm.offset = (unsigned int  )235;
+    sqlstm.offset = (unsigned int  )323;
     sqlstm.cud = sqlcud0;
     sqlstm.sqlest = (unsigned char  *)&sqlca;
     sqlstm.sqlety = (unsigned short)4352;
@@ -1233,7 +1476,7 @@ struct { unsigned short len; unsigned char arr[255]; } v_userid;
     sqlstm.sqltdsp = &sqltds;
     sqlstm.stmt = "";
     sqlstm.iters = (unsigned int  )1;
-    sqlstm.offset = (unsigned int  )282;
+    sqlstm.offset = (unsigned int  )370;
     sqlstm.cud = sqlcud0;
     sqlstm.sqlest = (unsigned char  *)&sqlca;
     sqlstm.sqlety = (unsigned short)4352;
@@ -1271,7 +1514,7 @@ struct { unsigned short len; unsigned char arr[255]; } v_userid;
     sqlstm.sqltdsp = &sqltds;
     sqlstm.stmt = "";
     sqlstm.iters = (unsigned int  )1;
-    sqlstm.offset = (unsigned int  )301;
+    sqlstm.offset = (unsigned int  )389;
     sqlstm.selerr = (unsigned short)1;
     sqlstm.sqlpfmem = (unsigned int  )0;
     sqlstm.cud = sqlcud0;
@@ -1295,7 +1538,7 @@ struct { unsigned short len; unsigned char arr[255]; } v_userid;
         sqlstm.sqladtp = &sqladt;
         sqlstm.sqltdsp = &sqltds;
         sqlstm.iters = (unsigned int  )1;
-        sqlstm.offset = (unsigned int  )316;
+        sqlstm.offset = (unsigned int  )404;
         sqlstm.selerr = (unsigned short)1;
         sqlstm.sqlpfmem = (unsigned int  )0;
         sqlstm.cud = sqlcud0;
@@ -1411,7 +1654,7 @@ struct { unsigned short len; unsigned char arr[255]; } v_userid;
             sqlstm.sqltdsp = &sqltds;
             sqlstm.stmt = "";
             sqlstm.iters = (unsigned int  )1;
-            sqlstm.offset = (unsigned int  )359;
+            sqlstm.offset = (unsigned int  )447;
             sqlstm.cud = sqlcud0;
             sqlstm.sqlest = (unsigned char  *)&sqlca;
             sqlstm.sqlety = (unsigned short)4352;
@@ -1447,7 +1690,7 @@ struct { unsigned short len; unsigned char arr[255]; } v_userid;
             sqlstm.sqltdsp = &sqltds;
             sqlstm.stmt = "";
             sqlstm.iters = (unsigned int  )1;
-            sqlstm.offset = (unsigned int  )378;
+            sqlstm.offset = (unsigned int  )466;
             sqlstm.cud = sqlcud0;
             sqlstm.sqlest = (unsigned char  *)&sqlca;
             sqlstm.sqlety = (unsigned short)4352;
@@ -1469,7 +1712,7 @@ struct { unsigned short len; unsigned char arr[255]; } v_userid;
                 sqlstm.sqladtp = &sqladt;
                 sqlstm.sqltdsp = &sqltds;
                 sqlstm.iters = (unsigned int  )1;
-                sqlstm.offset = (unsigned int  )393;
+                sqlstm.offset = (unsigned int  )481;
                 sqlstm.cud = sqlcud0;
                 sqlstm.sqlest = (unsigned char  *)&sqlca;
                 sqlstm.sqlety = (unsigned short)4352;
@@ -1491,7 +1734,7 @@ struct { unsigned short len; unsigned char arr[255]; } v_userid;
             sqlstm.sqladtp = &sqladt;
             sqlstm.sqltdsp = &sqltds;
             sqlstm.iters = (unsigned int  )1;
-            sqlstm.offset = (unsigned int  )408;
+            sqlstm.offset = (unsigned int  )496;
             sqlstm.cud = sqlcud0;
             sqlstm.sqlest = (unsigned char  *)&sqlca;
             sqlstm.sqlety = (unsigned short)4352;
@@ -1521,7 +1764,7 @@ struct { unsigned short len; unsigned char arr[255]; } v_userid;
     sqlstm.sqladtp = &sqladt;
     sqlstm.sqltdsp = &sqltds;
     sqlstm.iters = (unsigned int  )1;
-    sqlstm.offset = (unsigned int  )423;
+    sqlstm.offset = (unsigned int  )511;
     sqlstm.cud = sqlcud0;
     sqlstm.sqlest = (unsigned char  *)&sqlca;
     sqlstm.sqlety = (unsigned short)4352;
@@ -1576,7 +1819,7 @@ struct { unsigned short len; unsigned char arr[255]; } v_type;
     sqlstm.sqltdsp = &sqltds;
     sqlstm.stmt = "";
     sqlstm.iters = (unsigned int  )1;
-    sqlstm.offset = (unsigned int  )438;
+    sqlstm.offset = (unsigned int  )526;
     sqlstm.cud = sqlcud0;
     sqlstm.sqlest = (unsigned char  *)&sqlca;
     sqlstm.sqlety = (unsigned short)4352;
@@ -1614,7 +1857,7 @@ struct { unsigned short len; unsigned char arr[255]; } v_type;
     sqlstm.sqltdsp = &sqltds;
     sqlstm.stmt = "";
     sqlstm.iters = (unsigned int  )1;
-    sqlstm.offset = (unsigned int  )457;
+    sqlstm.offset = (unsigned int  )545;
     sqlstm.selerr = (unsigned short)1;
     sqlstm.sqlpfmem = (unsigned int  )0;
     sqlstm.cud = sqlcud0;
@@ -1638,7 +1881,7 @@ struct { unsigned short len; unsigned char arr[255]; } v_type;
         sqlstm.sqladtp = &sqladt;
         sqlstm.sqltdsp = &sqltds;
         sqlstm.iters = (unsigned int  )1;
-        sqlstm.offset = (unsigned int  )472;
+        sqlstm.offset = (unsigned int  )560;
         sqlstm.selerr = (unsigned short)1;
         sqlstm.sqlpfmem = (unsigned int  )0;
         sqlstm.cud = sqlcud0;
@@ -1750,7 +1993,7 @@ struct { unsigned short len; unsigned char arr[255]; } v_type;
     sqlstm.sqladtp = &sqladt;
     sqlstm.sqltdsp = &sqltds;
     sqlstm.iters = (unsigned int  )1;
-    sqlstm.offset = (unsigned int  )515;
+    sqlstm.offset = (unsigned int  )603;
     sqlstm.cud = sqlcud0;
     sqlstm.sqlest = (unsigned char  *)&sqlca;
     sqlstm.sqlety = (unsigned short)4352;
@@ -1804,7 +2047,7 @@ struct { unsigned short len; unsigned char arr[255]; } v_type;
     sqlstm.sqltdsp = &sqltds;
     sqlstm.stmt = "";
     sqlstm.iters = (unsigned int  )1;
-    sqlstm.offset = (unsigned int  )530;
+    sqlstm.offset = (unsigned int  )618;
     sqlstm.cud = sqlcud0;
     sqlstm.sqlest = (unsigned char  *)&sqlca;
     sqlstm.sqlety = (unsigned short)4352;
@@ -1840,7 +2083,7 @@ struct { unsigned short len; unsigned char arr[255]; } v_type;
     sqlstm.sqltdsp = &sqltds;
     sqlstm.stmt = "";
     sqlstm.iters = (unsigned int  )1;
-    sqlstm.offset = (unsigned int  )549;
+    sqlstm.offset = (unsigned int  )637;
     sqlstm.cud = sqlcud0;
     sqlstm.sqlest = (unsigned char  *)&sqlca;
     sqlstm.sqlety = (unsigned short)4352;
@@ -1864,7 +2107,7 @@ struct { unsigned short len; unsigned char arr[255]; } v_type;
         sqlstm.sqladtp = &sqladt;
         sqlstm.sqltdsp = &sqltds;
         sqlstm.iters = (unsigned int  )1;
-        sqlstm.offset = (unsigned int  )564;
+        sqlstm.offset = (unsigned int  )652;
         sqlstm.cud = sqlcud0;
         sqlstm.sqlest = (unsigned char  *)&sqlca;
         sqlstm.sqlety = (unsigned short)4352;
@@ -1886,7 +2129,7 @@ struct { unsigned short len; unsigned char arr[255]; } v_type;
     sqlstm.sqladtp = &sqladt;
     sqlstm.sqltdsp = &sqltds;
     sqlstm.iters = (unsigned int  )1;
-    sqlstm.offset = (unsigned int  )579;
+    sqlstm.offset = (unsigned int  )667;
     sqlstm.cud = sqlcud0;
     sqlstm.sqlest = (unsigned char  *)&sqlca;
     sqlstm.sqlety = (unsigned short)4352;
@@ -1991,7 +2234,7 @@ struct { unsigned short len; unsigned char arr[20]; } v_id;
         sqlstm.sqltdsp = &sqltds;
         sqlstm.stmt = "";
         sqlstm.iters = (unsigned int  )1;
-        sqlstm.offset = (unsigned int  )594;
+        sqlstm.offset = (unsigned int  )682;
         sqlstm.cud = sqlcud0;
         sqlstm.sqlest = (unsigned char  *)&sqlca;
         sqlstm.sqlety = (unsigned short)4352;
@@ -2029,7 +2272,7 @@ struct { unsigned short len; unsigned char arr[20]; } v_id;
         sqlstm.sqltdsp = &sqltds;
         sqlstm.stmt = "";
         sqlstm.iters = (unsigned int  )1;
-        sqlstm.offset = (unsigned int  )613;
+        sqlstm.offset = (unsigned int  )701;
         sqlstm.selerr = (unsigned short)1;
         sqlstm.sqlpfmem = (unsigned int  )0;
         sqlstm.cud = sqlcud0;
@@ -2050,7 +2293,7 @@ struct { unsigned short len; unsigned char arr[20]; } v_id;
         sqlstm.sqladtp = &sqladt;
         sqlstm.sqltdsp = &sqltds;
         sqlstm.iters = (unsigned int  )1;
-        sqlstm.offset = (unsigned int  )628;
+        sqlstm.offset = (unsigned int  )716;
         sqlstm.selerr = (unsigned short)1;
         sqlstm.sqlpfmem = (unsigned int  )0;
         sqlstm.cud = sqlcud0;
@@ -2094,7 +2337,7 @@ struct { unsigned short len; unsigned char arr[20]; } v_id;
             sqlstm.sqladtp = &sqladt;
             sqlstm.sqltdsp = &sqltds;
             sqlstm.iters = (unsigned int  )1;
-            sqlstm.offset = (unsigned int  )647;
+            sqlstm.offset = (unsigned int  )735;
             sqlstm.cud = sqlcud0;
             sqlstm.sqlest = (unsigned char  *)&sqlca;
             sqlstm.sqlety = (unsigned short)4352;
@@ -2120,7 +2363,7 @@ struct { unsigned short len; unsigned char arr[20]; } v_id;
             sqlstm.sqltdsp = &sqltds;
             sqlstm.stmt = "";
             sqlstm.iters = (unsigned int  )1;
-            sqlstm.offset = (unsigned int  )662;
+            sqlstm.offset = (unsigned int  )750;
             sqlstm.cud = sqlcud0;
             sqlstm.sqlest = (unsigned char  *)&sqlca;
             sqlstm.sqlety = (unsigned short)4352;
@@ -2160,7 +2403,7 @@ struct { unsigned short len; unsigned char arr[20]; } v_id;
                 sqlstm.sqladtp = &sqladt;
                 sqlstm.sqltdsp = &sqltds;
                 sqlstm.iters = (unsigned int  )1;
-                sqlstm.offset = (unsigned int  )681;
+                sqlstm.offset = (unsigned int  )769;
                 sqlstm.cud = sqlcud0;
                 sqlstm.sqlest = (unsigned char  *)&sqlca;
                 sqlstm.sqlety = (unsigned short)4352;
@@ -2184,7 +2427,7 @@ struct { unsigned short len; unsigned char arr[20]; } v_id;
             sqlstm.sqladtp = &sqladt;
             sqlstm.sqltdsp = &sqltds;
             sqlstm.iters = (unsigned int  )1;
-            sqlstm.offset = (unsigned int  )696;
+            sqlstm.offset = (unsigned int  )784;
             sqlstm.cud = sqlcud0;
             sqlstm.sqlest = (unsigned char  *)&sqlca;
             sqlstm.sqlety = (unsigned short)4352;
@@ -2209,7 +2452,7 @@ struct { unsigned short len; unsigned char arr[20]; } v_id;
             sqlstm.sqladtp = &sqladt;
             sqlstm.sqltdsp = &sqltds;
             sqlstm.iters = (unsigned int  )1;
-            sqlstm.offset = (unsigned int  )711;
+            sqlstm.offset = (unsigned int  )799;
             sqlstm.cud = sqlcud0;
             sqlstm.sqlest = (unsigned char  *)&sqlca;
             sqlstm.sqlety = (unsigned short)4352;
@@ -2273,7 +2516,7 @@ void login()
         sqlstm.sqltdsp = &sqltds;
         sqlstm.stmt = "";
         sqlstm.iters = (unsigned int  )1;
-        sqlstm.offset = (unsigned int  )726;
+        sqlstm.offset = (unsigned int  )814;
         sqlstm.cud = sqlcud0;
         sqlstm.sqlest = (unsigned char  *)&sqlca;
         sqlstm.sqlety = (unsigned short)4352;
@@ -2311,7 +2554,7 @@ void login()
         sqlstm.sqltdsp = &sqltds;
         sqlstm.stmt = "";
         sqlstm.iters = (unsigned int  )1;
-        sqlstm.offset = (unsigned int  )745;
+        sqlstm.offset = (unsigned int  )833;
         sqlstm.selerr = (unsigned short)1;
         sqlstm.sqlpfmem = (unsigned int  )0;
         sqlstm.cud = sqlcud0;
@@ -2332,7 +2575,7 @@ void login()
         sqlstm.sqladtp = &sqladt;
         sqlstm.sqltdsp = &sqltds;
         sqlstm.iters = (unsigned int  )1;
-        sqlstm.offset = (unsigned int  )760;
+        sqlstm.offset = (unsigned int  )848;
         sqlstm.selerr = (unsigned short)1;
         sqlstm.sqlpfmem = (unsigned int  )0;
         sqlstm.cud = sqlcud0;

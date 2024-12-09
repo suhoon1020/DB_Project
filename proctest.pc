@@ -370,8 +370,82 @@ void view_food_search()
     }
 }
 
-void view_menu() // 식단 확인
+void view_menu()
 {
+    EXEC SQL BEGIN DECLARE SECTION;
+    char sqlstmt[1024];
+    varchar v_mDate[20];
+    varchar v_mTime[10];
+    int v_menuID;
+    varchar v_fnameMain[30];
+    varchar v_fnameSub[30];
+    varchar v_fnameSide[30];
+    EXEC SQL END DECLARE SECTION;
+
+    int count = 0;
+    char c;
+
+    clrscr();
+
+    sprintf(sqlstmt, 
+            "SELECT m.mDate, m.mTime, m.menuID, mt.fnameMain, mt.fnameSub, mt.fnameSide FROM composition_menu_table m JOIN menu_table mt ON m.menuID = mt.menuID WHERE mt.userID = '%s' ORDER BY m.mDate, m.mTime", v_userId.arr);
+    EXEC SQL PREPARE S FROM :sqlstmt;
+    EXEC SQL DECLARE v_cursor CURSOR FOR S;
+    EXEC SQL OPEN v_cursor;
+
+
+    printf(" %-15s %-10s %-10s %-20s %-20s %-20s\n",
+           "Date", "Time", "MenuID", "Main Dish", "Sub Dish", "Side Dish");
+    printf("-------------------------------------------------------------------------------\n");
+
+    while (1)
+    {
+        EXEC SQL FETCH v_cursor INTO :v_mDate, :v_mTime, :v_menuID, :v_fnameMain, :v_fnameSub ,:v_fnameSide;
+
+        if (sqlca.sqlcode != 0)
+        {
+            break;
+        }
+
+        v_mDate.arr[v_mDate.len] = '\0';
+        v_mTime.arr[v_mTime.len] = '\0';
+        v_fnameMain.arr[v_fnameMain.len] = '\0';
+        v_fnameSide.arr[v_fnameSide.len] = '\0';
+
+        printf(" %-15s %-10s %-10d %-20s %-20s\n",
+               v_mDate.arr, v_mTime.arr, v_menuID, v_fnameMain.arr, v_fnameSide.arr);
+        ++count;
+
+        if (count == PAGE_NUM)
+        {
+            printf("\n\n                                          Hit any key for next page\n");
+            count = 0;
+            getch();
+
+            gotoxy(0, 2);
+            for (int i = 0; i < PAGE_NUM; i++)
+            {
+                printf("                                                                                               \n");
+            }
+            gotoxy(0, 2);
+        }
+    }
+
+    printf("\n");
+    printf("Total matched tuples: %d\n", sqlca.sqlerrd[2]);
+    printf("Press Q : Go back / Press any key : Exit Program\n");
+    EXEC SQL CLOSE c_cursor;
+
+    c = getch();
+
+    if (c == 'q' || c == 'Q')
+    {
+        return;
+    }
+    else
+    {
+        exit(0);
+    }
 }
 
 void refresh_today_menu()
