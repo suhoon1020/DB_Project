@@ -164,40 +164,38 @@ static const short sqlcud0[] =
 473,0,0,3,0,0,13,477,0,0,6,0,0,1,0,2,9,0,0,2,9,0,0,2,3,0,0,2,9,0,0,2,9,0,0,2,9,
 0,0,
 512,0,0,3,0,0,15,511,0,0,0,0,0,1,0,
-527,0,0,5,0,0,17,599,0,0,1,1,0,1,0,1,97,0,0,
-546,0,0,5,0,0,45,601,0,0,0,0,0,1,0,
-561,0,0,5,0,0,13,603,0,0,1,0,0,1,0,2,9,0,0,
-580,0,0,6,0,0,24,633,0,0,1,1,0,1,0,1,97,0,0,
-599,0,0,7,0,0,29,639,0,0,0,0,0,1,0,
-614,0,0,3,0,0,17,682,0,0,1,1,0,1,0,1,97,0,0,
-633,0,0,3,0,0,45,684,0,0,0,0,0,1,0,
-648,0,0,3,0,0,13,688,0,0,7,0,0,1,0,2,9,0,0,2,9,0,0,2,9,0,0,2,4,0,0,2,4,0,0,2,4,
+527,0,0,5,0,0,17,602,0,0,1,1,0,1,0,1,97,0,0,
+546,0,0,5,0,0,45,604,0,0,0,0,0,1,0,
+561,0,0,5,0,0,13,606,0,0,1,0,0,1,0,2,9,0,0,
+580,0,0,6,0,0,24,635,0,0,1,1,0,1,0,1,97,0,0,
+599,0,0,7,0,0,29,641,0,0,0,0,0,1,0,
+614,0,0,3,0,0,17,685,0,0,1,1,0,1,0,1,97,0,0,
+633,0,0,3,0,0,45,687,0,0,0,0,0,1,0,
+648,0,0,3,0,0,13,691,0,0,7,0,0,1,0,2,9,0,0,2,9,0,0,2,9,0,0,2,4,0,0,2,4,0,0,2,4,
 0,0,2,4,0,0,
-691,0,0,8,0,0,17,725,0,0,1,1,0,1,0,1,97,0,0,
-710,0,0,8,0,0,21,726,0,0,0,0,0,1,0,
-725,0,0,9,0,0,31,732,0,0,0,0,0,1,0,
-740,0,0,10,0,0,29,737,0,0,0,0,0,1,0,
-755,0,0,3,0,0,15,751,0,0,0,0,0,1,0,
-770,0,0,11,0,0,17,780,0,0,1,1,0,1,0,1,97,0,0,
-789,0,0,11,0,0,45,782,0,0,0,0,0,1,0,
-804,0,0,11,0,0,13,786,0,0,7,0,0,1,0,2,9,0,0,2,9,0,0,2,9,0,0,2,4,0,0,2,4,0,0,2,
+691,0,0,8,0,0,17,728,0,0,1,1,0,1,0,1,97,0,0,
+710,0,0,8,0,0,21,729,0,0,0,0,0,1,0,
+725,0,0,9,0,0,31,735,0,0,0,0,0,1,0,
+740,0,0,10,0,0,29,740,0,0,0,0,0,1,0,
+755,0,0,3,0,0,15,754,0,0,0,0,0,1,0,
+770,0,0,11,0,0,17,783,0,0,1,1,0,1,0,1,97,0,0,
+789,0,0,11,0,0,45,785,0,0,0,0,0,1,0,
+804,0,0,11,0,0,13,789,0,0,7,0,0,1,0,2,9,0,0,2,9,0,0,2,9,0,0,2,4,0,0,2,4,0,0,2,
 4,0,0,2,4,0,0,
-847,0,0,11,0,0,15,812,0,0,0,0,0,1,0,
-862,0,0,12,0,0,17,849,0,0,1,1,0,1,0,1,97,0,0,
-881,0,0,12,0,0,21,850,0,0,0,0,0,1,0,
-896,0,0,13,0,0,31,857,0,0,0,0,0,1,0,
-911,0,0,14,0,0,29,862,0,0,0,0,0,1,0,
-926,0,0,15,0,0,17,946,0,0,1,1,0,1,0,1,97,0,0,
-945,0,0,15,0,0,45,948,0,0,0,0,0,1,0,
-960,0,0,15,0,0,13,949,0,0,1,0,0,1,0,2,9,0,0,
-979,0,0,15,0,0,15,954,0,0,0,0,0,1,0,
-994,0,0,16,0,0,24,962,0,0,1,1,0,1,0,1,97,0,0,
-1013,0,0,17,0,0,31,968,0,0,0,0,0,1,0,
-1028,0,0,18,0,0,29,975,0,0,0,0,0,1,0,
-1043,0,0,15,0,0,15,983,0,0,0,0,0,1,0,
-1058,0,0,19,0,0,17,1026,0,0,1,1,0,1,0,1,97,0,0,
-1077,0,0,19,0,0,45,1028,0,0,0,0,0,1,0,
-1092,0,0,19,0,0,13,1029,0,0,7,0,0,1,0,2,9,0,0,2,9,0,0,2,9,0,0,2,9,0,0,2,4,0,0,
+847,0,0,11,0,0,15,815,0,0,0,0,0,1,0,
+862,0,0,12,0,0,17,852,0,0,1,1,0,1,0,1,97,0,0,
+881,0,0,12,0,0,21,853,0,0,0,0,0,1,0,
+896,0,0,13,0,0,31,860,0,0,0,0,0,1,0,
+911,0,0,14,0,0,29,865,0,0,0,0,0,1,0,
+926,0,0,15,0,0,17,923,0,0,1,1,0,1,0,1,97,0,0,
+945,0,0,15,0,0,45,925,0,0,0,0,0,1,0,
+960,0,0,15,0,0,13,926,0,0,1,0,0,1,0,2,9,0,0,
+979,0,0,15,0,0,15,931,0,0,0,0,0,1,0,
+994,0,0,16,0,0,24,996,0,0,1,1,0,1,0,1,97,0,0,
+1013,0,0,17,0,0,29,1003,0,0,0,0,0,1,0,
+1028,0,0,18,0,0,17,1047,0,0,1,1,0,1,0,1,97,0,0,
+1047,0,0,18,0,0,45,1049,0,0,0,0,0,1,0,
+1062,0,0,18,0,0,13,1050,0,0,7,0,0,1,0,2,9,0,0,2,9,0,0,2,9,0,0,2,9,0,0,2,4,0,0,
 2,4,0,0,2,4,0,0,
 };
 
@@ -1672,10 +1670,11 @@ struct { unsigned short len; unsigned char arr[255]; } v_menu_name;
 
     print_screen("screen/scr_insert.txt");
 
-    //카테고리 1 입력
+    // 카테고리 1 입력
     while (1)
     {
-        gotoxy(14, 4); // "카테고리 1:"
+        gotoxy(14, 4);                                                         // "카테고리 1:"
+        printf("                                                           "); // 이전 입력 삭제
         gets(category1);
 
         // 카테고리 1 입력 중 범주에 벗어난 값이 입력되면 오류 메시지 출력
@@ -1695,10 +1694,11 @@ struct { unsigned short len; unsigned char arr[255]; } v_menu_name;
             break;
         }
     }
-    //카테고리 2 입력
+    // 카테고리 2 입력
     while (1)
     {
-        gotoxy(14, 7); // "카테고리 2:"
+        gotoxy(14, 7);                                                         // "카테고리 2:"
+        printf("                                                           "); // 이전 입력 삭제
         gets(category2);
 
         // 카테고리 2 입력 중 범주에 벗어난 값이 입력되면 오류 메시지 출력
@@ -1719,10 +1719,11 @@ struct { unsigned short len; unsigned char arr[255]; } v_menu_name;
         }
     }
 
-    //메뉴 이름 입력
+    // 메뉴 이름 입력
     while (1)
     {
-        gotoxy(14, 10); // "메뉴 이름:"
+        gotoxy(14, 10);                                                        // "메뉴 이름:"
+        printf("                                                           "); // 이전 입력 삭제
         gets(menu_name);
 
         sprintf(sqlstmt, "SELECT fname FROM food_table WHERE fname = '%s'", menu_name);
@@ -1832,7 +1833,6 @@ struct { unsigned short len; unsigned char arr[255]; } v_menu_name;
         {
             gotoxy(0, 21);
             printf("Already exists food name");
-            getch();
             continue;
         }
         else
@@ -1920,6 +1920,7 @@ struct { unsigned short len; unsigned char arr[255]; } v_menu_name;
         {
             gotoxy(0, 21);
             printf("Error adding data: %s\n", sqlca.sqlerrm.sqlerrmc);
+            exit(0);
         }
 
         gotoxy(0, 23);
@@ -2704,38 +2705,12 @@ struct { unsigned short len; unsigned char arr[20]; } v_id;
     char height[20];
     char weight[20];
     // 사용자 입력 받기
+
+    // 아이디 입력
     while (1)
     {
         gotoxy(33, 4);
         gets(id);
-        printf("id: %s\n", id);
-        gotoxy(33, 6);
-        gets(pw);
-        printf("pw: %s\n", pw);
-        gotoxy(33, 8);
-        gets(re_pw);
-        if (strcmp(pw, re_pw) != 0)
-        {
-            gotoxy(0, 22);
-            printf("Password does not match. Please try again.\n");
-            continue;
-        }
-        gotoxy(33, 10);
-        gets(name);
-        gotoxy(33, 12);
-        gets(gender);
-        if (strcmp(gender, "Female") != 0 && strcmp(gender, "Male") != 0)
-        {
-            gotoxy(0, 22);
-            printf("Incorrect input type");
-            continue;
-        }
-        gotoxy(33, 14);
-        gets(height);
-        gotoxy(33, 16);
-        gets(weight);
-        clrscr();
-
         sprintf(sqlstmt, "SELECT userID FROM user_table where userID = '%s'", id);
         /* EXEC SQL PREPARE USER FROM : sqlstmt; */ 
 
@@ -2858,166 +2833,71 @@ struct { unsigned short len; unsigned char arr[20]; } v_id;
 }
 
 
+            gotoxy(33, 4);
+            printf("                                    ");
             continue;
-        }
-        // 여까지는 성공!!
-        else if (sqlca.sqlcode == 1403) // 아이디가 존재하지 않는 경우
-        {
-            // 사용자 정보를 데이터베이스에 삽입
-            sprintf(sqlstmt, "INSERT INTO user_table (userID, userPW, uname, gender, height, weight, isAdmin) VALUES ('%s', '%s', '%s', '%s', %s, %s, 0)", id, pw, name, gender, height, weight);
-            /* EXEC SQL EXECUTE IMMEDIATE : sqlstmt; */ 
-
-{
-            struct sqlexd sqlstm;
-            sqlstm.sqlvsn = 13;
-            sqlstm.arrsiz = 7;
-            sqlstm.sqladtp = &sqladt;
-            sqlstm.sqltdsp = &sqltds;
-            sqlstm.stmt = "";
-            sqlstm.iters = (unsigned int  )1;
-            sqlstm.offset = (unsigned int  )994;
-            sqlstm.cud = sqlcud0;
-            sqlstm.sqlest = (unsigned char  *)&sqlca;
-            sqlstm.sqlety = (unsigned short)4352;
-            sqlstm.occurs = (unsigned int  )0;
-            sqlstm.sqhstv[0] = (         void  *)sqlstmt;
-            sqlstm.sqhstl[0] = (unsigned int  )1024;
-            sqlstm.sqhsts[0] = (         int  )0;
-            sqlstm.sqindv[0] = (         void  *)0;
-            sqlstm.sqinds[0] = (         int  )0;
-            sqlstm.sqharm[0] = (unsigned int  )0;
-            sqlstm.sqadto[0] = (unsigned short )0;
-            sqlstm.sqtdso[0] = (unsigned short )0;
-            sqlstm.sqphsv = sqlstm.sqhstv;
-            sqlstm.sqphsl = sqlstm.sqhstl;
-            sqlstm.sqphss = sqlstm.sqhsts;
-            sqlstm.sqpind = sqlstm.sqindv;
-            sqlstm.sqpins = sqlstm.sqinds;
-            sqlstm.sqparm = sqlstm.sqharm;
-            sqlstm.sqparc = sqlstm.sqharc;
-            sqlstm.sqpadto = sqlstm.sqadto;
-            sqlstm.sqptdso = sqlstm.sqtdso;
-            sqlcxt((void **)0, &sqlctx, &sqlstm, &sqlfpn);
-}
-
- // 쿼리 실행
-
-            if (sqlca.sqlcode != 0)
-            {
-                gotoxy(0, 22);
-                printf("Error: Unable to sign_up. SQLCODE: %d\n", sqlca.sqlcode);
-                /* EXEC SQL ROLLBACK WORK; */ 
-
-{
-                struct sqlexd sqlstm;
-                sqlstm.sqlvsn = 13;
-                sqlstm.arrsiz = 7;
-                sqlstm.sqladtp = &sqladt;
-                sqlstm.sqltdsp = &sqltds;
-                sqlstm.iters = (unsigned int  )1;
-                sqlstm.offset = (unsigned int  )1013;
-                sqlstm.cud = sqlcud0;
-                sqlstm.sqlest = (unsigned char  *)&sqlca;
-                sqlstm.sqlety = (unsigned short)4352;
-                sqlstm.occurs = (unsigned int  )0;
-                sqlcxt((void **)0, &sqlctx, &sqlstm, &sqlfpn);
-}
-
-
-                getch();
-                continue;
-            }
-
-            gotoxy(0, 22);
-            printf("Sign up successful! Press Any key\n");
-            /* EXEC SQL COMMIT WORK; */ 
-
-{
-            struct sqlexd sqlstm;
-            sqlstm.sqlvsn = 13;
-            sqlstm.arrsiz = 7;
-            sqlstm.sqladtp = &sqladt;
-            sqlstm.sqltdsp = &sqltds;
-            sqlstm.iters = (unsigned int  )1;
-            sqlstm.offset = (unsigned int  )1028;
-            sqlstm.cud = sqlcud0;
-            sqlstm.sqlest = (unsigned char  *)&sqlca;
-            sqlstm.sqlety = (unsigned short)4352;
-            sqlstm.occurs = (unsigned int  )0;
-            sqlcxt((void **)0, &sqlctx, &sqlstm, &sqlfpn);
-}
-
-
-            getch();
-            break;
         }
         else
         {
-            gotoxy(0, 22);
-            printf("An error occurred while checking the ID.\n");
-            /* EXEC SQL CLOSE user_cursor; */ 
-
-{
-            struct sqlexd sqlstm;
-            sqlstm.sqlvsn = 13;
-            sqlstm.arrsiz = 7;
-            sqlstm.sqladtp = &sqladt;
-            sqlstm.sqltdsp = &sqltds;
-            sqlstm.iters = (unsigned int  )1;
-            sqlstm.offset = (unsigned int  )1043;
-            sqlstm.cud = sqlcud0;
-            sqlstm.sqlest = (unsigned char  *)&sqlca;
-            sqlstm.sqlety = (unsigned short)4352;
-            sqlstm.occurs = (unsigned int  )0;
-            sqlcxt((void **)0, &sqlctx, &sqlstm, &sqlfpn);
-}
-
-
-            continue;
+            break;
         }
     }
-    return;
-}
 
-void login()
-{
-    /* EXEC SQL BEGIN DECLARE SECTION; */ 
+    // 비밀번호 입력
+    while (1)
+    {
+        gotoxy(33, 6);
+        gets(pw);
+        gotoxy(33, 8);
+        gets(re_pw);
+        if (strcmp(pw, re_pw) != 0)
+        {
+            gotoxy(0, 22);
+            printf("Password does not match. Please try again.\n");
+            gotoxy(33, 6);
+            printf("                                    ");
+            gotoxy(33, 8);
+            printf("                                    ");
+            continue;
+        }
+        else
+        {
+            break;
+        }
+    }
 
-    char sqlstmt[1024];
-    /* EXEC SQL END DECLARE SECTION; */ 
+    gotoxy(33, 10);
+    gets(name);
+
+    // 성별 입력
+    while (1)
+    {
+        gotoxy(33, 12);
+        gets(gender);
+        if (strcmp(gender, "Female") != 0 && strcmp(gender, "Male") != 0)
+        {
+            gotoxy(0, 22);
+            printf("Incorrect input type");
+            gotoxy(33, 12);
+            printf("                                    ");
+            continue;
+        }
+        else
+        {
+            break;
+        }
+    }
 
     while (1)
     {
-        clrscr();
-        print_screen("screen/scr_login.txt");
-        gotoxy(28, 20);
+        gotoxy(33, 14);
+        gets(height);
+        gotoxy(33, 16);
+        gets(weight);
 
-        char c = getchar();
-        while (getchar() != '\n')
-            ;
-
-        if (c == '1')
-        {
-        }
-        else if (c == '2')
-        {
-            sign_up();
-            continue;
-        }
-
-        char input_id[255];
-        char input_pw[255];
-
-        gotoxy(33, 8);
-        gets(input_id);
-        printf("id: %s\n", input_id);
-        gotoxy(33, 11);
-        gets(input_pw);
-        printf("pw: %s\n", input_pw);
-
-        sprintf(sqlstmt, "SELECT userID, userPW, uname, gender, height, weight, isAdmin FROM user_table where userID = '%s' AND userPW = '%s'", input_id, input_pw);
-
-        /* EXEC SQL PREPARE LOGIN FROM : sqlstmt; */ 
+        // 사용자 정보를 데이터베이스에 삽입
+        sprintf(sqlstmt, "INSERT INTO user_table (userID, userPW, uname, gender, height, weight, isAdmin) VALUES ('%s', '%s', '%s', '%s', %s, %s, 0)", id, pw, name, gender, height, weight);
+        /* EXEC SQL EXECUTE IMMEDIATE : sqlstmt; */ 
 
 {
         struct sqlexd sqlstm;
@@ -3027,7 +2907,7 @@ void login()
         sqlstm.sqltdsp = &sqltds;
         sqlstm.stmt = "";
         sqlstm.iters = (unsigned int  )1;
-        sqlstm.offset = (unsigned int  )1058;
+        sqlstm.offset = (unsigned int  )994;
         sqlstm.cud = sqlcud0;
         sqlstm.sqlest = (unsigned char  *)&sqlca;
         sqlstm.sqlety = (unsigned short)4352;
@@ -3052,133 +2932,254 @@ void login()
         sqlcxt((void **)0, &sqlctx, &sqlstm, &sqlfpn);
 }
 
+ // 쿼리 실행
 
-        /* EXEC SQL DECLARE login_cursor CURSOR FOR LOGIN; */ 
-
-        /* EXEC SQL OPEN login_cursor; */ 
-
-{
-        struct sqlexd sqlstm;
-        sqlstm.sqlvsn = 13;
-        sqlstm.arrsiz = 7;
-        sqlstm.sqladtp = &sqladt;
-        sqlstm.sqltdsp = &sqltds;
-        sqlstm.stmt = "";
-        sqlstm.iters = (unsigned int  )1;
-        sqlstm.offset = (unsigned int  )1077;
-        sqlstm.selerr = (unsigned short)1;
-        sqlstm.sqlpfmem = (unsigned int  )0;
-        sqlstm.cud = sqlcud0;
-        sqlstm.sqlest = (unsigned char  *)&sqlca;
-        sqlstm.sqlety = (unsigned short)4352;
-        sqlstm.occurs = (unsigned int  )0;
-        sqlstm.sqcmod = (unsigned int )0;
-        sqlcxt((void **)0, &sqlctx, &sqlstm, &sqlfpn);
-}
-
-
-        /* EXEC SQL FETCH login_cursor INTO : v_userId, : v_userPw, : v_uname, : v_gender, : v_height, : v_weight, : v_isAdmin; */ 
-
-{
-        struct sqlexd sqlstm;
-        sqlstm.sqlvsn = 13;
-        sqlstm.arrsiz = 7;
-        sqlstm.sqladtp = &sqladt;
-        sqlstm.sqltdsp = &sqltds;
-        sqlstm.iters = (unsigned int  )1;
-        sqlstm.offset = (unsigned int  )1092;
-        sqlstm.selerr = (unsigned short)1;
-        sqlstm.sqlpfmem = (unsigned int  )0;
-        sqlstm.cud = sqlcud0;
-        sqlstm.sqlest = (unsigned char  *)&sqlca;
-        sqlstm.sqlety = (unsigned short)4352;
-        sqlstm.occurs = (unsigned int  )0;
-        sqlstm.sqfoff = (           int )0;
-        sqlstm.sqfmod = (unsigned int )2;
-        sqlstm.sqhstv[0] = (         void  *)&v_userId;
-        sqlstm.sqhstl[0] = (unsigned int  )52;
-        sqlstm.sqhsts[0] = (         int  )0;
-        sqlstm.sqindv[0] = (         void  *)0;
-        sqlstm.sqinds[0] = (         int  )0;
-        sqlstm.sqharm[0] = (unsigned int  )0;
-        sqlstm.sqadto[0] = (unsigned short )0;
-        sqlstm.sqtdso[0] = (unsigned short )0;
-        sqlstm.sqhstv[1] = (         void  *)&v_userPw;
-        sqlstm.sqhstl[1] = (unsigned int  )52;
-        sqlstm.sqhsts[1] = (         int  )0;
-        sqlstm.sqindv[1] = (         void  *)0;
-        sqlstm.sqinds[1] = (         int  )0;
-        sqlstm.sqharm[1] = (unsigned int  )0;
-        sqlstm.sqadto[1] = (unsigned short )0;
-        sqlstm.sqtdso[1] = (unsigned short )0;
-        sqlstm.sqhstv[2] = (         void  *)&v_uname;
-        sqlstm.sqhstl[2] = (unsigned int  )32;
-        sqlstm.sqhsts[2] = (         int  )0;
-        sqlstm.sqindv[2] = (         void  *)0;
-        sqlstm.sqinds[2] = (         int  )0;
-        sqlstm.sqharm[2] = (unsigned int  )0;
-        sqlstm.sqadto[2] = (unsigned short )0;
-        sqlstm.sqtdso[2] = (unsigned short )0;
-        sqlstm.sqhstv[3] = (         void  *)&v_gender;
-        sqlstm.sqhstl[3] = (unsigned int  )8;
-        sqlstm.sqhsts[3] = (         int  )0;
-        sqlstm.sqindv[3] = (         void  *)0;
-        sqlstm.sqinds[3] = (         int  )0;
-        sqlstm.sqharm[3] = (unsigned int  )0;
-        sqlstm.sqadto[3] = (unsigned short )0;
-        sqlstm.sqtdso[3] = (unsigned short )0;
-        sqlstm.sqhstv[4] = (         void  *)&v_height;
-        sqlstm.sqhstl[4] = (unsigned int  )sizeof(float);
-        sqlstm.sqhsts[4] = (         int  )0;
-        sqlstm.sqindv[4] = (         void  *)0;
-        sqlstm.sqinds[4] = (         int  )0;
-        sqlstm.sqharm[4] = (unsigned int  )0;
-        sqlstm.sqadto[4] = (unsigned short )0;
-        sqlstm.sqtdso[4] = (unsigned short )0;
-        sqlstm.sqhstv[5] = (         void  *)&v_weight;
-        sqlstm.sqhstl[5] = (unsigned int  )sizeof(float);
-        sqlstm.sqhsts[5] = (         int  )0;
-        sqlstm.sqindv[5] = (         void  *)0;
-        sqlstm.sqinds[5] = (         int  )0;
-        sqlstm.sqharm[5] = (unsigned int  )0;
-        sqlstm.sqadto[5] = (unsigned short )0;
-        sqlstm.sqtdso[5] = (unsigned short )0;
-        sqlstm.sqhstv[6] = (         void  *)&v_isAdmin;
-        sqlstm.sqhstl[6] = (unsigned int  )sizeof(float);
-        sqlstm.sqhsts[6] = (         int  )0;
-        sqlstm.sqindv[6] = (         void  *)0;
-        sqlstm.sqinds[6] = (         int  )0;
-        sqlstm.sqharm[6] = (unsigned int  )0;
-        sqlstm.sqadto[6] = (unsigned short )0;
-        sqlstm.sqtdso[6] = (unsigned short )0;
-        sqlstm.sqphsv = sqlstm.sqhstv;
-        sqlstm.sqphsl = sqlstm.sqhstl;
-        sqlstm.sqphss = sqlstm.sqhsts;
-        sqlstm.sqpind = sqlstm.sqindv;
-        sqlstm.sqpins = sqlstm.sqinds;
-        sqlstm.sqparm = sqlstm.sqharm;
-        sqlstm.sqparc = sqlstm.sqharc;
-        sqlstm.sqpadto = sqlstm.sqadto;
-        sqlstm.sqptdso = sqlstm.sqtdso;
-        sqlcxt((void **)0, &sqlctx, &sqlstm, &sqlfpn);
-}
-
-
-        printf("%d\n", sqlca.sqlcode);
-
-        if (sqlca.sqlcode == 1403)
+        if (sqlca.sqlcode == 0)
         {
-            gotoxy(0, 22);
-            printf("ID or password is incorrect. Please try again.\n");
-            continue;
+            gotoxy(0, 23); // 성공 메시지 출력 위치
+            printf("Sign up successful! Press Any key\n");
+            getch();
+            /* EXEC SQL COMMIT WORK; */ 
+
+{
+            struct sqlexd sqlstm;
+            sqlstm.sqlvsn = 13;
+            sqlstm.arrsiz = 7;
+            sqlstm.sqladtp = &sqladt;
+            sqlstm.sqltdsp = &sqltds;
+            sqlstm.iters = (unsigned int  )1;
+            sqlstm.offset = (unsigned int  )1013;
+            sqlstm.cud = sqlcud0;
+            sqlstm.sqlest = (unsigned char  *)&sqlca;
+            sqlstm.sqlety = (unsigned short)4352;
+            sqlstm.occurs = (unsigned int  )0;
+            sqlcxt((void **)0, &sqlctx, &sqlstm, &sqlfpn);
+}
+
+
+            break;
         }
         else
         {
-            v_userId.arr[v_userId.len] = '\0';
-            v_userPw.arr[v_userPw.len] = '\0';
-            v_uname.arr[v_uname.len] = '\0';
-            v_gender.arr[v_gender.len] = '\0';
-            main_options();
+            gotoxy(0, 23);
+            printf("                                                   ");
+            printf("Error adding data: %s\n", sqlca.sqlerrm.sqlerrmc);
+            exit(0);
+        }
+    }
+    return;
+}
+
+void login()
+{
+    /* EXEC SQL BEGIN DECLARE SECTION; */ 
+
+    char sqlstmt[1024];
+    /* EXEC SQL END DECLARE SECTION; */ 
+
+
+    char input_id[255];
+    char input_pw[255];
+
+    while (1)
+    {
+        clrscr();
+        print_screen("screen/scr_login.txt");
+        // 사용자 입력으로 가기
+        gotoxy(28, 20);
+
+        // 사용자 입력 받기
+        char c = getchar();
+        while (getchar() != '\n')
+            ;
+
+        if (c == '1')
+        {
+            gotoxy(33, 8);
+            gets(input_id);
+            gotoxy(33, 11);
+            gets(input_pw);
+
+            sprintf(sqlstmt, "SELECT userID, userPW, uname, gender, height, weight, isAdmin FROM user_table where userID = '%s' AND userPW = '%s'", input_id, input_pw);
+
+            /* EXEC SQL PREPARE LOGIN FROM : sqlstmt; */ 
+
+{
+            struct sqlexd sqlstm;
+            sqlstm.sqlvsn = 13;
+            sqlstm.arrsiz = 7;
+            sqlstm.sqladtp = &sqladt;
+            sqlstm.sqltdsp = &sqltds;
+            sqlstm.stmt = "";
+            sqlstm.iters = (unsigned int  )1;
+            sqlstm.offset = (unsigned int  )1028;
+            sqlstm.cud = sqlcud0;
+            sqlstm.sqlest = (unsigned char  *)&sqlca;
+            sqlstm.sqlety = (unsigned short)4352;
+            sqlstm.occurs = (unsigned int  )0;
+            sqlstm.sqhstv[0] = (         void  *)sqlstmt;
+            sqlstm.sqhstl[0] = (unsigned int  )1024;
+            sqlstm.sqhsts[0] = (         int  )0;
+            sqlstm.sqindv[0] = (         void  *)0;
+            sqlstm.sqinds[0] = (         int  )0;
+            sqlstm.sqharm[0] = (unsigned int  )0;
+            sqlstm.sqadto[0] = (unsigned short )0;
+            sqlstm.sqtdso[0] = (unsigned short )0;
+            sqlstm.sqphsv = sqlstm.sqhstv;
+            sqlstm.sqphsl = sqlstm.sqhstl;
+            sqlstm.sqphss = sqlstm.sqhsts;
+            sqlstm.sqpind = sqlstm.sqindv;
+            sqlstm.sqpins = sqlstm.sqinds;
+            sqlstm.sqparm = sqlstm.sqharm;
+            sqlstm.sqparc = sqlstm.sqharc;
+            sqlstm.sqpadto = sqlstm.sqadto;
+            sqlstm.sqptdso = sqlstm.sqtdso;
+            sqlcxt((void **)0, &sqlctx, &sqlstm, &sqlfpn);
+}
+
+
+            /* EXEC SQL DECLARE login_cursor CURSOR FOR LOGIN; */ 
+
+            /* EXEC SQL OPEN login_cursor; */ 
+
+{
+            struct sqlexd sqlstm;
+            sqlstm.sqlvsn = 13;
+            sqlstm.arrsiz = 7;
+            sqlstm.sqladtp = &sqladt;
+            sqlstm.sqltdsp = &sqltds;
+            sqlstm.stmt = "";
+            sqlstm.iters = (unsigned int  )1;
+            sqlstm.offset = (unsigned int  )1047;
+            sqlstm.selerr = (unsigned short)1;
+            sqlstm.sqlpfmem = (unsigned int  )0;
+            sqlstm.cud = sqlcud0;
+            sqlstm.sqlest = (unsigned char  *)&sqlca;
+            sqlstm.sqlety = (unsigned short)4352;
+            sqlstm.occurs = (unsigned int  )0;
+            sqlstm.sqcmod = (unsigned int )0;
+            sqlcxt((void **)0, &sqlctx, &sqlstm, &sqlfpn);
+}
+
+
+            /* EXEC SQL FETCH login_cursor INTO : v_userId, : v_userPw, : v_uname, : v_gender, : v_height, : v_weight, : v_isAdmin; */ 
+
+{
+            struct sqlexd sqlstm;
+            sqlstm.sqlvsn = 13;
+            sqlstm.arrsiz = 7;
+            sqlstm.sqladtp = &sqladt;
+            sqlstm.sqltdsp = &sqltds;
+            sqlstm.iters = (unsigned int  )1;
+            sqlstm.offset = (unsigned int  )1062;
+            sqlstm.selerr = (unsigned short)1;
+            sqlstm.sqlpfmem = (unsigned int  )0;
+            sqlstm.cud = sqlcud0;
+            sqlstm.sqlest = (unsigned char  *)&sqlca;
+            sqlstm.sqlety = (unsigned short)4352;
+            sqlstm.occurs = (unsigned int  )0;
+            sqlstm.sqfoff = (           int )0;
+            sqlstm.sqfmod = (unsigned int )2;
+            sqlstm.sqhstv[0] = (         void  *)&v_userId;
+            sqlstm.sqhstl[0] = (unsigned int  )52;
+            sqlstm.sqhsts[0] = (         int  )0;
+            sqlstm.sqindv[0] = (         void  *)0;
+            sqlstm.sqinds[0] = (         int  )0;
+            sqlstm.sqharm[0] = (unsigned int  )0;
+            sqlstm.sqadto[0] = (unsigned short )0;
+            sqlstm.sqtdso[0] = (unsigned short )0;
+            sqlstm.sqhstv[1] = (         void  *)&v_userPw;
+            sqlstm.sqhstl[1] = (unsigned int  )52;
+            sqlstm.sqhsts[1] = (         int  )0;
+            sqlstm.sqindv[1] = (         void  *)0;
+            sqlstm.sqinds[1] = (         int  )0;
+            sqlstm.sqharm[1] = (unsigned int  )0;
+            sqlstm.sqadto[1] = (unsigned short )0;
+            sqlstm.sqtdso[1] = (unsigned short )0;
+            sqlstm.sqhstv[2] = (         void  *)&v_uname;
+            sqlstm.sqhstl[2] = (unsigned int  )32;
+            sqlstm.sqhsts[2] = (         int  )0;
+            sqlstm.sqindv[2] = (         void  *)0;
+            sqlstm.sqinds[2] = (         int  )0;
+            sqlstm.sqharm[2] = (unsigned int  )0;
+            sqlstm.sqadto[2] = (unsigned short )0;
+            sqlstm.sqtdso[2] = (unsigned short )0;
+            sqlstm.sqhstv[3] = (         void  *)&v_gender;
+            sqlstm.sqhstl[3] = (unsigned int  )8;
+            sqlstm.sqhsts[3] = (         int  )0;
+            sqlstm.sqindv[3] = (         void  *)0;
+            sqlstm.sqinds[3] = (         int  )0;
+            sqlstm.sqharm[3] = (unsigned int  )0;
+            sqlstm.sqadto[3] = (unsigned short )0;
+            sqlstm.sqtdso[3] = (unsigned short )0;
+            sqlstm.sqhstv[4] = (         void  *)&v_height;
+            sqlstm.sqhstl[4] = (unsigned int  )sizeof(float);
+            sqlstm.sqhsts[4] = (         int  )0;
+            sqlstm.sqindv[4] = (         void  *)0;
+            sqlstm.sqinds[4] = (         int  )0;
+            sqlstm.sqharm[4] = (unsigned int  )0;
+            sqlstm.sqadto[4] = (unsigned short )0;
+            sqlstm.sqtdso[4] = (unsigned short )0;
+            sqlstm.sqhstv[5] = (         void  *)&v_weight;
+            sqlstm.sqhstl[5] = (unsigned int  )sizeof(float);
+            sqlstm.sqhsts[5] = (         int  )0;
+            sqlstm.sqindv[5] = (         void  *)0;
+            sqlstm.sqinds[5] = (         int  )0;
+            sqlstm.sqharm[5] = (unsigned int  )0;
+            sqlstm.sqadto[5] = (unsigned short )0;
+            sqlstm.sqtdso[5] = (unsigned short )0;
+            sqlstm.sqhstv[6] = (         void  *)&v_isAdmin;
+            sqlstm.sqhstl[6] = (unsigned int  )sizeof(float);
+            sqlstm.sqhsts[6] = (         int  )0;
+            sqlstm.sqindv[6] = (         void  *)0;
+            sqlstm.sqinds[6] = (         int  )0;
+            sqlstm.sqharm[6] = (unsigned int  )0;
+            sqlstm.sqadto[6] = (unsigned short )0;
+            sqlstm.sqtdso[6] = (unsigned short )0;
+            sqlstm.sqphsv = sqlstm.sqhstv;
+            sqlstm.sqphsl = sqlstm.sqhstl;
+            sqlstm.sqphss = sqlstm.sqhsts;
+            sqlstm.sqpind = sqlstm.sqindv;
+            sqlstm.sqpins = sqlstm.sqinds;
+            sqlstm.sqparm = sqlstm.sqharm;
+            sqlstm.sqparc = sqlstm.sqharc;
+            sqlstm.sqpadto = sqlstm.sqadto;
+            sqlstm.sqptdso = sqlstm.sqtdso;
+            sqlcxt((void **)0, &sqlctx, &sqlstm, &sqlfpn);
+}
+
+
+
+            if (sqlca.sqlcode == 1403) // 로그인 실패
+            {
+                gotoxy(0, 22);
+                printf("ID or password is incorrect. Please try again.\n");
+                getch();
+                continue;
+            }
+            else
+            {
+                v_userId.arr[v_userId.len] = '\0';
+                v_userPw.arr[v_userPw.len] = '\0';
+                v_uname.arr[v_uname.len] = '\0';
+                v_gender.arr[v_gender.len] = '\0';
+                printf("Login Success, Press any key\n");
+                getch();
+                main_options();
+            }
+        }
+        else if (c == '2')
+        {
+            sign_up();
+            continue;
+        }
+
+        else
+        {
+            gotoxy(0, 22);
+            printf("Invalid input\n");
+            getch();
+            continue;
         }
     }
 }
