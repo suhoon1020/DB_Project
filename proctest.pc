@@ -165,28 +165,33 @@ void main_options()
             view_food(); // ?쓬?떇 ?솗?씤
             break;
         case '2':
-            if(v_isAdmin == 1)
+            if(v_isAdmin == 1.0f)
                 add_food(); // ?쓬?떇 異붽??
-            else
+            else{
                 gotoxy(11, 24); // 而ㅼ꽌 ?쐞移? ?꽕?젙
                 printf("Admin Only\n");
                 getch();
+            }
+                
             break;
         case '3':
-            if(v_isAdmin == 1)
+            if(v_isAdmin == 1.0f)
                 delete_food(); // ?쓬?떇 異붽??
-            else
+            else{
                 gotoxy(11, 24); // 而ㅼ꽌 ?쐞移? ?꽕?젙
                 printf("Admin Only\n");
                 getch();
             break;
+            }
+                
         case '4':
-            if(v_isAdmin == 1)
+            if(v_isAdmin == 1.0f)
                 update_food(); // ?쓬?떇 異붽??
-            else
+            else{
                 gotoxy(11, 24); // 而ㅼ꽌 ?쐞移? ?꽕?젙
                 printf("Admin Only\n");
                 getch();
+            }
             break;
         case '5':
             view_menu(); // ?떇?떒 ?솗?씤
