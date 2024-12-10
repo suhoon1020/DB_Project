@@ -164,37 +164,40 @@ static const short sqlcud0[] =
 473,0,0,3,0,0,13,477,0,0,6,0,0,1,0,2,9,0,0,2,9,0,0,2,3,0,0,2,9,0,0,2,9,0,0,2,9,
 0,0,
 512,0,0,3,0,0,15,511,0,0,0,0,0,1,0,
-527,0,0,5,109,0,3,614,0,0,7,7,0,1,0,1,9,0,0,1,9,0,0,1,9,0,0,1,4,0,0,1,4,0,0,1,
-4,0,0,1,4,0,0,
-570,0,0,3,0,0,17,661,0,0,1,1,0,1,0,1,97,0,0,
-589,0,0,3,0,0,45,663,0,0,0,0,0,1,0,
-604,0,0,3,0,0,13,667,0,0,7,0,0,1,0,2,9,0,0,2,9,0,0,2,9,0,0,2,4,0,0,2,4,0,0,2,4,
+527,0,0,5,0,0,17,599,0,0,1,1,0,1,0,1,97,0,0,
+546,0,0,5,0,0,45,601,0,0,0,0,0,1,0,
+561,0,0,5,0,0,13,603,0,0,1,0,0,1,0,2,9,0,0,
+580,0,0,6,0,0,24,633,0,0,1,1,0,1,0,1,97,0,0,
+599,0,0,7,0,0,29,639,0,0,0,0,0,1,0,
+614,0,0,3,0,0,17,682,0,0,1,1,0,1,0,1,97,0,0,
+633,0,0,3,0,0,45,684,0,0,0,0,0,1,0,
+648,0,0,3,0,0,13,688,0,0,7,0,0,1,0,2,9,0,0,2,9,0,0,2,9,0,0,2,4,0,0,2,4,0,0,2,4,
 0,0,2,4,0,0,
-647,0,0,6,0,0,17,704,0,0,1,1,0,1,0,1,97,0,0,
-666,0,0,6,0,0,21,705,0,0,0,0,0,1,0,
-681,0,0,7,0,0,31,711,0,0,0,0,0,1,0,
-696,0,0,8,0,0,29,716,0,0,0,0,0,1,0,
-711,0,0,3,0,0,15,730,0,0,0,0,0,1,0,
-726,0,0,9,0,0,17,759,0,0,1,1,0,1,0,1,97,0,0,
-745,0,0,9,0,0,45,761,0,0,0,0,0,1,0,
-760,0,0,9,0,0,13,765,0,0,7,0,0,1,0,2,9,0,0,2,9,0,0,2,9,0,0,2,4,0,0,2,4,0,0,2,4,
-0,0,2,4,0,0,
-803,0,0,9,0,0,15,791,0,0,0,0,0,1,0,
-818,0,0,10,0,0,17,828,0,0,1,1,0,1,0,1,97,0,0,
-837,0,0,10,0,0,21,829,0,0,0,0,0,1,0,
-852,0,0,11,0,0,31,836,0,0,0,0,0,1,0,
-867,0,0,12,0,0,29,841,0,0,0,0,0,1,0,
-882,0,0,13,0,0,17,926,0,0,1,1,0,1,0,1,97,0,0,
-901,0,0,13,0,0,45,928,0,0,0,0,0,1,0,
-916,0,0,13,0,0,13,929,0,0,1,0,0,1,0,2,9,0,0,
-935,0,0,13,0,0,15,935,0,0,0,0,0,1,0,
-950,0,0,14,0,0,24,943,0,0,1,1,0,1,0,1,97,0,0,
-969,0,0,15,0,0,31,949,0,0,0,0,0,1,0,
-984,0,0,16,0,0,29,956,0,0,0,0,0,1,0,
-999,0,0,13,0,0,15,964,0,0,0,0,0,1,0,
-1014,0,0,17,0,0,17,1009,0,0,1,1,0,1,0,1,97,0,0,
-1033,0,0,17,0,0,45,1011,0,0,0,0,0,1,0,
-1048,0,0,17,0,0,13,1012,0,0,7,0,0,1,0,2,9,0,0,2,9,0,0,2,9,0,0,2,9,0,0,2,4,0,0,
+691,0,0,8,0,0,17,725,0,0,1,1,0,1,0,1,97,0,0,
+710,0,0,8,0,0,21,726,0,0,0,0,0,1,0,
+725,0,0,9,0,0,31,732,0,0,0,0,0,1,0,
+740,0,0,10,0,0,29,737,0,0,0,0,0,1,0,
+755,0,0,3,0,0,15,751,0,0,0,0,0,1,0,
+770,0,0,11,0,0,17,780,0,0,1,1,0,1,0,1,97,0,0,
+789,0,0,11,0,0,45,782,0,0,0,0,0,1,0,
+804,0,0,11,0,0,13,786,0,0,7,0,0,1,0,2,9,0,0,2,9,0,0,2,9,0,0,2,4,0,0,2,4,0,0,2,
+4,0,0,2,4,0,0,
+847,0,0,11,0,0,15,812,0,0,0,0,0,1,0,
+862,0,0,12,0,0,17,849,0,0,1,1,0,1,0,1,97,0,0,
+881,0,0,12,0,0,21,850,0,0,0,0,0,1,0,
+896,0,0,13,0,0,31,857,0,0,0,0,0,1,0,
+911,0,0,14,0,0,29,862,0,0,0,0,0,1,0,
+926,0,0,15,0,0,17,946,0,0,1,1,0,1,0,1,97,0,0,
+945,0,0,15,0,0,45,948,0,0,0,0,0,1,0,
+960,0,0,15,0,0,13,949,0,0,1,0,0,1,0,2,9,0,0,
+979,0,0,15,0,0,15,954,0,0,0,0,0,1,0,
+994,0,0,16,0,0,24,962,0,0,1,1,0,1,0,1,97,0,0,
+1013,0,0,17,0,0,31,968,0,0,0,0,0,1,0,
+1028,0,0,18,0,0,29,975,0,0,0,0,0,1,0,
+1043,0,0,15,0,0,15,983,0,0,0,0,0,1,0,
+1058,0,0,19,0,0,17,1026,0,0,1,1,0,1,0,1,97,0,0,
+1077,0,0,19,0,0,45,1028,0,0,0,0,0,1,0,
+1092,0,0,19,0,0,13,1029,0,0,7,0,0,1,0,2,9,0,0,2,9,0,0,2,9,0,0,2,9,0,0,2,4,0,0,
 2,4,0,0,2,4,0,0,
 };
 
@@ -889,10 +892,10 @@ void view_food()
         {
         case '1':
             view_food_all();
-            break;
+            continue;
         case '2':
             view_food_search();
-            break;
+            continue;
         case '3':
             return;
         default:
@@ -1650,205 +1653,283 @@ void add_food()
 {
     /* EXEC SQL BEGIN DECLARE SECTION; */ 
 
-    /* varchar v_category1[255]; */ 
-struct { unsigned short len; unsigned char arr[255]; } v_category1;
- // Western, Korean, Japanese, Chinese
-    /* varchar v_category2[255]; */ 
-struct { unsigned short len; unsigned char arr[255]; } v_category2;
- // Main, Sub, Side
     /* varchar v_menu_name[255]; */ 
 struct { unsigned short len; unsigned char arr[255]; } v_menu_name;
 
-    float v_calorie;
-    float v_carbo;
-    float v_protein;
-    float v_fat;
-    /* varchar v_userId[255]; */ 
-struct { unsigned short len; unsigned char arr[255]; } v_userId;
- // 사용자 ID 추가
+    char sqlstmt[1024];
     /* EXEC SQL END DECLARE SECTION; */ 
 
+
+    char category1[255];
+    char category2[255];
+    char menu_name[255];
+    char calorie[5];
+    char carbo[5];
+    char protein[5];
+    char fat[5];
 
     clrscr();
 
     print_screen("screen/scr_insert.txt");
 
+    //카테고리 1 입력
     while (1)
     {
         gotoxy(14, 4); // "카테고리 1:"
-        gets((char *)v_category1.arr);
-        v_category1.len = (short)strlen((char *)v_category1.arr);
+        gets(category1);
 
         // 카테고리 1 입력 중 범주에 벗어난 값이 입력되면 오류 메시지 출력
-        if (strcmp((char *)v_category1.arr, "Western") == 0 ||
-            strcmp((char *)v_category1.arr, "Korean") == 0 ||
-            strcmp((char *)v_category1.arr, "Japanese") == 0 ||
-            strcmp((char *)v_category1.arr, "Chinese") == 0)
+        if (strcmp(category1, "Western") != 0 &&
+            strcmp(category1, "Korean") != 0 &&
+            strcmp(category1, "Japanese") != 0 &&
+            strcmp(category1, "Chinese") != 0)
         {
-            // 오류 메시지 삭제
+            gotoxy(0, 21); // 오류 메시지 출력
+            printf("The category you entered is not valid. Please re-enter.");
+            continue;
+        }
+        else
+        {
             gotoxy(0, 21);
-            printf("                                                       "); // 이전 입력 삭제
+            printf("                                                           "); // 이전 입력 삭제
             break;
         }
-
-        gotoxy(0, 21); // 오류 메시지 출력
-        printf("The category you entered is not valid. Please re-enter.");
-        gotoxy(14, 4);                                             // 입력 위치 초기화
-        printf("                                               "); // 이전 입력 삭제
     }
-
+    //카테고리 2 입력
     while (1)
     {
         gotoxy(14, 7); // "카테고리 2:"
-        gets((char *)v_category2.arr);
-        v_category2.len = (short)strlen((char *)v_category2.arr);
+        gets(category2);
 
         // 카테고리 2 입력 중 범주에 벗어난 값이 입력되면 오류 메시지 출력
-        if (strcmp((char *)v_category2.arr, "Main") == 0 ||
-            strcmp((char *)v_category2.arr, "Sub") == 0 ||
-            strcmp((char *)v_category2.arr, "Side") == 0)
+        if (strcmp(category2, "Main") != 0 &&
+            strcmp(category2, "Sub") != 0 &&
+            strcmp(category2, "Side") != 0)
         {
             // 오류 메시지 삭제
+            gotoxy(0, 21); // 오류 메시지 출력
+            printf("The type you entered is not valid. Please re-enter.");
+            continue;
+        }
+        else
+        {
             gotoxy(0, 21);
-            printf("                                                   "); // 이전 입력 삭제
+            printf("                                                           "); // 이전 입력 삭제
             break;
         }
-
-        gotoxy(0, 21); // 오류 메시지 출력
-        printf("The type you entered is not valid. Please re-enter.");
-        gotoxy(14, 7);                                        // 입력 위치 초기화
-        printf("                                          "); // 이전 입력 삭제
     }
 
-    gotoxy(14, 10); // "메뉴 이름:"
-    gets((char *)v_menu_name.arr);
-    v_menu_name.len = (short)strlen((char *)v_menu_name.arr);
+    //메뉴 이름 입력
+    while (1)
+    {
+        gotoxy(14, 10); // "메뉴 이름:"
+        gets(menu_name);
 
-    gotoxy(14, 12); // "칼로리:"
-    scanf("%f", &v_calorie);
-    while (getchar() != '\n')
-        ;
+        sprintf(sqlstmt, "SELECT fname FROM food_table WHERE fname = '%s'", menu_name);
 
-    gotoxy(14, 14); // "탄수화물:"
-    scanf("%f", &v_carbo);
-    while (getchar() != '\n')
-        ;
-
-    gotoxy(14, 16); // "단백질:"
-    scanf("%f", &v_protein);
-    while (getchar() != '\n')
-        ;
-
-    gotoxy(14, 18); // "지방:"
-    scanf("%f", &v_fat);
-    while (getchar() != '\n')
-        ;
-
-    // 데이터베이스 삽입
-    /* EXEC SQL INSERT INTO FOOD_TABLE(fcategory, ftype, fname, calorie, carbo, protein, fat)
-        VALUES( : v_category1, : v_category2, : v_menu_name, : v_calorie, : v_carbo, : v_protein, : v_fat); */ 
+        /* EXEC SQL PREPARE ADD_FOOD from : sqlstmt; */ 
 
 {
-    struct sqlexd sqlstm;
-    sqlstm.sqlvsn = 13;
-    sqlstm.arrsiz = 7;
-    sqlstm.sqladtp = &sqladt;
-    sqlstm.sqltdsp = &sqltds;
-    sqlstm.stmt = "insert into FOOD_TABLE (fcategory,ftype,fname,calorie,car\
-bo,protein,fat) values (:b0,:b1,:b2,:b3,:b4,:b5,:b6)";
-    sqlstm.iters = (unsigned int  )1;
-    sqlstm.offset = (unsigned int  )527;
-    sqlstm.cud = sqlcud0;
-    sqlstm.sqlest = (unsigned char  *)&sqlca;
-    sqlstm.sqlety = (unsigned short)4352;
-    sqlstm.occurs = (unsigned int  )0;
-    sqlstm.sqhstv[0] = (         void  *)&v_category1;
-    sqlstm.sqhstl[0] = (unsigned int  )257;
-    sqlstm.sqhsts[0] = (         int  )0;
-    sqlstm.sqindv[0] = (         void  *)0;
-    sqlstm.sqinds[0] = (         int  )0;
-    sqlstm.sqharm[0] = (unsigned int  )0;
-    sqlstm.sqadto[0] = (unsigned short )0;
-    sqlstm.sqtdso[0] = (unsigned short )0;
-    sqlstm.sqhstv[1] = (         void  *)&v_category2;
-    sqlstm.sqhstl[1] = (unsigned int  )257;
-    sqlstm.sqhsts[1] = (         int  )0;
-    sqlstm.sqindv[1] = (         void  *)0;
-    sqlstm.sqinds[1] = (         int  )0;
-    sqlstm.sqharm[1] = (unsigned int  )0;
-    sqlstm.sqadto[1] = (unsigned short )0;
-    sqlstm.sqtdso[1] = (unsigned short )0;
-    sqlstm.sqhstv[2] = (         void  *)&v_menu_name;
-    sqlstm.sqhstl[2] = (unsigned int  )257;
-    sqlstm.sqhsts[2] = (         int  )0;
-    sqlstm.sqindv[2] = (         void  *)0;
-    sqlstm.sqinds[2] = (         int  )0;
-    sqlstm.sqharm[2] = (unsigned int  )0;
-    sqlstm.sqadto[2] = (unsigned short )0;
-    sqlstm.sqtdso[2] = (unsigned short )0;
-    sqlstm.sqhstv[3] = (         void  *)&v_calorie;
-    sqlstm.sqhstl[3] = (unsigned int  )sizeof(float);
-    sqlstm.sqhsts[3] = (         int  )0;
-    sqlstm.sqindv[3] = (         void  *)0;
-    sqlstm.sqinds[3] = (         int  )0;
-    sqlstm.sqharm[3] = (unsigned int  )0;
-    sqlstm.sqadto[3] = (unsigned short )0;
-    sqlstm.sqtdso[3] = (unsigned short )0;
-    sqlstm.sqhstv[4] = (         void  *)&v_carbo;
-    sqlstm.sqhstl[4] = (unsigned int  )sizeof(float);
-    sqlstm.sqhsts[4] = (         int  )0;
-    sqlstm.sqindv[4] = (         void  *)0;
-    sqlstm.sqinds[4] = (         int  )0;
-    sqlstm.sqharm[4] = (unsigned int  )0;
-    sqlstm.sqadto[4] = (unsigned short )0;
-    sqlstm.sqtdso[4] = (unsigned short )0;
-    sqlstm.sqhstv[5] = (         void  *)&v_protein;
-    sqlstm.sqhstl[5] = (unsigned int  )sizeof(float);
-    sqlstm.sqhsts[5] = (         int  )0;
-    sqlstm.sqindv[5] = (         void  *)0;
-    sqlstm.sqinds[5] = (         int  )0;
-    sqlstm.sqharm[5] = (unsigned int  )0;
-    sqlstm.sqadto[5] = (unsigned short )0;
-    sqlstm.sqtdso[5] = (unsigned short )0;
-    sqlstm.sqhstv[6] = (         void  *)&v_fat;
-    sqlstm.sqhstl[6] = (unsigned int  )sizeof(float);
-    sqlstm.sqhsts[6] = (         int  )0;
-    sqlstm.sqindv[6] = (         void  *)0;
-    sqlstm.sqinds[6] = (         int  )0;
-    sqlstm.sqharm[6] = (unsigned int  )0;
-    sqlstm.sqadto[6] = (unsigned short )0;
-    sqlstm.sqtdso[6] = (unsigned short )0;
-    sqlstm.sqphsv = sqlstm.sqhstv;
-    sqlstm.sqphsl = sqlstm.sqhstl;
-    sqlstm.sqphss = sqlstm.sqhsts;
-    sqlstm.sqpind = sqlstm.sqindv;
-    sqlstm.sqpins = sqlstm.sqinds;
-    sqlstm.sqparm = sqlstm.sqharm;
-    sqlstm.sqparc = sqlstm.sqharc;
-    sqlstm.sqpadto = sqlstm.sqadto;
-    sqlstm.sqptdso = sqlstm.sqtdso;
-    sqlcxt((void **)0, &sqlctx, &sqlstm, &sqlfpn);
+        struct sqlexd sqlstm;
+        sqlstm.sqlvsn = 13;
+        sqlstm.arrsiz = 7;
+        sqlstm.sqladtp = &sqladt;
+        sqlstm.sqltdsp = &sqltds;
+        sqlstm.stmt = "";
+        sqlstm.iters = (unsigned int  )1;
+        sqlstm.offset = (unsigned int  )527;
+        sqlstm.cud = sqlcud0;
+        sqlstm.sqlest = (unsigned char  *)&sqlca;
+        sqlstm.sqlety = (unsigned short)4352;
+        sqlstm.occurs = (unsigned int  )0;
+        sqlstm.sqhstv[0] = (         void  *)sqlstmt;
+        sqlstm.sqhstl[0] = (unsigned int  )1024;
+        sqlstm.sqhsts[0] = (         int  )0;
+        sqlstm.sqindv[0] = (         void  *)0;
+        sqlstm.sqinds[0] = (         int  )0;
+        sqlstm.sqharm[0] = (unsigned int  )0;
+        sqlstm.sqadto[0] = (unsigned short )0;
+        sqlstm.sqtdso[0] = (unsigned short )0;
+        sqlstm.sqphsv = sqlstm.sqhstv;
+        sqlstm.sqphsl = sqlstm.sqhstl;
+        sqlstm.sqphss = sqlstm.sqhsts;
+        sqlstm.sqpind = sqlstm.sqindv;
+        sqlstm.sqpins = sqlstm.sqinds;
+        sqlstm.sqparm = sqlstm.sqharm;
+        sqlstm.sqparc = sqlstm.sqharc;
+        sqlstm.sqpadto = sqlstm.sqadto;
+        sqlstm.sqptdso = sqlstm.sqtdso;
+        sqlcxt((void **)0, &sqlctx, &sqlstm, &sqlfpn);
+}
+
+
+        /* EXEC SQL DECLARE ADD_FOOD_CURSOR CURSOR FOR ADD_FOOD; */ 
+
+        /* EXEC SQL OPEN ADD_FOOD_CURSOR; */ 
+
+{
+        struct sqlexd sqlstm;
+        sqlstm.sqlvsn = 13;
+        sqlstm.arrsiz = 7;
+        sqlstm.sqladtp = &sqladt;
+        sqlstm.sqltdsp = &sqltds;
+        sqlstm.stmt = "";
+        sqlstm.iters = (unsigned int  )1;
+        sqlstm.offset = (unsigned int  )546;
+        sqlstm.selerr = (unsigned short)1;
+        sqlstm.sqlpfmem = (unsigned int  )0;
+        sqlstm.cud = sqlcud0;
+        sqlstm.sqlest = (unsigned char  *)&sqlca;
+        sqlstm.sqlety = (unsigned short)4352;
+        sqlstm.occurs = (unsigned int  )0;
+        sqlstm.sqcmod = (unsigned int )0;
+        sqlcxt((void **)0, &sqlctx, &sqlstm, &sqlfpn);
 }
 
 
 
-    if (sqlca.sqlcode == 0)
-    {
-        gotoxy(0, 21); // 성공 메시지 출력 위치
-        printf("Data added successfully.");
-    }
-    else
-    {
-        gotoxy(0, 21);
-        printf("Error adding data: %s\n", sqlca.sqlerrm.sqlerrmc);
+        /* EXEC SQL FETCH ADD_FOOD_CURSOR INTO : v_menu_name; */ 
+
+{
+        struct sqlexd sqlstm;
+        sqlstm.sqlvsn = 13;
+        sqlstm.arrsiz = 7;
+        sqlstm.sqladtp = &sqladt;
+        sqlstm.sqltdsp = &sqltds;
+        sqlstm.iters = (unsigned int  )1;
+        sqlstm.offset = (unsigned int  )561;
+        sqlstm.selerr = (unsigned short)1;
+        sqlstm.sqlpfmem = (unsigned int  )0;
+        sqlstm.cud = sqlcud0;
+        sqlstm.sqlest = (unsigned char  *)&sqlca;
+        sqlstm.sqlety = (unsigned short)4352;
+        sqlstm.occurs = (unsigned int  )0;
+        sqlstm.sqfoff = (           int )0;
+        sqlstm.sqfmod = (unsigned int )2;
+        sqlstm.sqhstv[0] = (         void  *)&v_menu_name;
+        sqlstm.sqhstl[0] = (unsigned int  )257;
+        sqlstm.sqhsts[0] = (         int  )0;
+        sqlstm.sqindv[0] = (         void  *)0;
+        sqlstm.sqinds[0] = (         int  )0;
+        sqlstm.sqharm[0] = (unsigned int  )0;
+        sqlstm.sqadto[0] = (unsigned short )0;
+        sqlstm.sqtdso[0] = (unsigned short )0;
+        sqlstm.sqphsv = sqlstm.sqhstv;
+        sqlstm.sqphsl = sqlstm.sqhstl;
+        sqlstm.sqphss = sqlstm.sqhsts;
+        sqlstm.sqpind = sqlstm.sqindv;
+        sqlstm.sqpins = sqlstm.sqinds;
+        sqlstm.sqparm = sqlstm.sqharm;
+        sqlstm.sqparc = sqlstm.sqharc;
+        sqlstm.sqpadto = sqlstm.sqadto;
+        sqlstm.sqptdso = sqlstm.sqtdso;
+        sqlcxt((void **)0, &sqlctx, &sqlstm, &sqlfpn);
+}
+
+
+
+        if (sqlca.sqlcode == 0)
+        {
+            gotoxy(0, 21);
+            printf("Already exists food name");
+            getch();
+            continue;
+        }
+        else
+        {
+            break;
+        }
     }
 
-    gotoxy(0, 23);
-    printf("Press Enter to return to main menu.");
-    getch();
+    while (1)
+    {
+        gotoxy(14, 12); // "칼로리:"
+        gets(calorie);
 
-    clrscr();       // 화면 초기화
-    main_options(); // 메인 메뉴로 돌아가기
+        gotoxy(14, 14); // "탄수화물:"
+        gets(carbo);
+
+        gotoxy(14, 16); // "단백질:"
+        gets(protein);
+
+        gotoxy(14, 18); // "지방:"
+        gets(fat);
+
+        sprintf(sqlstmt, "INSERT INTO food_table(fcategory, ftype, fname, calorie, carbo, protein, fat) VALUES('%s', '%s', '%s', %s, %s, %s, %s)", category1, category2, menu_name, calorie, carbo, protein, fat);
+        /* EXEC SQL EXECUTE IMMEDIATE : sqlstmt; */ 
+
+{
+        struct sqlexd sqlstm;
+        sqlstm.sqlvsn = 13;
+        sqlstm.arrsiz = 7;
+        sqlstm.sqladtp = &sqladt;
+        sqlstm.sqltdsp = &sqltds;
+        sqlstm.stmt = "";
+        sqlstm.iters = (unsigned int  )1;
+        sqlstm.offset = (unsigned int  )580;
+        sqlstm.cud = sqlcud0;
+        sqlstm.sqlest = (unsigned char  *)&sqlca;
+        sqlstm.sqlety = (unsigned short)4352;
+        sqlstm.occurs = (unsigned int  )0;
+        sqlstm.sqhstv[0] = (         void  *)sqlstmt;
+        sqlstm.sqhstl[0] = (unsigned int  )1024;
+        sqlstm.sqhsts[0] = (         int  )0;
+        sqlstm.sqindv[0] = (         void  *)0;
+        sqlstm.sqinds[0] = (         int  )0;
+        sqlstm.sqharm[0] = (unsigned int  )0;
+        sqlstm.sqadto[0] = (unsigned short )0;
+        sqlstm.sqtdso[0] = (unsigned short )0;
+        sqlstm.sqphsv = sqlstm.sqhstv;
+        sqlstm.sqphsl = sqlstm.sqhstl;
+        sqlstm.sqphss = sqlstm.sqhsts;
+        sqlstm.sqpind = sqlstm.sqindv;
+        sqlstm.sqpins = sqlstm.sqinds;
+        sqlstm.sqparm = sqlstm.sqharm;
+        sqlstm.sqparc = sqlstm.sqharc;
+        sqlstm.sqpadto = sqlstm.sqadto;
+        sqlstm.sqptdso = sqlstm.sqtdso;
+        sqlcxt((void **)0, &sqlctx, &sqlstm, &sqlfpn);
+}
+
+
+
+        if (sqlca.sqlcode == 0)
+        {
+            gotoxy(0, 21); // 성공 메시지 출력 위치
+            printf("Data added successfully.");
+            /* EXEC SQL COMMIT WORK; */ 
+
+{
+            struct sqlexd sqlstm;
+            sqlstm.sqlvsn = 13;
+            sqlstm.arrsiz = 7;
+            sqlstm.sqladtp = &sqladt;
+            sqlstm.sqltdsp = &sqltds;
+            sqlstm.iters = (unsigned int  )1;
+            sqlstm.offset = (unsigned int  )599;
+            sqlstm.cud = sqlcud0;
+            sqlstm.sqlest = (unsigned char  *)&sqlca;
+            sqlstm.sqlety = (unsigned short)4352;
+            sqlstm.occurs = (unsigned int  )0;
+            sqlcxt((void **)0, &sqlctx, &sqlstm, &sqlfpn);
+}
+
+
+        }
+        else
+        {
+            gotoxy(0, 21);
+            printf("Error adding data: %s\n", sqlca.sqlerrm.sqlerrmc);
+        }
+
+        gotoxy(0, 23);
+        printf("Press Enter to return to main menu.");
+        getch();
+
+        break;
+    }
+    clrscr(); // 화면 초기화
+    return;
 }
 
 void delete_food()
@@ -1896,7 +1977,7 @@ struct { unsigned short len; unsigned char arr[255]; } v_userid;
     sqlstm.sqltdsp = &sqltds;
     sqlstm.stmt = "";
     sqlstm.iters = (unsigned int  )1;
-    sqlstm.offset = (unsigned int  )570;
+    sqlstm.offset = (unsigned int  )614;
     sqlstm.cud = sqlcud0;
     sqlstm.sqlest = (unsigned char  *)&sqlca;
     sqlstm.sqlety = (unsigned short)4352;
@@ -1934,7 +2015,7 @@ struct { unsigned short len; unsigned char arr[255]; } v_userid;
     sqlstm.sqltdsp = &sqltds;
     sqlstm.stmt = "";
     sqlstm.iters = (unsigned int  )1;
-    sqlstm.offset = (unsigned int  )589;
+    sqlstm.offset = (unsigned int  )633;
     sqlstm.selerr = (unsigned short)1;
     sqlstm.sqlpfmem = (unsigned int  )0;
     sqlstm.cud = sqlcud0;
@@ -1958,7 +2039,7 @@ struct { unsigned short len; unsigned char arr[255]; } v_userid;
         sqlstm.sqladtp = &sqladt;
         sqlstm.sqltdsp = &sqltds;
         sqlstm.iters = (unsigned int  )1;
-        sqlstm.offset = (unsigned int  )604;
+        sqlstm.offset = (unsigned int  )648;
         sqlstm.selerr = (unsigned short)1;
         sqlstm.sqlpfmem = (unsigned int  )0;
         sqlstm.cud = sqlcud0;
@@ -2082,7 +2163,7 @@ struct { unsigned short len; unsigned char arr[255]; } v_userid;
             sqlstm.sqltdsp = &sqltds;
             sqlstm.stmt = "";
             sqlstm.iters = (unsigned int  )1;
-            sqlstm.offset = (unsigned int  )647;
+            sqlstm.offset = (unsigned int  )691;
             sqlstm.cud = sqlcud0;
             sqlstm.sqlest = (unsigned char  *)&sqlca;
             sqlstm.sqlety = (unsigned short)4352;
@@ -2118,7 +2199,7 @@ struct { unsigned short len; unsigned char arr[255]; } v_userid;
             sqlstm.sqltdsp = &sqltds;
             sqlstm.stmt = "";
             sqlstm.iters = (unsigned int  )1;
-            sqlstm.offset = (unsigned int  )666;
+            sqlstm.offset = (unsigned int  )710;
             sqlstm.cud = sqlcud0;
             sqlstm.sqlest = (unsigned char  *)&sqlca;
             sqlstm.sqlety = (unsigned short)4352;
@@ -2141,7 +2222,7 @@ struct { unsigned short len; unsigned char arr[255]; } v_userid;
                 sqlstm.sqladtp = &sqladt;
                 sqlstm.sqltdsp = &sqltds;
                 sqlstm.iters = (unsigned int  )1;
-                sqlstm.offset = (unsigned int  )681;
+                sqlstm.offset = (unsigned int  )725;
                 sqlstm.cud = sqlcud0;
                 sqlstm.sqlest = (unsigned char  *)&sqlca;
                 sqlstm.sqlety = (unsigned short)4352;
@@ -2163,7 +2244,7 @@ struct { unsigned short len; unsigned char arr[255]; } v_userid;
             sqlstm.sqladtp = &sqladt;
             sqlstm.sqltdsp = &sqltds;
             sqlstm.iters = (unsigned int  )1;
-            sqlstm.offset = (unsigned int  )696;
+            sqlstm.offset = (unsigned int  )740;
             sqlstm.cud = sqlcud0;
             sqlstm.sqlest = (unsigned char  *)&sqlca;
             sqlstm.sqlety = (unsigned short)4352;
@@ -2194,7 +2275,7 @@ struct { unsigned short len; unsigned char arr[255]; } v_userid;
     sqlstm.sqladtp = &sqladt;
     sqlstm.sqltdsp = &sqltds;
     sqlstm.iters = (unsigned int  )1;
-    sqlstm.offset = (unsigned int  )711;
+    sqlstm.offset = (unsigned int  )755;
     sqlstm.cud = sqlcud0;
     sqlstm.sqlest = (unsigned char  *)&sqlca;
     sqlstm.sqlety = (unsigned short)4352;
@@ -2249,7 +2330,7 @@ struct { unsigned short len; unsigned char arr[255]; } v_type;
     sqlstm.sqltdsp = &sqltds;
     sqlstm.stmt = "";
     sqlstm.iters = (unsigned int  )1;
-    sqlstm.offset = (unsigned int  )726;
+    sqlstm.offset = (unsigned int  )770;
     sqlstm.cud = sqlcud0;
     sqlstm.sqlest = (unsigned char  *)&sqlca;
     sqlstm.sqlety = (unsigned short)4352;
@@ -2287,7 +2368,7 @@ struct { unsigned short len; unsigned char arr[255]; } v_type;
     sqlstm.sqltdsp = &sqltds;
     sqlstm.stmt = "";
     sqlstm.iters = (unsigned int  )1;
-    sqlstm.offset = (unsigned int  )745;
+    sqlstm.offset = (unsigned int  )789;
     sqlstm.selerr = (unsigned short)1;
     sqlstm.sqlpfmem = (unsigned int  )0;
     sqlstm.cud = sqlcud0;
@@ -2311,7 +2392,7 @@ struct { unsigned short len; unsigned char arr[255]; } v_type;
         sqlstm.sqladtp = &sqladt;
         sqlstm.sqltdsp = &sqltds;
         sqlstm.iters = (unsigned int  )1;
-        sqlstm.offset = (unsigned int  )760;
+        sqlstm.offset = (unsigned int  )804;
         sqlstm.selerr = (unsigned short)1;
         sqlstm.sqlpfmem = (unsigned int  )0;
         sqlstm.cud = sqlcud0;
@@ -2423,7 +2504,7 @@ struct { unsigned short len; unsigned char arr[255]; } v_type;
     sqlstm.sqladtp = &sqladt;
     sqlstm.sqltdsp = &sqltds;
     sqlstm.iters = (unsigned int  )1;
-    sqlstm.offset = (unsigned int  )803;
+    sqlstm.offset = (unsigned int  )847;
     sqlstm.cud = sqlcud0;
     sqlstm.sqlest = (unsigned char  *)&sqlca;
     sqlstm.sqlety = (unsigned short)4352;
@@ -2478,7 +2559,7 @@ struct { unsigned short len; unsigned char arr[255]; } v_type;
     sqlstm.sqltdsp = &sqltds;
     sqlstm.stmt = "";
     sqlstm.iters = (unsigned int  )1;
-    sqlstm.offset = (unsigned int  )818;
+    sqlstm.offset = (unsigned int  )862;
     sqlstm.cud = sqlcud0;
     sqlstm.sqlest = (unsigned char  *)&sqlca;
     sqlstm.sqlety = (unsigned short)4352;
@@ -2514,7 +2595,7 @@ struct { unsigned short len; unsigned char arr[255]; } v_type;
     sqlstm.sqltdsp = &sqltds;
     sqlstm.stmt = "";
     sqlstm.iters = (unsigned int  )1;
-    sqlstm.offset = (unsigned int  )837;
+    sqlstm.offset = (unsigned int  )881;
     sqlstm.cud = sqlcud0;
     sqlstm.sqlest = (unsigned char  *)&sqlca;
     sqlstm.sqlety = (unsigned short)4352;
@@ -2538,7 +2619,7 @@ struct { unsigned short len; unsigned char arr[255]; } v_type;
         sqlstm.sqladtp = &sqladt;
         sqlstm.sqltdsp = &sqltds;
         sqlstm.iters = (unsigned int  )1;
-        sqlstm.offset = (unsigned int  )852;
+        sqlstm.offset = (unsigned int  )896;
         sqlstm.cud = sqlcud0;
         sqlstm.sqlest = (unsigned char  *)&sqlca;
         sqlstm.sqlety = (unsigned short)4352;
@@ -2560,7 +2641,7 @@ struct { unsigned short len; unsigned char arr[255]; } v_type;
     sqlstm.sqladtp = &sqladt;
     sqlstm.sqltdsp = &sqltds;
     sqlstm.iters = (unsigned int  )1;
-    sqlstm.offset = (unsigned int  )867;
+    sqlstm.offset = (unsigned int  )911;
     sqlstm.cud = sqlcud0;
     sqlstm.sqlest = (unsigned char  *)&sqlca;
     sqlstm.sqlety = (unsigned short)4352;
@@ -2619,7 +2700,7 @@ struct { unsigned short len; unsigned char arr[20]; } v_id;
     char pw[20];
     char re_pw[20];
     char name[20];
-    char gender[6];
+    char gender[10];
     char height[20];
     char weight[20];
     // 사용자 입력 받기
@@ -2636,8 +2717,7 @@ struct { unsigned short len; unsigned char arr[20]; } v_id;
         if (strcmp(pw, re_pw) != 0)
         {
             gotoxy(0, 22);
-            //printf("Password does not match. Please try again.\n");
-            printf("비밀번호 불일치\n");
+            printf("Password does not match. Please try again.\n");
             continue;
         }
         gotoxy(33, 10);
@@ -2667,7 +2747,7 @@ struct { unsigned short len; unsigned char arr[20]; } v_id;
         sqlstm.sqltdsp = &sqltds;
         sqlstm.stmt = "";
         sqlstm.iters = (unsigned int  )1;
-        sqlstm.offset = (unsigned int  )882;
+        sqlstm.offset = (unsigned int  )926;
         sqlstm.cud = sqlcud0;
         sqlstm.sqlest = (unsigned char  *)&sqlca;
         sqlstm.sqlety = (unsigned short)4352;
@@ -2705,7 +2785,7 @@ struct { unsigned short len; unsigned char arr[20]; } v_id;
         sqlstm.sqltdsp = &sqltds;
         sqlstm.stmt = "";
         sqlstm.iters = (unsigned int  )1;
-        sqlstm.offset = (unsigned int  )901;
+        sqlstm.offset = (unsigned int  )945;
         sqlstm.selerr = (unsigned short)1;
         sqlstm.sqlpfmem = (unsigned int  )0;
         sqlstm.cud = sqlcud0;
@@ -2726,7 +2806,7 @@ struct { unsigned short len; unsigned char arr[20]; } v_id;
         sqlstm.sqladtp = &sqladt;
         sqlstm.sqltdsp = &sqltds;
         sqlstm.iters = (unsigned int  )1;
-        sqlstm.offset = (unsigned int  )916;
+        sqlstm.offset = (unsigned int  )960;
         sqlstm.selerr = (unsigned short)1;
         sqlstm.sqlpfmem = (unsigned int  )0;
         sqlstm.cud = sqlcud0;
@@ -2756,7 +2836,6 @@ struct { unsigned short len; unsigned char arr[20]; } v_id;
 }
 
 
-        printf("%d\n", sqlca.sqlcode);
         if (sqlca.sqlcode == 0) // 아이디가 존재하는 경우
         {
             gotoxy(0, 22);
@@ -2770,7 +2849,7 @@ struct { unsigned short len; unsigned char arr[20]; } v_id;
             sqlstm.sqladtp = &sqladt;
             sqlstm.sqltdsp = &sqltds;
             sqlstm.iters = (unsigned int  )1;
-            sqlstm.offset = (unsigned int  )935;
+            sqlstm.offset = (unsigned int  )979;
             sqlstm.cud = sqlcud0;
             sqlstm.sqlest = (unsigned char  *)&sqlca;
             sqlstm.sqlety = (unsigned short)4352;
@@ -2796,7 +2875,7 @@ struct { unsigned short len; unsigned char arr[20]; } v_id;
             sqlstm.sqltdsp = &sqltds;
             sqlstm.stmt = "";
             sqlstm.iters = (unsigned int  )1;
-            sqlstm.offset = (unsigned int  )950;
+            sqlstm.offset = (unsigned int  )994;
             sqlstm.cud = sqlcud0;
             sqlstm.sqlest = (unsigned char  *)&sqlca;
             sqlstm.sqlety = (unsigned short)4352;
@@ -2836,7 +2915,7 @@ struct { unsigned short len; unsigned char arr[20]; } v_id;
                 sqlstm.sqladtp = &sqladt;
                 sqlstm.sqltdsp = &sqltds;
                 sqlstm.iters = (unsigned int  )1;
-                sqlstm.offset = (unsigned int  )969;
+                sqlstm.offset = (unsigned int  )1013;
                 sqlstm.cud = sqlcud0;
                 sqlstm.sqlest = (unsigned char  *)&sqlca;
                 sqlstm.sqlety = (unsigned short)4352;
@@ -2860,7 +2939,7 @@ struct { unsigned short len; unsigned char arr[20]; } v_id;
             sqlstm.sqladtp = &sqladt;
             sqlstm.sqltdsp = &sqltds;
             sqlstm.iters = (unsigned int  )1;
-            sqlstm.offset = (unsigned int  )984;
+            sqlstm.offset = (unsigned int  )1028;
             sqlstm.cud = sqlcud0;
             sqlstm.sqlest = (unsigned char  *)&sqlca;
             sqlstm.sqlety = (unsigned short)4352;
@@ -2885,7 +2964,7 @@ struct { unsigned short len; unsigned char arr[20]; } v_id;
             sqlstm.sqladtp = &sqladt;
             sqlstm.sqltdsp = &sqltds;
             sqlstm.iters = (unsigned int  )1;
-            sqlstm.offset = (unsigned int  )999;
+            sqlstm.offset = (unsigned int  )1043;
             sqlstm.cud = sqlcud0;
             sqlstm.sqlest = (unsigned char  *)&sqlca;
             sqlstm.sqlety = (unsigned short)4352;
@@ -2896,7 +2975,6 @@ struct { unsigned short len; unsigned char arr[20]; } v_id;
 
             continue;
         }
-        break;
     }
     return;
 }
@@ -2908,11 +2986,10 @@ void login()
     char sqlstmt[1024];
     /* EXEC SQL END DECLARE SECTION; */ 
 
-    clrscr();
-    print_screen("screen/scr_login.txt");
-    _putenv("NLS_LANG=American_America.KO16KSC5601"); // �ѱۻ��� �ʿ���
     while (1)
     {
+        clrscr();
+        print_screen("screen/scr_login.txt");
         gotoxy(28, 20);
 
         char c = getchar();
@@ -2950,7 +3027,7 @@ void login()
         sqlstm.sqltdsp = &sqltds;
         sqlstm.stmt = "";
         sqlstm.iters = (unsigned int  )1;
-        sqlstm.offset = (unsigned int  )1014;
+        sqlstm.offset = (unsigned int  )1058;
         sqlstm.cud = sqlcud0;
         sqlstm.sqlest = (unsigned char  *)&sqlca;
         sqlstm.sqlety = (unsigned short)4352;
@@ -2988,7 +3065,7 @@ void login()
         sqlstm.sqltdsp = &sqltds;
         sqlstm.stmt = "";
         sqlstm.iters = (unsigned int  )1;
-        sqlstm.offset = (unsigned int  )1033;
+        sqlstm.offset = (unsigned int  )1077;
         sqlstm.selerr = (unsigned short)1;
         sqlstm.sqlpfmem = (unsigned int  )0;
         sqlstm.cud = sqlcud0;
@@ -3009,7 +3086,7 @@ void login()
         sqlstm.sqladtp = &sqladt;
         sqlstm.sqltdsp = &sqltds;
         sqlstm.iters = (unsigned int  )1;
-        sqlstm.offset = (unsigned int  )1048;
+        sqlstm.offset = (unsigned int  )1092;
         sqlstm.selerr = (unsigned short)1;
         sqlstm.sqlpfmem = (unsigned int  )0;
         sqlstm.cud = sqlcud0;
@@ -3019,7 +3096,7 @@ void login()
         sqlstm.sqfoff = (           int )0;
         sqlstm.sqfmod = (unsigned int )2;
         sqlstm.sqhstv[0] = (         void  *)&v_userId;
-        sqlstm.sqhstl[0] = (unsigned int  )257;
+        sqlstm.sqhstl[0] = (unsigned int  )52;
         sqlstm.sqhsts[0] = (         int  )0;
         sqlstm.sqindv[0] = (         void  *)0;
         sqlstm.sqinds[0] = (         int  )0;
