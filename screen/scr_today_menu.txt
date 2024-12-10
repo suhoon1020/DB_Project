@@ -8,7 +8,7 @@ Main                :
 Sub                 :
 Side                :
 Recommended calorie :
-Diet calorie        :
+Menu calorie        :
 
 
 

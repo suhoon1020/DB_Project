@@ -1061,7 +1061,7 @@ void set_meal_time(char *v_meal_time)
     }
     else
     {
-        strcpy(v_meal_time, "out");
+        strcpy(v_meal_time, "Lunch");
     }
 }
 
@@ -1120,8 +1120,8 @@ void refresh_today_menu()
     /* 怨꾩궛?맂 理쒕?? 移쇰줈由? */
     day_max_cal = (10.0 * v_weight) + (6.25 * v_height) - 100 + 
                   (!strcmp(v_gender.arr, "Male") ? 5.0 : -161.0);
-    
 
+    float menu_max_cal = day_max_cal / 3;
 
     while(1){
         clrscr(); // ?솕硫? ?겢由ъ뼱
@@ -1140,7 +1140,7 @@ void refresh_today_menu()
             "(SELECT fname, calorie FROM food_table WHERE fcategory = '%s' AND ftype = 'Sub' ORDER BY dbms_random.value) sub_menu, "
             "(SELECT fname, calorie FROM food_table WHERE fcategory = '%s' AND ftype = 'Side' ORDER BY dbms_random.value) side_menu "
             "WHERE (main_menu.calorie + sub_menu.calorie + side_menu.calorie) <= %f"
-            "AND ROWNUM = 1",input_category, input_category, input_category, day_max_cal);
+            "AND ROWNUM = 1",input_category, input_category, input_category, menu_max_cal);
 
 
         EXEC SQL PREPARE S FROM : sqlstmt;
@@ -1149,11 +1149,15 @@ void refresh_today_menu()
         EXEC SQL FETCH m1_cursor INTO : v_t_main_food_name, :v_t_sub_food_name, :v_t_side_food_name, :v_t_menu_cal;
 
         if (sqlca.sqlcode == 1403) {  /* ?뜲?씠?꽣媛? ?뾾?쓣 寃쎌슦 */
+            gotoxy(0, 23);
             printf("No suitable menu found within calorie limit.\n");
+            getch();
             return;
         }
         else if (sqlca.sqlcode != 0) {  /* 湲고?? ?삤瑜? */
+            gotoxy(0, 23);
             printf("SQL Error: %s\n", sqlca.sqlerrm.sqlerrmc);
+            getch();
             return;
         }
         else{
@@ -1168,7 +1172,7 @@ void refresh_today_menu()
         gotoxy(22, 8);
         printf("%s", v_t_side_food_name.arr);
         gotoxy(22, 9);
-        printf("%f", day_max_cal);
+        printf("%f", menu_max_cal);
         gotoxy(22, 10);
         printf("%f", v_t_menu_cal);
 
@@ -1198,6 +1202,7 @@ void refresh_today_menu()
     if (sqlca.sqlcode != 0) {
         gotoxy(0, 23);
         printf("Failed to insert into menu_table. SQL Error: %s\n", sqlca.sqlerrm.sqlerrmc);
+        getch();
         return;
     }
 
@@ -1207,7 +1212,6 @@ void refresh_today_menu()
     if (sqlca.sqlcode != 0) {
         gotoxy(0, 23);
         printf("Failed to insert Main menu into composition_menu_table. SQL Error: %s\n", sqlca.sqlerrm.sqlerrmc);
-        getch();
         EXEC SQL ROLLBACK WORK;
         return;
     }
@@ -1234,7 +1238,6 @@ void refresh_today_menu()
 
     EXEC SQL COMMIT WORK;  // ?듃?옖?옲?뀡 而ㅻ컠
 }
-
 
 void get_today_menu(){
     EXEC SQL BEGIN DECLARE SECTION;

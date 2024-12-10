@@ -191,22 +191,22 @@ static const short sqlcud0[] =
 965,0,0,3,0,0,17,1146,0,0,1,1,0,1,0,1,97,0,0,
 984,0,0,3,0,0,45,1148,0,0,0,0,0,1,0,
 999,0,0,3,0,0,13,1149,0,0,4,0,0,1,0,2,9,0,0,2,9,0,0,2,9,0,0,2,4,0,0,
-1030,0,0,3,0,0,15,1175,0,0,0,0,0,1,0,
-1045,0,0,19,35,0,4,1191,0,0,1,0,0,1,0,2,97,0,0,
-1064,0,0,20,139,0,3,1194,0,0,5,4,0,1,0,1,9,0,0,1,9,0,0,1,9,0,0,1,9,0,0,2,3,0,0,
-1099,0,0,21,86,0,3,1205,0,0,4,4,0,1,0,1,3,0,0,1,9,0,0,1,97,0,0,1,97,0,0,
-1130,0,0,22,0,0,31,1211,0,0,0,0,0,1,0,
-1145,0,0,23,86,0,3,1215,0,0,4,4,0,1,0,1,3,0,0,1,9,0,0,1,97,0,0,1,97,0,0,
-1176,0,0,24,0,0,31,1220,0,0,0,0,0,1,0,
-1191,0,0,25,86,0,3,1224,0,0,4,4,0,1,0,1,3,0,0,1,9,0,0,1,97,0,0,1,97,0,0,
-1222,0,0,26,0,0,31,1229,0,0,0,0,0,1,0,
-1237,0,0,27,0,0,29,1235,0,0,0,0,0,1,0,
-1252,0,0,3,0,0,17,1259,0,0,1,1,0,1,0,1,97,0,0,
-1271,0,0,3,0,0,45,1261,0,0,0,0,0,1,0,
-1286,0,0,3,0,0,13,1263,0,0,4,0,0,1,0,2,9,0,0,2,9,0,0,2,9,0,0,2,4,0,0,
-1317,0,0,3,0,0,15,1266,0,0,0,0,0,1,0,
-1332,0,0,3,0,0,15,1271,0,0,0,0,0,1,0,
-1347,0,0,3,0,0,15,1279,0,0,0,0,0,1,0,
+1030,0,0,3,0,0,15,1179,0,0,0,0,0,1,0,
+1045,0,0,19,35,0,4,1195,0,0,1,0,0,1,0,2,97,0,0,
+1064,0,0,20,139,0,3,1198,0,0,5,4,0,1,0,1,9,0,0,1,9,0,0,1,9,0,0,1,9,0,0,2,3,0,0,
+1099,0,0,21,86,0,3,1210,0,0,4,4,0,1,0,1,3,0,0,1,9,0,0,1,97,0,0,1,97,0,0,
+1130,0,0,22,0,0,31,1215,0,0,0,0,0,1,0,
+1145,0,0,23,86,0,3,1219,0,0,4,4,0,1,0,1,3,0,0,1,9,0,0,1,97,0,0,1,97,0,0,
+1176,0,0,24,0,0,31,1224,0,0,0,0,0,1,0,
+1191,0,0,25,86,0,3,1228,0,0,4,4,0,1,0,1,3,0,0,1,9,0,0,1,97,0,0,1,97,0,0,
+1222,0,0,26,0,0,31,1233,0,0,0,0,0,1,0,
+1237,0,0,27,0,0,29,1239,0,0,0,0,0,1,0,
+1252,0,0,3,0,0,17,1262,0,0,1,1,0,1,0,1,97,0,0,
+1271,0,0,3,0,0,45,1264,0,0,0,0,0,1,0,
+1286,0,0,3,0,0,13,1266,0,0,4,0,0,1,0,2,9,0,0,2,9,0,0,2,9,0,0,2,4,0,0,
+1317,0,0,3,0,0,15,1269,0,0,0,0,0,1,0,
+1332,0,0,3,0,0,15,1274,0,0,0,0,0,1,0,
+1347,0,0,3,0,0,15,1282,0,0,0,0,0,1,0,
 };
 
 
@@ -2826,7 +2826,7 @@ void set_meal_time(char *v_meal_time)
     }
     else
     {
-        strcpy(v_meal_time, "out");
+        strcpy(v_meal_time, "Lunch");
     }
 }
 
@@ -3007,8 +3007,8 @@ struct { unsigned short len; unsigned char arr[30]; } v_t_side_food_name;
     /* 怨꾩궛?맂 理쒕?? 移쇰줈由? */
     day_max_cal = (10.0 * v_weight) + (6.25 * v_height) - 100 + 
                   (!strcmp(v_gender.arr, "Male") ? 5.0 : -161.0);
-    
 
+    float menu_max_cal = day_max_cal / 3;
 
     while(1){
         clrscr(); // ?솕硫? ?겢由ъ뼱
@@ -3027,7 +3027,7 @@ struct { unsigned short len; unsigned char arr[30]; } v_t_side_food_name;
             "(SELECT fname, calorie FROM food_table WHERE fcategory = '%s' AND ftype = 'Sub' ORDER BY dbms_random.value) sub_menu, "
             "(SELECT fname, calorie FROM food_table WHERE fcategory = '%s' AND ftype = 'Side' ORDER BY dbms_random.value) side_menu "
             "WHERE (main_menu.calorie + sub_menu.calorie + side_menu.calorie) <= %f"
-            "AND ROWNUM = 1",input_category, input_category, input_category, day_max_cal);
+            "AND ROWNUM = 1",input_category, input_category, input_category, menu_max_cal);
 
 
         /* EXEC SQL PREPARE S FROM : sqlstmt; */ 
@@ -3155,11 +3155,15 @@ struct { unsigned short len; unsigned char arr[30]; } v_t_side_food_name;
 
 
         if (sqlca.sqlcode == 1403) {  /* ?뜲?씠?꽣媛? ?뾾?쓣 寃쎌슦 */
+            gotoxy(0, 23);
             printf("No suitable menu found within calorie limit.\n");
+            getch();
             return;
         }
         else if (sqlca.sqlcode != 0) {  /* 湲고?? ?삤瑜? */
+            gotoxy(0, 23);
             printf("SQL Error: %s\n", sqlca.sqlerrm.sqlerrmc);
+            getch();
             return;
         }
         else{
@@ -3174,7 +3178,7 @@ struct { unsigned short len; unsigned char arr[30]; } v_t_side_food_name;
         gotoxy(22, 8);
         printf("%s", v_t_side_food_name.arr);
         gotoxy(22, 9);
-        printf("%f", day_max_cal);
+        printf("%f", menu_max_cal);
         gotoxy(22, 10);
         printf("%f", v_t_menu_cal);
 
@@ -3327,6 +3331,7 @@ fnameSide) values (seq_number.nextval ,:b0,:b1,:b2,:b3) returning menuID into \
     if (sqlca.sqlcode != 0) {
         gotoxy(0, 23);
         printf("Failed to insert into menu_table. SQL Error: %s\n", sqlca.sqlerrm.sqlerrmc);
+        getch();
         return;
     }
 
@@ -3396,7 +3401,6 @@ ime) values (:b0,:b1,:b2,:b3)";
     if (sqlca.sqlcode != 0) {
         gotoxy(0, 23);
         printf("Failed to insert Main menu into composition_menu_table. SQL Error: %s\n", sqlca.sqlerrm.sqlerrmc);
-        getch();
         /* EXEC SQL ROLLBACK WORK; */ 
 
 {
@@ -3611,7 +3615,6 @@ ime) values (:b0,:b1,:b2,:b3)";
 
   // ?듃?옖?옲?뀡 而ㅻ컠
 }
-
 
 void get_today_menu(){
     /* EXEC SQL BEGIN DECLARE SECTION; */ 
