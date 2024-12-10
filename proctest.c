@@ -137,71 +137,71 @@ static const short sqlcud0[] =
 {13,4130,1,0,0,
 5,0,0,0,0,0,27,74,0,0,4,4,0,1,0,1,9,0,0,1,9,0,0,1,10,0,0,1,10,0,0,
 36,0,0,2,0,0,31,99,0,0,0,0,0,1,0,
-51,0,0,3,0,0,17,251,0,0,1,1,0,1,0,1,97,0,0,
-70,0,0,3,0,0,45,253,0,0,0,0,0,1,0,
-85,0,0,3,0,0,13,261,0,0,7,0,0,1,0,2,9,0,0,2,9,0,0,2,9,0,0,2,4,0,0,2,4,0,0,2,4,
+51,0,0,3,0,0,17,243,0,0,1,1,0,1,0,1,97,0,0,
+70,0,0,3,0,0,45,245,0,0,0,0,0,1,0,
+85,0,0,3,0,0,13,253,0,0,7,0,0,1,0,2,9,0,0,2,9,0,0,2,9,0,0,2,4,0,0,2,4,0,0,2,4,
 0,0,2,4,0,0,
-128,0,0,3,0,0,15,294,0,0,0,0,0,1,0,
-143,0,0,4,0,0,17,339,0,0,1,1,0,1,0,1,97,0,0,
-162,0,0,4,0,0,45,341,0,0,0,0,0,1,0,
-177,0,0,4,0,0,13,349,0,0,7,0,0,1,0,2,9,0,0,2,9,0,0,2,9,0,0,2,4,0,0,2,4,0,0,2,4,
+128,0,0,3,0,0,15,287,0,0,0,0,0,1,0,
+143,0,0,4,0,0,17,330,0,0,1,1,0,1,0,1,97,0,0,
+162,0,0,4,0,0,45,332,0,0,0,0,0,1,0,
+177,0,0,4,0,0,13,340,0,0,7,0,0,1,0,2,9,0,0,2,9,0,0,2,9,0,0,2,4,0,0,2,4,0,0,2,4,
 0,0,2,4,0,0,
-220,0,0,4,0,0,15,381,0,0,0,0,0,1,0,
-235,0,0,3,0,0,17,414,0,0,1,1,0,1,0,1,97,0,0,
-254,0,0,3,0,0,45,416,0,0,0,0,0,1,0,
-269,0,0,3,0,0,13,424,0,0,6,0,0,1,0,2,9,0,0,2,9,0,0,2,3,0,0,2,9,0,0,2,9,0,0,2,9,
+220,0,0,4,0,0,15,372,0,0,0,0,0,1,0,
+235,0,0,3,0,0,17,405,0,0,1,1,0,1,0,1,97,0,0,
+254,0,0,3,0,0,45,407,0,0,0,0,0,1,0,
+269,0,0,3,0,0,13,415,0,0,6,0,0,1,0,2,9,0,0,2,9,0,0,2,3,0,0,2,9,0,0,2,9,0,0,2,9,
 0,0,
-308,0,0,3,0,0,15,458,0,0,0,0,0,1,0,
-323,0,0,5,0,0,17,549,0,0,1,1,0,1,0,1,97,0,0,
-342,0,0,5,0,0,45,551,0,0,0,0,0,1,0,
-357,0,0,5,0,0,13,553,0,0,1,0,0,1,0,2,9,0,0,
-376,0,0,6,0,0,24,582,0,0,1,1,0,1,0,1,97,0,0,
-395,0,0,7,0,0,29,588,0,0,0,0,0,1,0,
-410,0,0,3,0,0,17,632,0,0,1,1,0,1,0,1,97,0,0,
-429,0,0,3,0,0,45,634,0,0,0,0,0,1,0,
-444,0,0,3,0,0,13,638,0,0,7,0,0,1,0,2,9,0,0,2,9,0,0,2,9,0,0,2,4,0,0,2,4,0,0,2,4,
+308,0,0,3,0,0,15,450,0,0,0,0,0,1,0,
+323,0,0,5,0,0,17,542,0,0,1,1,0,1,0,1,97,0,0,
+342,0,0,5,0,0,45,544,0,0,0,0,0,1,0,
+357,0,0,5,0,0,13,546,0,0,1,0,0,1,0,2,9,0,0,
+376,0,0,6,0,0,24,577,0,0,1,1,0,1,0,1,97,0,0,
+395,0,0,7,0,0,29,583,0,0,0,0,0,1,0,
+410,0,0,3,0,0,17,627,0,0,1,1,0,1,0,1,97,0,0,
+429,0,0,3,0,0,45,629,0,0,0,0,0,1,0,
+444,0,0,3,0,0,13,633,0,0,7,0,0,1,0,2,9,0,0,2,9,0,0,2,9,0,0,2,4,0,0,2,4,0,0,2,4,
 0,0,2,4,0,0,
-487,0,0,8,0,0,17,675,0,0,1,1,0,1,0,1,97,0,0,
-506,0,0,8,0,0,21,676,0,0,0,0,0,1,0,
-521,0,0,9,0,0,31,682,0,0,0,0,0,1,0,
-536,0,0,10,0,0,29,687,0,0,0,0,0,1,0,
-551,0,0,3,0,0,15,701,0,0,0,0,0,1,0,
-566,0,0,11,0,0,17,730,0,0,1,1,0,1,0,1,97,0,0,
-585,0,0,11,0,0,45,732,0,0,0,0,0,1,0,
-600,0,0,11,0,0,13,736,0,0,7,0,0,1,0,2,9,0,0,2,9,0,0,2,9,0,0,2,4,0,0,2,4,0,0,2,
+487,0,0,8,0,0,17,670,0,0,1,1,0,1,0,1,97,0,0,
+506,0,0,8,0,0,21,671,0,0,0,0,0,1,0,
+521,0,0,9,0,0,31,677,0,0,0,0,0,1,0,
+536,0,0,10,0,0,29,682,0,0,0,0,0,1,0,
+551,0,0,3,0,0,15,696,0,0,0,0,0,1,0,
+566,0,0,11,0,0,17,725,0,0,1,1,0,1,0,1,97,0,0,
+585,0,0,11,0,0,45,727,0,0,0,0,0,1,0,
+600,0,0,11,0,0,13,731,0,0,7,0,0,1,0,2,9,0,0,2,9,0,0,2,9,0,0,2,4,0,0,2,4,0,0,2,
 4,0,0,2,4,0,0,
-643,0,0,11,0,0,15,762,0,0,0,0,0,1,0,
-658,0,0,12,0,0,17,799,0,0,1,1,0,1,0,1,97,0,0,
-677,0,0,12,0,0,21,800,0,0,0,0,0,1,0,
-692,0,0,13,0,0,31,807,0,0,0,0,0,1,0,
-707,0,0,14,0,0,29,812,0,0,0,0,0,1,0,
-722,0,0,15,0,0,17,871,0,0,1,1,0,1,0,1,97,0,0,
-741,0,0,15,0,0,45,873,0,0,0,0,0,1,0,
-756,0,0,15,0,0,13,874,0,0,1,0,0,1,0,2,9,0,0,
-775,0,0,15,0,0,15,879,0,0,0,0,0,1,0,
-790,0,0,16,0,0,24,944,0,0,1,1,0,1,0,1,97,0,0,
-809,0,0,17,0,0,29,951,0,0,0,0,0,1,0,
-824,0,0,18,0,0,17,995,0,0,1,1,0,1,0,1,97,0,0,
-843,0,0,18,0,0,45,997,0,0,0,0,0,1,0,
-858,0,0,18,0,0,13,998,0,0,7,0,0,1,0,2,9,0,0,2,9,0,0,2,9,0,0,2,9,0,0,2,4,0,0,2,
+643,0,0,11,0,0,15,757,0,0,0,0,0,1,0,
+658,0,0,12,0,0,17,794,0,0,1,1,0,1,0,1,97,0,0,
+677,0,0,12,0,0,21,795,0,0,0,0,0,1,0,
+692,0,0,13,0,0,31,802,0,0,0,0,0,1,0,
+707,0,0,14,0,0,29,807,0,0,0,0,0,1,0,
+722,0,0,15,0,0,17,865,0,0,1,1,0,1,0,1,97,0,0,
+741,0,0,15,0,0,45,867,0,0,0,0,0,1,0,
+756,0,0,15,0,0,13,868,0,0,1,0,0,1,0,2,9,0,0,
+775,0,0,15,0,0,15,873,0,0,0,0,0,1,0,
+790,0,0,16,0,0,24,938,0,0,1,1,0,1,0,1,97,0,0,
+809,0,0,17,0,0,29,945,0,0,0,0,0,1,0,
+824,0,0,18,0,0,17,989,0,0,1,1,0,1,0,1,97,0,0,
+843,0,0,18,0,0,45,991,0,0,0,0,0,1,0,
+858,0,0,18,0,0,13,992,0,0,7,0,0,1,0,2,9,0,0,2,9,0,0,2,9,0,0,2,9,0,0,2,4,0,0,2,
 4,0,0,2,4,0,0,
-901,0,0,3,0,0,17,1064,0,0,1,1,0,1,0,1,97,0,0,
-920,0,0,3,0,0,45,1066,0,0,0,0,0,1,0,
-935,0,0,3,0,0,13,1068,0,0,1,0,0,1,0,2,3,0,0,
-954,0,0,3,0,0,15,1070,0,0,0,0,0,1,0,
-969,0,0,3,0,0,17,1123,0,0,1,1,0,1,0,1,97,0,0,
-988,0,0,3,0,0,45,1125,0,0,0,0,0,1,0,
-1003,0,0,3,0,0,13,1126,0,0,4,0,0,1,0,2,9,0,0,2,9,0,0,2,9,0,0,2,4,0,0,
-1034,0,0,3,0,0,15,1152,0,0,0,0,0,1,0,
-1049,0,0,19,35,0,4,1166,0,0,1,0,0,1,0,2,97,0,0,
-1068,0,0,20,139,0,3,1169,0,0,5,4,0,1,0,1,9,0,0,1,9,0,0,1,9,0,0,1,9,0,0,2,3,0,0,
-1103,0,0,21,86,0,3,1180,0,0,4,4,0,1,0,1,3,0,0,1,9,0,0,1,97,0,0,1,97,0,0,
-1134,0,0,22,0,0,31,1186,0,0,0,0,0,1,0,
-1149,0,0,23,86,0,3,1190,0,0,4,4,0,1,0,1,3,0,0,1,9,0,0,1,97,0,0,1,97,0,0,
-1180,0,0,24,0,0,31,1195,0,0,0,0,0,1,0,
-1195,0,0,25,86,0,3,1199,0,0,4,4,0,1,0,1,3,0,0,1,9,0,0,1,97,0,0,1,97,0,0,
-1226,0,0,26,0,0,31,1204,0,0,0,0,0,1,0,
-1241,0,0,27,0,0,29,1208,0,0,0,0,0,1,0,
+901,0,0,3,0,0,17,1069,0,0,1,1,0,1,0,1,97,0,0,
+920,0,0,3,0,0,45,1071,0,0,0,0,0,1,0,
+935,0,0,3,0,0,13,1073,0,0,1,0,0,1,0,2,3,0,0,
+954,0,0,3,0,0,15,1075,0,0,0,0,0,1,0,
+969,0,0,3,0,0,17,1127,0,0,1,1,0,1,0,1,97,0,0,
+988,0,0,3,0,0,45,1129,0,0,0,0,0,1,0,
+1003,0,0,3,0,0,13,1130,0,0,4,0,0,1,0,2,9,0,0,2,9,0,0,2,9,0,0,2,4,0,0,
+1034,0,0,3,0,0,15,1159,0,0,0,0,0,1,0,
+1049,0,0,19,35,0,4,1173,0,0,1,0,0,1,0,2,97,0,0,
+1068,0,0,20,139,0,3,1176,0,0,5,4,0,1,0,1,9,0,0,1,9,0,0,1,9,0,0,1,9,0,0,2,3,0,0,
+1103,0,0,21,86,0,3,1188,0,0,4,4,0,1,0,1,3,0,0,1,9,0,0,1,97,0,0,1,97,0,0,
+1134,0,0,22,0,0,31,1195,0,0,0,0,0,1,0,
+1149,0,0,23,86,0,3,1199,0,0,4,4,0,1,0,1,3,0,0,1,9,0,0,1,97,0,0,1,97,0,0,
+1180,0,0,24,0,0,31,1205,0,0,0,0,0,1,0,
+1195,0,0,25,86,0,3,1209,0,0,4,4,0,1,0,1,3,0,0,1,9,0,0,1,97,0,0,1,97,0,0,
+1226,0,0,26,0,0,31,1215,0,0,0,0,0,1,0,
+1241,0,0,27,0,0,29,1219,0,0,0,0,0,1,0,
 };
 
 
@@ -418,8 +418,6 @@ void clrscr(void)
     gotoxy(0, 0);
 }
 
-
-
 void main_options()
 {
     char c;
@@ -483,19 +481,16 @@ void main_options()
     }
 }
 
-
 void view_food()
 {
-    clrscr();
-
-    print_screen("screen/scr_select.txt");
-
-    gotoxy(11, 16);
-
     char c;
 
     while (1)
     {
+        clrscr();
+        print_screen("screen/scr_select.txt");
+        gotoxy(11, 16);
+
         c = getchar();
         while (getchar() != '\n')
             ;
@@ -504,19 +499,16 @@ void view_food()
         {
         case '1':
             view_food_all();
-            continue;
+            break;
         case '2':
             view_food_search();
-            continue;
+            break;
         case '3':
             return;
         default:
-            clrscr();
-            print_screen("screen/scr_select.txt");
-            gotoxy(11, 24); // 커서 위치 설정
+            gotoxy(11, 24); // 而ㅼ꽌 ?쐞移? ?꽕?젙
             printf("Invalid input\n");
-            gotoxy(11, 16); // 커서 위치 설정
-            continue;       // 잘못된 입력 시 계속 루프
+            getch();
         }
     }
 }
@@ -733,7 +725,8 @@ struct { unsigned short len; unsigned char arr[255]; } v_type;
 
     printf("\n");
     printf("Total matched tuples: %d\n", sqlca.sqlerrd[2]);
-    printf("Press Q : Go back / Press any key : Exit Program\n");
+    gotoxy(0, 23);
+    printf("Press Q : Go back / Press any key : Exit Program \n");
     /* EXEC SQL CLOSE c_cursor; */ 
 
 {
@@ -754,8 +747,6 @@ struct { unsigned short len; unsigned char arr[255]; } v_type;
 
 
     c = getch();
-    
-
     if (c == 'q' || c == 'Q')
     {
         return;
@@ -1229,7 +1220,8 @@ struct { unsigned short len; unsigned char arr[30]; } v_fnameSide;
 
     printf("\n");
     printf("Total matched tuples: %d\n", sqlca.sqlerrd[2]);
-    printf("Press Q : Go back / Press any key : Exit Program\n");
+    gotoxy(0, 23);
+    printf("Press Q : Go back / Press any key : Exit Program : \n");
     /* EXEC SQL CLOSE c_cursor; */ 
 
 {
@@ -1259,6 +1251,8 @@ struct { unsigned short len; unsigned char arr[30]; } v_fnameSide;
     {
         exit(0);
     }
+
+    return;
 }
 
 void add_food()
@@ -1287,8 +1281,7 @@ struct { unsigned short len; unsigned char arr[255]; } v_menu_name;
     // 카테고리 1 입력
     while (1)
     {
-        gotoxy(14, 4);                                                         // "카테고리 1:"
-        printf("                                                           "); // 이전 입력 삭제
+        gotoxy(14, 4); // "카테고리 1:"
         gets(category1);
 
         // 카테고리 1 입력 중 범주에 벗어난 값이 입력되면 오류 메시지 출력
@@ -1299,20 +1292,20 @@ struct { unsigned short len; unsigned char arr[255]; } v_menu_name;
         {
             gotoxy(0, 21); // 오류 메시지 출력
             printf("The category you entered is not valid. Please re-enter.");
+            gotoxy(14, 4);
+            printf("                                                           "); // 이전 입력 삭제
             continue;
         }
         else
         {
-            gotoxy(0, 21);
-            printf("                                                           "); // 이전 입력 삭제
+
             break;
         }
     }
     // 카테고리 2 입력
     while (1)
     {
-        gotoxy(14, 7);                                                         // "카테고리 2:"
-        printf("                                                           "); // 이전 입력 삭제
+        gotoxy(14, 7); // "카테고리 2:"
         gets(category2);
 
         // 카테고리 2 입력 중 범주에 벗어난 값이 입력되면 오류 메시지 출력
@@ -1323,12 +1316,13 @@ struct { unsigned short len; unsigned char arr[255]; } v_menu_name;
             // 오류 메시지 삭제
             gotoxy(0, 21); // 오류 메시지 출력
             printf("The type you entered is not valid. Please re-enter.");
+            gotoxy(14, 7);
+            printf("                                                           "); // 이전 입력 삭제
             continue;
         }
         else
         {
-            gotoxy(0, 21);
-            printf("                                                           "); // 이전 입력 삭제
+           
             break;
         }
     }
@@ -1337,7 +1331,6 @@ struct { unsigned short len; unsigned char arr[255]; } v_menu_name;
     while (1)
     {
         gotoxy(14, 10);                                                        // "메뉴 이름:"
-        printf("                                                           "); // 이전 입력 삭제
         gets(menu_name);
 
         sprintf(sqlstmt, "SELECT fname FROM food_table WHERE fname = '%s'", menu_name);
@@ -1447,6 +1440,8 @@ struct { unsigned short len; unsigned char arr[255]; } v_menu_name;
         {
             gotoxy(0, 21);
             printf("Already exists food name");
+            gotoxy(14, 10);
+            printf("                                                           ");
             continue;
         }
         else
@@ -2161,7 +2156,7 @@ struct { unsigned short len; unsigned char arr[255]; } v_type;
     gotoxy(47, 13);
     gets(input_fat);
 
-    sprintf(sqlstmt, "UPDATE food_table SET fname = '%s' fcategory = '%s', ftype = '%s', calorie = %s, carbo = %s, protein = %s, fat = %s WHERE fname = '%s'",
+    sprintf(sqlstmt, "UPDATE food_table SET fname = '%s', fcategory = '%s', ftype = '%s', calorie = %s, carbo = %s, protein = %s, fat = %s WHERE fname = '%s'",
             input_name, input_cate, input_type, input_cal, input_carbo, input_protein, input_fat, input_update_name);
 
     /* EXEC SQL PREPARE stmt_update FROM : sqlstmt; */ 
@@ -2269,7 +2264,6 @@ struct { unsigned short len; unsigned char arr[255]; } v_type;
     printf("Food '%s' updated successfully.\n", input_update_name);
     getch();
 }
-
 
 /*
 화면 보여주는 함수
@@ -2778,6 +2772,7 @@ void login()
                 v_userPw.arr[v_userPw.len] = '\0';
                 v_uname.arr[v_uname.len] = '\0';
                 v_gender.arr[v_gender.len] = '\0';
+                gotoxy(0, 24);
                 printf("Login Success, Press any key\n");
                 getch();
                 main_options();
@@ -2799,25 +2794,34 @@ void login()
     }
 }
 
-void set_meal_time(char *v_meal_time) {
+void set_meal_time(char *v_meal_time)
+{
     time_t current_time;
     struct tm *local_time;
 
     time(&current_time);
     local_time = localtime(&current_time);
 
-    if (local_time->tm_hour >= 6 && local_time->tm_hour < 10) {
+    if (local_time->tm_hour >= 6 && local_time->tm_hour < 10)
+    {
         strcpy(v_meal_time, "Breakfast");
-    } else if (local_time->tm_hour >= 12 && local_time->tm_hour < 14) {
+    }
+    else if (local_time->tm_hour >= 12 && local_time->tm_hour < 14)
+    {
         strcpy(v_meal_time, "Lunch");
-    } else if (local_time->tm_hour >= 18 && local_time->tm_hour < 21) {
+    }
+    else if (local_time->tm_hour >= 18 && local_time->tm_hour < 21)
+    {
         strcpy(v_meal_time, "Dinner");
-    } else {
+    }
+    else
+    {
         strcpy(v_meal_time, "out");
     }
 }
 
-int is_menu_exists(const char *v_meal_time) {
+int is_menu_exists(const char *v_meal_time)
+{
     /* EXEC SQL BEGIN DECLARE SECTION; */ 
 
     char sqlstmt[1024];
@@ -2826,10 +2830,11 @@ int is_menu_exists(const char *v_meal_time) {
 
 
     snprintf(sqlstmt, sizeof(sqlstmt),
-        "SELECT COUNT(*) FROM composition_menu_table cm, menu_table m "
-        "WHERE cm.menuID = m.menuID AND m.userID = '%s' "
-        "AND cm.mDate = TRUNC(SYSDATE) "
-        "AND cm.mTime = '%s'", v_userId.arr, v_meal_time);
+             "SELECT COUNT(*) FROM composition_menu_table cm, menu_table m "
+             "WHERE cm.menuID = m.menuID AND m.userID = '%s' "
+             "AND cm.mDate = TRUNC(SYSDATE) "
+             "AND cm.mTime = '%s'",
+             v_userId.arr, v_meal_time);
 
     /* EXEC SQL PREPARE S FROM : sqlstmt; */ 
 
@@ -2892,7 +2897,7 @@ int is_menu_exists(const char *v_meal_time) {
 
 
 
-    /* EXEC SQL FETCH t_cursor INTO :count; */ 
+    /* EXEC SQL FETCH t_cursor INTO : count; */ 
 
 {
     struct sqlexd sqlstm;
@@ -2955,7 +2960,6 @@ int is_menu_exists(const char *v_meal_time) {
     return (count > 0) ? 1 : 0;
 }
 
-
 void refresh_today_menu()
 {
     /* EXEC SQL BEGIN DECLARE SECTION; */ 
@@ -2971,20 +2975,20 @@ void refresh_today_menu()
 
 
     set_meal_time(v_meal_time);
-        
-    if (is_menu_exists(v_meal_time)) {
+
+    if (is_menu_exists(v_meal_time))
+    {
         printf("It is not menu time or a menu already exists. \n");
         getch();
         return; // 메뉴가 이미 있으면 더 이상 수행하지 않음
     }
 
     /* 계산된 최대 칼로리 */
-    day_max_cal = (10.0 * v_weight) + (6.25 * v_height) - 100 + 
+    day_max_cal = (10.0 * v_weight) + (6.25 * v_height) - 100 +
                   (!strcmp(v_gender.arr, "Male") ? 5.0 : -161.0);
-    
 
-
-    while(1){
+    while (1)
+    {
         clrscr(); // 화면 클리어
         print_screen("screen/scr_today_menu.txt");
 
@@ -2994,15 +2998,15 @@ void refresh_today_menu()
 
         /* SQL 쿼리 생성 */
         snprintf(sqlstmt, sizeof(sqlstmt),
-            "SELECT main_menu.fname, sub_menu.fname, side_menu.fname, "
-            "(main_menu.calorie + sub_menu.calorie + side_menu.calorie) AS total_calorie "
-            "FROM "
-            "(SELECT fname, calorie FROM food_table WHERE fcategory = '%s' AND ftype = 'Main' ORDER BY dbms_random.value) main_menu, "
-            "(SELECT fname, calorie FROM food_table WHERE fcategory = '%s' AND ftype = 'Sub' ORDER BY dbms_random.value) sub_menu, "
-            "(SELECT fname, calorie FROM food_table WHERE fcategory = '%s' AND ftype = 'Side' ORDER BY dbms_random.value) side_menu "
-            "WHERE (main_menu.calorie + sub_menu.calorie + side_menu.calorie) <= %f"
-            "AND ROWNUM = 1",input_category, input_category, input_category, day_max_cal);
-
+                 "SELECT main_menu.fname, sub_menu.fname, side_menu.fname, "
+                 "(main_menu.calorie + sub_menu.calorie + side_menu.calorie) AS total_calorie "
+                 "FROM "
+                 "(SELECT fname, calorie FROM food_table WHERE fcategory = '%s' AND ftype = 'Main' ORDER BY dbms_random.value) main_menu, "
+                 "(SELECT fname, calorie FROM food_table WHERE fcategory = '%s' AND ftype = 'Sub' ORDER BY dbms_random.value) sub_menu, "
+                 "(SELECT fname, calorie FROM food_table WHERE fcategory = '%s' AND ftype = 'Side' ORDER BY dbms_random.value) side_menu "
+                 "WHERE (main_menu.calorie + sub_menu.calorie + side_menu.calorie) <= %f"
+                 "AND ROWNUM = 1",
+                 input_category, input_category, input_category, day_max_cal);
 
         /* EXEC SQL PREPARE S FROM : sqlstmt; */ 
 
@@ -3064,7 +3068,7 @@ void refresh_today_menu()
 }
 
 
-        /* EXEC SQL FETCH m1_cursor INTO : v_main_food_name, :v_sub_food_name, :v_side_food_name, :v_menu_cal; */ 
+        /* EXEC SQL FETCH m1_cursor INTO : v_main_food_name, : v_sub_food_name, : v_side_food_name, : v_menu_cal; */ 
 
 {
         struct sqlexd sqlstm;
@@ -3128,15 +3132,18 @@ void refresh_today_menu()
 
 
 
-        if (sqlca.sqlcode == 1403) {  /* 데이터가 없을 경우 */
+        if (sqlca.sqlcode == 1403)
+        { /* 데이터가 없을 경우 */
             printf("No suitable menu found within calorie limit.\n");
             return;
         }
-        else if (sqlca.sqlcode != 0) {  /* 기타 오류 */
+        else if (sqlca.sqlcode != 0)
+        { /* 기타 오류 */
             printf("SQL Error: %s\n", sqlca.sqlerrm.sqlerrmc);
             return;
         }
-        else{
+        else
+        {
             v_main_food_name.arr[v_main_food_name.len] = '\0';
             v_sub_food_name.arr[v_sub_food_name.len] = '\0';
             v_side_food_name.arr[v_side_food_name.len] = '\0';
@@ -3148,9 +3155,9 @@ void refresh_today_menu()
         gotoxy(22, 8);
         printf("%s", v_side_food_name.arr);
         gotoxy(22, 9);
-        printf("%s", day_max_cal);
+        printf("%f", day_max_cal);
         gotoxy(22, 10);
-        printf("%s", v_menu_cal);
+        printf("%f", v_menu_cal);
 
         /* EXEC SQL CLOSE m1_cursor; */ 
 
@@ -3178,12 +3185,12 @@ void refresh_today_menu()
         while (getchar() != '\n')
             ;
 
-        if(c == '1')
+        if (c == '1')
             break;
     }
 
     /* 현재 날짜를 v_current_date에 SYSDATE로 할당 */
-    /* EXEC SQL SELECT SYSDATE INTO :v_current_date FROM dual; */ 
+    /* EXEC SQL SELECT SYSDATE INTO : v_current_date FROM dual; */ 
 
 {
     struct sqlexd sqlstm;
@@ -3223,9 +3230,9 @@ void refresh_today_menu()
 
 
     /* menu_table에 삽입 */
-    /* EXEC SQL INSERT INTO menu_table (menuID, userID, fnameMain, fnameSub, fnameSide)
-    VALUES (seq_number.NEXTVAL, :v_userId, :v_main_food_name, :v_sub_food_name, :v_side_food_name)
-    RETURNING menuID INTO :v_menu_id; */ 
+    /* EXEC SQL INSERT INTO menu_table(menuID, userID, fnameMain, fnameSub, fnameSide)
+        VALUES(seq_number.NEXTVAL, : v_userId, : v_main_food_name, : v_sub_food_name, : v_side_food_name)
+            RETURNING menuID INTO : v_menu_id; */ 
 
 {
     struct sqlexd sqlstm;
@@ -3296,15 +3303,16 @@ fnameSide) values (seq_number.nextval ,:b0,:b1,:b2,:b3) returning menuID into \
 
 
 
-    if (sqlca.sqlcode != 0) {
+    if (sqlca.sqlcode != 0)
+    {
         gotoxy(0, 23);
         printf("Failed to insert into menu_table. SQL Error: %s\n", sqlca.sqlerrm.sqlerrmc);
         return;
     }
 
     /* composition_menu_table에 삽입 (Main, Sub, Side) */
-    /* EXEC SQL INSERT INTO composition_menu_table (menuID, fname, mDate, mTime)
-        VALUES (:v_menu_id, :v_main_food_name, :v_current_date, :v_meal_time); */ 
+    /* EXEC SQL INSERT INTO composition_menu_table(menuID, fname, mDate, mTime)
+        VALUES( : v_menu_id, : v_main_food_name, : v_current_date, : v_meal_time); */ 
 
 {
     struct sqlexd sqlstm;
@@ -3365,7 +3373,8 @@ ime) values (:b0,:b1,:b2,:b3)";
 }
 
 
-    if (sqlca.sqlcode != 0) {
+    if (sqlca.sqlcode != 0)
+    {
         gotoxy(0, 23);
         printf("Failed to insert Main menu into composition_menu_table. SQL Error: %s\n", sqlca.sqlerrm.sqlerrmc);
         getch();
@@ -3390,8 +3399,8 @@ ime) values (:b0,:b1,:b2,:b3)";
         return;
     }
 
-    /* EXEC SQL INSERT INTO composition_menu_table (menuID, fname, mDate, mTime)
-        VALUES (:v_menu_id, :v_sub_food_name, :v_current_date, :v_meal_time); */ 
+    /* EXEC SQL INSERT INTO composition_menu_table(menuID, fname, mDate, mTime)
+        VALUES( : v_menu_id, : v_sub_food_name, : v_current_date, : v_meal_time); */ 
 
 {
     struct sqlexd sqlstm;
@@ -3452,7 +3461,8 @@ ime) values (:b0,:b1,:b2,:b3)";
 }
 
 
-    if (sqlca.sqlcode != 0) {
+    if (sqlca.sqlcode != 0)
+    {
         gotoxy(0, 23);
         printf("Failed to insert Sub menu into composition_menu_table. SQL Error: %s\n", sqlca.sqlerrm.sqlerrmc);
         /* EXEC SQL ROLLBACK WORK; */ 
@@ -3476,8 +3486,8 @@ ime) values (:b0,:b1,:b2,:b3)";
         return;
     }
 
-    /* EXEC SQL INSERT INTO composition_menu_table (menuID, fname, mDate, mTime)
-        VALUES (:v_menu_id, :v_side_food_name, :v_current_date, :v_meal_time); */ 
+    /* EXEC SQL INSERT INTO composition_menu_table(menuID, fname, mDate, mTime)
+        VALUES( : v_menu_id, : v_side_food_name, : v_current_date, : v_meal_time); */ 
 
 {
     struct sqlexd sqlstm;
@@ -3538,7 +3548,8 @@ ime) values (:b0,:b1,:b2,:b3)";
 }
 
 
-    if (sqlca.sqlcode != 0) {
+    if (sqlca.sqlcode != 0)
+    {
         gotoxy(0, 23);
         printf("Failed to insert Side menu into composition_menu_table. SQL Error: %s\n", sqlca.sqlerrm.sqlerrmc);
         /* EXEC SQL ROLLBACK WORK; */ 
@@ -3579,5 +3590,5 @@ ime) values (:b0,:b1,:b2,:b3)";
     sqlcxt((void **)0, &sqlctx, &sqlstm, &sqlfpn);
 }
 
-  // 트랜잭션 커밋
+ // 트랜잭션 커밋
 }
