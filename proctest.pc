@@ -1061,7 +1061,7 @@ void set_meal_time(char *v_meal_time)
     }
     else
     {
-        strcpy(v_meal_time, "Lunch");
+        strcpy(v_meal_time, "out");
     }
 }
 
