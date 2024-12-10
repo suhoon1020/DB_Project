@@ -5,6 +5,7 @@
 #include <ctype.h>
 #include <string.h>
 #include <conio.h>
+#include <time.h>
 
 /* for oracle */
 #include <sqlda.h>
@@ -20,14 +21,13 @@ void view_food();
 void view_food_all();
 void view_food_search();
 void view_menu();
-void refresh_today_menu();
 void add_food();
 void delete_food();
 void update_food();
 void login();
 void sign_up();
-void refresh_today_menu();
 void print_screen(char *fname);
+void refresh_today_menu();
 
 #include <windows.h>
 void gotoxy(int x, int y);
@@ -47,9 +47,11 @@ VARCHAR v_side_food_name[30];
 float v_height;
 float v_weight;
 float v_isAdmin;
+float v_menu_cal;
 EXEC SQL END DECLARE SECTION;
 
 #define getch() _getch()
+#define PAGE_NUM 5
 
 void main()
 {
@@ -97,7 +99,6 @@ void sql_error(char *msg)
     EXEC SQL ROLLBACK WORK;
 }
 
-/*---------------  print screen --------------------*/
 #define STD_HANDLE GetStdHandle(STD_OUTPUT_HANDLE)
 
 void gotoxy(int x, int y)
@@ -125,13 +126,10 @@ void clrscr(void)
     gotoxy(0, 0);
 }
 
-/*---------------------------------------------------------*/
 
-/*------------------------- Manus ------------------------*/
 
 void main_options()
 {
-    refresh_today_menu();
     char c;
     while (1) // 무한 루프
     {
@@ -151,6 +149,11 @@ void main_options()
         printf("                                    ");
         gotoxy(3, 6);
         printf("%s", v_side_food_name.arr);
+
+        gotoxy(12, 7);
+        printf("                                    ");
+        gotoxy(12, 7);
+        printf("%f", v_menu_cal);
 
         gotoxy(7, 19); // 커서 위치 설정
         c = getchar(); // 사용자 입력 받기
@@ -181,69 +184,13 @@ void main_options()
             exit(0); // 종료
             break;
         default:
-            clrscr();
-            print_screen("screen/scr_main.txt");
-            gotoxy(7, 22); // 커서 위치 설정
-            printf("Invalid input\n");
             gotoxy(7, 19); // 커서 위치 설정
-            continue;      // 잘못된 입력 시 계속 루프
+            printf("Invalid input\n");
+            getch();
         }
     }
 }
 
-void refresh_today_menu()
-{
-    EXEC SQL BEGIN DECLARE SECTION;
-    char sqlstmt[1024];
-    EXEC SQL END DECLARE SECTION;
-
-    clrscr(); // 화면 클리어
-
-    sprintf(sqlstmt, "SELECT fname FROM (SELECT fname FROM food_table WHERE ftype = 'Main' ORDER BY dbms_random.value) WHERE rownum = 1");
-    EXEC SQL PREPARE S FROM : sqlstmt;
-    EXEC SQL DECLARE m1_cursor CURSOR FOR S;
-    EXEC SQL OPEN m1_cursor;
-    EXEC SQL FETCH m1_cursor INTO : v_main_food_name;
-
-    if (sqlca.sqlcode == 1403)
-    {
-        return;
-    }
-
-    sprintf(sqlstmt, "SELECT fname FROM (SELECT fname FROM food_table WHERE ftype = 'Sub' ORDER BY dbms_random.value) WHERE rownum = 1");
-    EXEC SQL PREPARE S FROM : sqlstmt;
-    EXEC SQL DECLARE m2_cursor CURSOR FOR S;
-    EXEC SQL OPEN m2_cursor;
-    EXEC SQL FETCH m2_cursor INTO : v_sub_food_name;
-
-    if (sqlca.sqlcode == 1403)
-    {
-        // 못찾음
-        return;
-    }
-
-    sprintf(sqlstmt, "SELECT fname FROM (SELECT fname FROM food_table WHERE ftype = 'Side' ORDER BY dbms_random.value) WHERE rownum = 1");
-    EXEC SQL PREPARE S FROM : sqlstmt;
-    EXEC SQL DECLARE m3_cursor CURSOR FOR S;
-    EXEC SQL OPEN m3_cursor;
-    EXEC SQL FETCH m3_cursor INTO : v_side_food_name;
-
-    if (sqlca.sqlcode == 1403)
-    {
-        // 못찾음
-        return;
-    }
-
-    v_main_food_name.arr[v_main_food_name.len] = '\0';
-    v_sub_food_name.arr[v_sub_food_name.len] = '\0';
-    v_side_food_name.arr[v_side_food_name.len] = '\0';
-
-    printf("v_main_food_name : %s\nv_sub_food_name : %s\nv_side_food_name : %s\n", v_main_food_name.arr, v_sub_food_name.arr, v_side_food_name.arr);
-
-    EXEC SQL CLOSE m1_cursor;
-    EXEC SQL CLOSE m2_cursor;
-    EXEC SQL CLOSE m3_cursor;
-}
 
 void view_food()
 {
@@ -282,7 +229,6 @@ void view_food()
     }
 }
 
-#define PAGE_NUM 5
 void view_food_all()
 {
     EXEC SQL BEGIN DECLARE SECTION;
@@ -347,7 +293,8 @@ void view_food_all()
     printf("Press Q : Go back / Press any key : Exit Program\n");
     EXEC SQL CLOSE c_cursor;
 
-    c = getch(); // 종료
+    c = getch();
+    
 
     if (c == 'q' || c == 'Q')
     {
@@ -846,8 +793,8 @@ void update_food()
     gotoxy(47, 13);
     gets(input_fat);
 
-    sprintf(sqlstmt, "UPDATE food_table SET fcategory = '%s', ftype = '%s', calorie = %s, carbo = %s, protein = %s, fat = %s WHERE fname = '%s'",
-            input_cate, input_type, input_cal, input_carbo, input_protein, input_fat, input_name);
+    sprintf(sqlstmt, "UPDATE food_table SET fname = '%s' fcategory = '%s', ftype = '%s', calorie = %s, carbo = %s, protein = %s, fat = %s WHERE fname = '%s'",
+            input_name, input_cate, input_type, input_cal, input_carbo, input_protein, input_fat, input_update_name);
 
     EXEC SQL PREPARE stmt_update FROM : sqlstmt;
     EXEC SQL EXECUTE stmt_update;
@@ -867,6 +814,7 @@ void update_food()
     printf("Food '%s' updated successfully.\n", input_update_name);
     getch();
 }
+
 
 /*
 화면 보여주는 함수
@@ -1081,4 +1029,181 @@ void login()
             continue;
         }
     }
+}
+
+void set_meal_time(char *v_meal_time) {
+    time_t current_time;
+    struct tm *local_time;
+
+    time(&current_time);
+    local_time = localtime(&current_time);
+
+    if (local_time->tm_hour >= 6 && local_time->tm_hour < 10) {
+        strcpy(v_meal_time, "Breakfast");
+    } else if (local_time->tm_hour >= 12 && local_time->tm_hour < 14) {
+        strcpy(v_meal_time, "Lunch");
+    } else if (local_time->tm_hour >= 18 && local_time->tm_hour < 21) {
+        strcpy(v_meal_time, "Dinner");
+    } else {
+        strcpy(v_meal_time, "out");
+    }
+}
+
+int is_menu_exists(const char *v_meal_time) {
+    EXEC SQL BEGIN DECLARE SECTION;
+    char sqlstmt[1024];
+    int count = 0;
+    EXEC SQL END DECLARE SECTION;
+
+    snprintf(sqlstmt, sizeof(sqlstmt),
+        "SELECT COUNT(*) FROM composition_menu_table cm, menu_table m "
+        "WHERE cm.menuID = m.menuID AND m.userID = '%s' "
+        "AND cm.mDate = TRUNC(SYSDATE) "
+        "AND cm.mTime = '%s'", v_userId.arr, v_meal_time);
+
+    EXEC SQL PREPARE S FROM : sqlstmt;
+    EXEC SQL DECLARE t_cursor CURSOR FOR S;
+    EXEC SQL OPEN t_cursor;
+
+    EXEC SQL FETCH t_cursor INTO :count;
+
+    EXEC SQL CLOSE t_cursor;
+
+    // 이미 메뉴가 존재하면 1, 그렇지 않으면 0 반환
+    return (count > 0) ? 1 : 0;
+}
+
+
+void refresh_today_menu()
+{
+    EXEC SQL BEGIN DECLARE SECTION;
+    float day_max_cal;
+
+    int v_menu_id;
+    char v_current_date[11];
+    char v_meal_time[10];
+
+    char sqlstmt[1024];
+    EXEC SQL END DECLARE SECTION;
+
+    set_meal_time(v_meal_time);
+        
+    if (is_menu_exists(v_meal_time)) {
+        printf("It is not menu time or a menu already exists. \n");
+        getch();
+        return; // 메뉴가 이미 있으면 더 이상 수행하지 않음
+    }
+
+    /* 계산된 최대 칼로리 */
+    day_max_cal = (10.0 * v_weight) + (6.25 * v_height) - 100 + 
+                  (!strcmp(v_gender.arr, "Male") ? 5.0 : -161.0);
+    
+
+
+    while(1){
+        clrscr(); // 화면 클리어
+        print_screen("screen/scr_today_menu.txt");
+
+        char input_category[20];
+        gotoxy(34, 3);
+        gets(input_category);
+
+        /* SQL 쿼리 생성 */
+        snprintf(sqlstmt, sizeof(sqlstmt),
+            "SELECT main_menu.fname, sub_menu.fname, side_menu.fname, "
+            "(main_menu.calorie + sub_menu.calorie + side_menu.calorie) AS total_calorie "
+            "FROM "
+            "(SELECT fname, calorie FROM food_table WHERE fcategory = '%s' AND ftype = 'Main' ORDER BY dbms_random.value) main_menu, "
+            "(SELECT fname, calorie FROM food_table WHERE fcategory = '%s' AND ftype = 'Sub' ORDER BY dbms_random.value) sub_menu, "
+            "(SELECT fname, calorie FROM food_table WHERE fcategory = '%s' AND ftype = 'Side' ORDER BY dbms_random.value) side_menu "
+            "WHERE (main_menu.calorie + sub_menu.calorie + side_menu.calorie) <= %f"
+            "AND ROWNUM = 1",input_category, input_category, input_category, day_max_cal);
+
+
+        EXEC SQL PREPARE S FROM : sqlstmt;
+        EXEC SQL DECLARE m1_cursor CURSOR FOR S;
+        EXEC SQL OPEN m1_cursor;
+        EXEC SQL FETCH m1_cursor INTO : v_main_food_name, :v_sub_food_name, :v_side_food_name, :v_menu_cal;
+
+        if (sqlca.sqlcode == 1403) {  /* 데이터가 없을 경우 */
+            printf("No suitable menu found within calorie limit.\n");
+            return;
+        }
+        else if (sqlca.sqlcode != 0) {  /* 기타 오류 */
+            printf("SQL Error: %s\n", sqlca.sqlerrm.sqlerrmc);
+            return;
+        }
+        else{
+            v_main_food_name.arr[v_main_food_name.len] = '\0';
+            v_sub_food_name.arr[v_sub_food_name.len] = '\0';
+            v_side_food_name.arr[v_side_food_name.len] = '\0';
+        }
+        gotoxy(22, 6);
+        printf("%s", v_main_food_name.arr);
+        gotoxy(22, 7);
+        printf("%s", v_sub_food_name.arr);
+        gotoxy(22, 8);
+        printf("%s", v_side_food_name.arr);
+        gotoxy(22, 9);
+        printf("%s", day_max_cal);
+        gotoxy(22, 10);
+        printf("%s", v_menu_cal);
+
+        EXEC SQL CLOSE m1_cursor;
+
+        char c;
+        gotoxy(0, 12);
+        printf("1 to commit");
+        c = getchar();
+        while (getchar() != '\n')
+            ;
+
+        if(c == '1')
+            break;
+    }
+
+    /* 현재 날짜를 v_current_date에 SYSDATE로 할당 */
+    EXEC SQL SELECT SYSDATE INTO :v_current_date FROM dual;
+
+    /* menu_table에 삽입 */
+    EXEC SQL INSERT INTO menu_table (menuID, userID, fnameMain, fnameSub, fnameSide)
+    VALUES (seq_number.NEXTVAL, :v_userId, :v_main_food_name, :v_sub_food_name, :v_side_food_name)
+    RETURNING menuID INTO :v_menu_id;
+
+    if (sqlca.sqlcode != 0) {
+        gotoxy(0, 23);
+        printf("Failed to insert into menu_table. SQL Error: %s\n", sqlca.sqlerrm.sqlerrmc);
+        return;
+    }
+
+    /* composition_menu_table에 삽입 (Main, Sub, Side) */
+    EXEC SQL INSERT INTO composition_menu_table (menuID, fname, mDate, mTime)
+        VALUES (:v_menu_id, :v_main_food_name, :v_current_date, :v_meal_time);
+    if (sqlca.sqlcode != 0) {
+        gotoxy(0, 23);
+        printf("Failed to insert Main menu into composition_menu_table. SQL Error: %s\n", sqlca.sqlerrm.sqlerrmc);
+        getch();
+        EXEC SQL ROLLBACK WORK;
+        return;
+    }
+
+    EXEC SQL INSERT INTO composition_menu_table (menuID, fname, mDate, mTime)
+        VALUES (:v_menu_id, :v_sub_food_name, :v_current_date, :v_meal_time);
+    if (sqlca.sqlcode != 0) {
+        gotoxy(0, 23);
+        printf("Failed to insert Sub menu into composition_menu_table. SQL Error: %s\n", sqlca.sqlerrm.sqlerrmc);
+        EXEC SQL ROLLBACK WORK;
+        return;
+    }
+
+    EXEC SQL INSERT INTO composition_menu_table (menuID, fname, mDate, mTime)
+        VALUES (:v_menu_id, :v_side_food_name, :v_current_date, :v_meal_time);
+    if (sqlca.sqlcode != 0) {
+        gotoxy(0, 23);
+        printf("Failed to insert Side menu into composition_menu_table. SQL Error: %s\n", sqlca.sqlerrm.sqlerrmc);
+        EXEC SQL ROLLBACK WORK;
+        return;
+    }
+
+    EXEC SQL COMMIT WORK;  // 트랜잭션 커밋
 }
