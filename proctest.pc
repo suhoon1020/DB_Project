@@ -41,6 +41,9 @@ VARCHAR v_userId[50];
 VARCHAR v_userPw[50];
 VARCHAR v_uname[30];
 VARCHAR v_gender[6];
+VARCHAR v_main_food_name[30];
+VARCHAR v_sub_food_name[30];
+VARCHAR v_side_food_name[30];
 float v_height;
 float v_weight;
 float v_isAdmin;
@@ -50,6 +53,8 @@ EXEC SQL END DECLARE SECTION;
 
 void main()
 {
+    _putenv("NLS_LANG=American_America.KO16KSC5601"); // �ѱۻ��� �ʿ���
+
     db_connect();
 
     login();
@@ -146,9 +151,9 @@ void main_options()
         printf("                                    ");
         gotoxy(3, 6);
         printf("%s", v_side_food_name.arr);
-        
-        gotoxy(7, 19);                       // 커서 위치 설정
-        c = getchar();                       // 사용자 입력 받기
+
+        gotoxy(7, 19); // 커서 위치 설정
+        c = getchar(); // 사용자 입력 받기
         while (getchar() != '\n')
             ; // 입력 버퍼 비우기
 
@@ -457,12 +462,11 @@ void view_menu()
 
     clrscr();
 
-    sprintf(sqlstmt, 
+    sprintf(sqlstmt,
             "SELECT m.mDate, m.mTime, m.menuID, mt.fnameMain, mt.fnameSub, mt.fnameSide FROM composition_menu_table m JOIN menu_table mt ON m.menuID = mt.menuID WHERE mt.userID = '%s' ORDER BY m.mDate, m.mTime", v_userId.arr);
-    EXEC SQL PREPARE S FROM :sqlstmt;
+    EXEC SQL PREPARE S FROM : sqlstmt;
     EXEC SQL DECLARE v_cursor CURSOR FOR S;
     EXEC SQL OPEN v_cursor;
-
 
     printf(" %-15s %-10s %-10s %-20s %-20s %-20s\n",
            "Date", "Time", "MenuID", "Main Dish", "Sub Dish", "Side Dish");
@@ -470,7 +474,7 @@ void view_menu()
 
     while (1)
     {
-        EXEC SQL FETCH v_cursor INTO :v_mDate, :v_mTime, :v_menuID, :v_fnameMain, :v_fnameSub ,:v_fnameSide;
+        EXEC SQL FETCH v_cursor INTO : v_mDate, : v_mTime, : v_menuID, : v_fnameMain, : v_fnameSub, : v_fnameSide;
 
         if (sqlca.sqlcode != 0)
         {
@@ -521,21 +525,22 @@ void view_menu()
 void add_food()
 {
     EXEC SQL BEGIN DECLARE SECTION;
-    varchar v_category1[255];  // Western, Korean, Japanese, Chinese
-    varchar v_category2[255];  // Main, Sub, Side
+    varchar v_category1[255]; // Western, Korean, Japanese, Chinese
+    varchar v_category2[255]; // Main, Sub, Side
     varchar v_menu_name[255];
     float v_calorie;
     float v_carbo;
     float v_protein;
     float v_fat;
-    varchar v_userId[255];     // 사용자 ID 추가
+    varchar v_userId[255]; // 사용자 ID 추가
     EXEC SQL END DECLARE SECTION;
 
     clrscr();
 
     print_screen("screen/scr_insert.txt");
 
-    while (1) {
+    while (1)
+    {
         gotoxy(14, 4); // "카테고리 1:"
         gets((char *)v_category1.arr);
         v_category1.len = (short)strlen((char *)v_category1.arr);
@@ -544,20 +549,22 @@ void add_food()
         if (strcmp((char *)v_category1.arr, "Western") == 0 ||
             strcmp((char *)v_category1.arr, "Korean") == 0 ||
             strcmp((char *)v_category1.arr, "Japanese") == 0 ||
-            strcmp((char *)v_category1.arr, "Chinese") == 0) {
-                // 오류 메시지 삭제
-                gotoxy(0, 21);
-                printf("                                                       "); // 이전 입력 삭제
+            strcmp((char *)v_category1.arr, "Chinese") == 0)
+        {
+            // 오류 메시지 삭제
+            gotoxy(0, 21);
+            printf("                                                       "); // 이전 입력 삭제
             break;
         }
 
         gotoxy(0, 21); // 오류 메시지 출력
         printf("The category you entered is not valid. Please re-enter.");
-        gotoxy(14, 4); // 입력 위치 초기화
+        gotoxy(14, 4);                                             // 입력 위치 초기화
         printf("                                               "); // 이전 입력 삭제
     }
 
-    while (1) {
+    while (1)
+    {
         gotoxy(14, 7); // "카테고리 2:"
         gets((char *)v_category2.arr);
         v_category2.len = (short)strlen((char *)v_category2.arr);
@@ -565,16 +572,17 @@ void add_food()
         // 카테고리 2 입력 중 범주에 벗어난 값이 입력되면 오류 메시지 출력
         if (strcmp((char *)v_category2.arr, "Main") == 0 ||
             strcmp((char *)v_category2.arr, "Sub") == 0 ||
-            strcmp((char *)v_category2.arr, "Side") == 0) {
-                // 오류 메시지 삭제
-                gotoxy(0, 21);
-                printf("                                                   "); // 이전 입력 삭제
+            strcmp((char *)v_category2.arr, "Side") == 0)
+        {
+            // 오류 메시지 삭제
+            gotoxy(0, 21);
+            printf("                                                   "); // 이전 입력 삭제
             break;
         }
 
         gotoxy(0, 21); // 오류 메시지 출력
         printf("The type you entered is not valid. Please re-enter.");
-        gotoxy(14, 7); // 입력 위치 초기화
+        gotoxy(14, 7);                                        // 입력 위치 초기화
         printf("                                          "); // 이전 입력 삭제
     }
 
@@ -584,28 +592,35 @@ void add_food()
 
     gotoxy(14, 12); // "칼로리:"
     scanf("%f", &v_calorie);
-    while (getchar() != '\n');
+    while (getchar() != '\n')
+        ;
 
     gotoxy(14, 14); // "탄수화물:"
     scanf("%f", &v_carbo);
-    while (getchar() != '\n');
+    while (getchar() != '\n')
+        ;
 
     gotoxy(14, 16); // "단백질:"
     scanf("%f", &v_protein);
-    while (getchar() != '\n');
+    while (getchar() != '\n')
+        ;
 
     gotoxy(14, 18); // "지방:"
     scanf("%f", &v_fat);
-    while (getchar() != '\n');
+    while (getchar() != '\n')
+        ;
 
-    // 데이터베이스 삽입 
-     EXEC SQL INSERT INTO FOOD_TABLE (fcategory, ftype, fname, calorie, carbo, protein, fat)
-             VALUES (:v_category1, :v_category2, :v_menu_name, :v_calorie, :v_carbo, :v_protein, :v_fat);
+    // 데이터베이스 삽입
+    EXEC SQL INSERT INTO FOOD_TABLE(fcategory, ftype, fname, calorie, carbo, protein, fat)
+        VALUES( : v_category1, : v_category2, : v_menu_name, : v_calorie, : v_carbo, : v_protein, : v_fat);
 
-    if (sqlca.sqlcode == 0) {
+    if (sqlca.sqlcode == 0)
+    {
         gotoxy(0, 21); // 성공 메시지 출력 위치
         printf("Data added successfully.");
-    } else {
+    }
+    else
+    {
         gotoxy(0, 21);
         printf("Error adding data: %s\n", sqlca.sqlerrm.sqlerrmc);
     }
@@ -614,7 +629,7 @@ void add_food()
     printf("Press Enter to return to main menu.");
     getch();
 
-    clrscr(); // 화면 초기화
+    clrscr();       // 화면 초기화
     main_options(); // 메인 메뉴로 돌아가기
 }
 
@@ -741,13 +756,13 @@ void update_food()
 
     sprintf(sqlstmt, "SELECT fcategory, fname, ftype, calorie, carbo, protein, fat FROM food_table where fname = '%s'", input_update_name);
 
-    EXEC SQL PREPARE S FROM : sqlstmt;
-    EXEC SQL DECLARE u_cursor CURSOR FOR S;
-    EXEC SQL OPEN u_cursor;
+    EXEC SQL PREPARE UPDATE FROM : sqlstmt;
+    EXEC SQL DECLARE update_cursor CURSOR FOR UPDATE;
+    EXEC SQL OPEN update_cursor;
 
     while (1)
     {
-        EXEC SQL FETCH u_cursor INTO : v_category, : v_food_name, : v_type, : v_calorie, : v_carbo, : v_protein, : v_fat; // 커서에 저장
+        EXEC SQL FETCH update_cursor INTO : v_category, : v_food_name, : v_type, : v_calorie, : v_carbo, : v_protein, : v_fat; // 커서에 저장
 
         if (sqlca.sqlcode == 1403)
         {
@@ -773,7 +788,7 @@ void update_food()
         gotoxy(10, 13);
         printf("%.1f\n", v_calorie);
     }
-    EXEC SQL CLOSE u_cursor;
+    EXEC SQL CLOSE update_cursor;
 
     // no tuple
     if (sqlca.sqlerrd[2] == 0)
@@ -887,7 +902,8 @@ void sign_up()
         if (strcmp(pw, re_pw) != 0)
         {
             gotoxy(0, 22);
-            printf("Password does not match. Please try again.\n");
+            //printf("Password does not match. Please try again.\n");
+            printf("비밀번호 불일치\n");
             continue;
         }
         gotoxy(33, 10);
@@ -904,6 +920,7 @@ void sign_up()
         gets(height);
         gotoxy(33, 16);
         gets(weight);
+        clrscr();
 
         sprintf(sqlstmt, "SELECT userID FROM user_table where userID = '%s'", id);
         EXEC SQL PREPARE USER FROM : sqlstmt;
@@ -935,7 +952,7 @@ void sign_up()
             }
 
             gotoxy(0, 22);
-            printf("Sign up successful!\n");
+            printf("Sign up successful! Press Any key\n");
             EXEC SQL COMMIT WORK;
             getch();
             break;
@@ -959,6 +976,7 @@ void login()
     EXEC SQL END DECLARE SECTION;
     clrscr();
     print_screen("screen/scr_login.txt");
+    _putenv("NLS_LANG=American_America.KO16KSC5601"); // �ѱۻ��� �ʿ���
     while (1)
     {
         gotoxy(28, 20);
@@ -994,7 +1012,7 @@ void login()
         EXEC SQL FETCH login_cursor INTO : v_userId, : v_userPw, : v_uname, : v_gender, : v_height, : v_weight, : v_isAdmin;
         printf("%d\n", sqlca.sqlcode);
 
-        if (sqlca.sqlcode < 0)
+        if (sqlca.sqlcode == 1403)
         {
             gotoxy(0, 22);
             printf("ID or password is incorrect. Please try again.\n");
