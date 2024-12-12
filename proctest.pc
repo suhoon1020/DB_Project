@@ -360,7 +360,7 @@ void view_food_search()
 
     while (1)
     {
-        EXEC SQL FETCH s_cursor INTO : v_category, : v_food_name, : v_type, : v_carbo, : v_protein, : v_fat, : v_calorie;
+        EXEC SQL FETCH s_cursor INTO : v_category, : v_food_name, : v_type, : v_calorie, : v_carbo, : v_protein, : v_fat;
 
         if (sqlca.sqlcode == 1403)
         { // 더 이상 데이터가 없으면 종료
@@ -522,7 +522,6 @@ void add_food()
         }
         else
         {
-
             break;
         }
     }
@@ -673,13 +672,13 @@ void delete_food()
         gotoxy(10, 9);
         printf("%s\n", v_type.arr);
         gotoxy(10, 10);
-        printf("%.1f\n", v_carbo);
-        gotoxy(10, 11);
-        printf("%.1f\n", v_protein);
-        gotoxy(10, 12);
-        printf("%.1f\n", v_fat);
-        gotoxy(10, 13);
         printf("%.1f\n", v_calorie);
+        gotoxy(10, 11);
+        printf("%.1f\n", v_carbo);
+        gotoxy(10, 12);
+        printf("%.1f\n", v_protein);
+        gotoxy(10, 13);
+        printf("%.1f\n", v_fat);
 
         // 삭제할지 여부 묻기
         char confirmation;
@@ -769,13 +768,13 @@ void update_food()
         gotoxy(10, 9);
         printf("%s\n", v_type.arr);
         gotoxy(10, 10);
-        printf("%.1f\n", v_carbo);
-        gotoxy(10, 11);
-        printf("%.1f\n", v_protein);
-        gotoxy(10, 12);
-        printf("%.1f\n", v_fat);
-        gotoxy(10, 13);
         printf("%.1f\n", v_calorie);
+        gotoxy(10, 11);
+        printf("%.1f\n", v_carbo);
+        gotoxy(10, 12);
+        printf("%.1f\n", v_protein);
+        gotoxy(10, 13);
+        printf("%.1f\n", v_fat);
     }
     EXEC SQL CLOSE update_cursor;
 
@@ -798,10 +797,52 @@ void update_food()
 
     gotoxy(47, 7);
     gets(input_name);
-    gotoxy(47, 8);
-    gets(input_cate);
-    gotoxy(47, 9);
-    gets(input_type);
+    // 카테고리 1 입력
+    while (1)
+    {
+        gotoxy(47, 8);
+        gets(input_cate);
+
+        if (strcmp(input_cate, "Western") != 0 &&
+            strcmp(input_cate, "Korean") != 0 &&
+            strcmp(input_cate, "Japanese") != 0 &&
+            strcmp(input_cate, "Chinese") != 0)
+        {
+            gotoxy(0, 21); // 오류 메시지 출력
+            printf("The category you entered is not valid. Please re-enter.");
+            gotoxy(47, 8);
+            printf("                                                           "); // 이전 입력 삭제
+            continue;
+        }
+        else
+        {
+            break;
+        }
+    }
+    // 카테고리 2 입력
+    while (1)
+    {
+        gotoxy(47, 9); // "카테고리 2:"
+        gets(input_type);
+
+        // 카테고리 2 입력 중 범주에 벗어난 값이 입력되면 오류 메시지 출력
+        if (strcmp(input_type, "Main") != 0 &&
+            strcmp(input_type, "Sub") != 0 &&
+            strcmp(input_type, "Side") != 0)
+        {
+            // 오류 메시지 삭제
+            gotoxy(0, 21); // 오류 메시지 출력
+            printf("The type you entered is not valid. Please re-enter.");
+            gotoxy(47, 9);
+            printf("                                                           "); // 이전 입력 삭제
+            continue;
+        }
+        else
+        {
+
+            break;
+        }
+    }
     gotoxy(47, 10);
     gets(input_cal);
     gotoxy(47, 11);
